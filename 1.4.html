@@ -40,6 +40,7 @@
 		<!--Fila de contenido-->
 		<div class="row">
 
+			<!-- Columna 12 -->
 			<div class="col-md-12 col-sm-12 col-xs-12">
 
 				<div class="no-print col-md-1 col-md-offset-11 col-sm-1 col-sm-offset-11 col-xs-12 text-right">
@@ -139,9 +140,30 @@
 
 				<p>La principal ventaja de enlazar un archivo JavaScript externo es que se simplifica el código HTML de la página, que se puede reutilizar el mismo código JavaScript en todas las páginas del sitio web y que cualquier modificación realizada en el archivo JavaScript se ve reflejada inmediatamente en todas las páginas HTML que lo enlazan.</p>
 
+				<h4>1.4.3.	Incluir JavaScript en los elementos HTML</h4>
+				<p>Este último método es el menos utilizado, ya que consiste en incluir trozos de JavaScript dentro del código HTML de la página:</p>
+				
+				<div class="highlight">
+					<p>
+						&lt;!DOCTYPE html&gt; <br>
+						&lt;html lang="es"&gt; <br>
+						&lt;head&gt; <br>
+						&emsp; &lt;meta charset="utf-8"&gt;<br>
+						&emsp; &lt;title&gt;Ejemplo de código JavaScript&lt;/title&gt;<br>
+						&lt;/head&gt;<br><br>
+
+						&lt;body&gt;<br>
+						&emsp; &lt;p onclick="alert('Un mensaje de prueba')"&gt;Un párrafo de texto.&lt;/p&gt;<br>
+						&lt;/body&gt;<br>
+
+						&lt;/html&gt;
+					</p>
+				</div>
 
 
-			</div>
+				<p>El mayor inconveniente de este método es que ensucia innecesariamente el código HTML de la página y complica el mantenimiento del código JavaScript. En general, este método sólo se utiliza para definir algunos eventos y en algunos otros casos especiales, como se verá más adelante.</p>
+
+			</div><!--/Columna 12-->
 
 		</div><!--/Fila de contenido-->
 

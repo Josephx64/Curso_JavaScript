@@ -4,173 +4,133 @@
 		"selected_items":
 		[
 			[
-				"el",
-				"elseif	elseif …"
+				"font-s",
+				"font-size"
 			],
 			[
-				"prin",
-				"printf"
+				"fot",
+				"font-size"
 			],
 			[
-				"Nombre",
-				"Nombre2"
+				"jquery",
+				"jquery-ui"
 			],
 			[
-				"eve",
-				"eventosDesplegados"
+				"jq",
+				"jquery-ui"
 			],
 			[
-				"total",
-				"totalEventos"
-			],
-			[
-				"wHERE",
-				"WHERE"
-			],
-			[
-				"rstotal",
-				"rsTotalFotox"
-			],
-			[
-				"rsT",
-				"rsTotalFotox"
-			],
-			[
-				"mysql_fetch",
-				"mysql_fetch_assoc"
-			],
-			[
-				"totalFotos",
-				"totalFotosGaleria"
-			],
-			[
-				"rs",
-				"rsTotalFotos"
-			],
-			[
-				"mysql_num",
-				"mysql_num_rows"
-			],
-			[
-				"id_",
-				"id_autor"
-			],
-			[
-				"bac",
-				"background"
+				"marg",
+				"margin-top"
 			],
 			[
 				"padding",
-				"padding-left"
+				"padding-top"
 			],
 			[
-				"margin",
-				"margin-bottom"
+				"form",
+				"formUser"
 			],
 			[
-				"text",
-				"text-align"
+				"funci",
+				"function"
 			],
 			[
-				"b",
-				"bold"
+				"jqery",
+				"jquery-ui-1"
 			],
 			[
-				"font",
-				"font-weight"
+				"mysql_err",
+				"mysql_error"
 			],
 			[
-				"boder",
-				"border-radius"
+				"cx",
+				"cxn_Encuestas"
 			],
 			[
-				"padding-",
-				"padding-right"
+				"mysql_fetch",
+				"mysqli_fetch"
 			],
 			[
-				"he",
-				"height"
+				"mysql_fetch_",
+				"mysql_fetch_object"
 			],
 			[
-				"back",
-				"background"
+				"php",
+				"phpinfo"
 			],
 			[
-				"tra",
-				"trainOperational"
+				"calif",
+				"calif_Preg1"
 			],
 			[
-				"rgb",
-				"rgb()"
+				"pts",
+				"ptsObtenidos_Preg1"
 			],
 			[
-				"heigh",
-				"max-height"
+				"totalP",
+				"TotalPtsObt"
 			]
 		]
 	},
 	"buffers":
 	[
-		{
-			"file": "css3/main.css",
-			"settings":
-			{
-				"buffer_size": 308,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 400.0,
+		"height": 43.0,
 		"selected_items":
 		[
 			[
-				"html5",
-				"Snippet: bs3-html5-template"
+				"centur",
+				"Preferences: Package Control Settings – User"
 			],
 			[
 				"install",
 				"Package Control: Install Package"
 			],
 			[
-				"pack",
-				"Package Control: Add Repository"
-			],
-			[
-				"centur",
-				"Preferences: Package Control Settings – User"
-			],
-			[
-				"diff",
-				"FileDiffs: Menu"
-			],
-			[
 				"insta",
 				"Package Control: Install Package"
 			],
 			[
-				"Snippet: ",
-				"Snippet: html5"
+				"inst",
+				"Package Control: Install Package"
 			],
 			[
-				"pa",
-				"Package Control: Install Package"
+				"book",
+				"SublimeBookmarks: Show All Bookmarks "
+			],
+			[
+				"show",
+				"SublimeBookmarks: Show Bookmarks Only In Current File "
+			],
+			[
+				"remove",
+				"SublimeBookmarks: Remove A Bookmark"
+			],
+			[
+				"add",
+				"SublimeBookmarks: Add Bookmark"
+			],
+			[
+				"Remove",
+				"SublimeBookmarks: Remove A Bookmark"
+			],
+			[
+				"add b",
+				"SublimeBookmarks: Add Bookmark"
 			]
 		],
-		"width": 520.0
+		"width": 601.0
 	},
 	"console":
 	{
-		"height": 160.0,
+		"height": 153.0,
 		"history":
 		[
-			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
-			"import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print 'Please restart Sublime Text to finish installation'",
-			"import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print 'Please restart Sublime Text to finish installation';",
-			"import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); ",
-			"import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print 'Please restart Sublime Text to finish installation'"
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
 		]
 	},
 	"distraction_free":
@@ -184,137 +144,230 @@
 	},
 	"expanded_folders":
 	[
-		"/C/xampp/htdocs/Curso_JavaScript",
-		"/C/xampp/htdocs/Curso_JavaScript/bootstrap",
-		"/C/xampp/htdocs/Curso_JavaScript/css3"
+		"/opt/lampp/htdocs/Curso_JavaScript"
 	],
 	"file_history":
 	[
-		"/C/xampp/htdocs/Curso_JavaScript/ejemplo_v2.html",
-		"/C/xampp/htdocs/Curso_JavaScript/ejemplo_v1.html",
-		"/C/xampp/htdocs/Curso_JavaScript/test.html",
-		"/C/xampp/htdocs/Curso_JavaScript/ejemplo.html",
-		"/C/xampp/htdocs/Curso_JavaScript/chart.html",
-		"/C/xampp/htdocs/Curso_JavaScript/chart.php",
-		"/C/xampp/htdocs/Blueberry2/inc/TopBar2.php",
-		"/C/Users/José Luis/Desktop/error.html",
-		"/C/xampp/htdocs/Blueberry2/index.php",
-		"/C/xampp/htdocs/Blueberry2/index.html",
-		"/C/xampp/htdocs/Blueberry/inc/TopBar.php",
-		"/C/xampp/htdocs/Blueberry2/eventos_Copia4.php",
-		"/C/xampp/htdocs/Blueberry2/eventos - Copia.php",
-		"/C/xampp/htdocs/Blueberry2/index.rar",
-		"/C/xampp/htdocs/Blueberry2/plugins/nprogress-master/component.json",
-		"/C/xampp/htdocs/Blueberry2/comboBox.html",
-		"/C/xampp/htdocs/Blueberry2/calendario.php",
-		"/C/xampp/htdocs/Blueberry2/css/normalize.css",
-		"/C/xampp/htdocs/Blueberry2/img/_notes/Asesor_AntonioCastro.jpg.mno",
-		"/C/xampp/htdocs/Blueberry2/img/thumbnails/_notes/Cuernavaca.jpg.mno",
-		"/C/Users/José Luis/Desktop/vwgalerias.sql",
-		"/C/Users/José Luis/Creative Cloud Files/Artwork/XML/Invitados_y_Colados.xml",
-		"/C/Users/José Luis/Creative Cloud Files/Artwork/XML/Recos Fin de Año/Ejecutivo de promocion educativa.xml",
-		"/C/Users/José Luis/Creative Cloud Files/Artwork/XML/Invitados2.xml",
-		"/C/Users/José Luis/Creative Cloud Files/Artwork/XML/Invitados.xml",
-		"/C/Users/José Luis/Creative Cloud Files/Artwork/XML/AsesoresPRONADEC.xml",
-		"/C/Users/José Luis/Creative Cloud Files/Artwork/XML/InvitadosConvivioNavidad.xml",
-		"/C/Users/José Luis/Desktop/alumnos.csv",
-		"/C/Users/José Luis/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/C/xampp/htdocs/Blueberry/sql/blueberry.sql",
-		"/C/Users/José Luis/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings",
-		"/C/xampp/htdocs/jqui/bootstrap/css/bootstrap.css",
-		"/C/xampp/htdocs/jqui/bootstrap/css/metro-bootstrap.css",
-		"/C/xampp/htdocs/jqui/css/main.css",
-		"/C/xampp/htdocs/jqui/css/widgets.styles.css",
-		"/C/xampp/htdocs/jqui/practica1.html",
-		"/C/xampp/htdocs/jqui/bootstrap/css/bootstrap.css.map",
-		"/C/xampp/htdocs/jqui/index.html",
-		"/C/xampp/htdocs/jqui/test.html",
-		"/C/Users/José Luis/AppData/Roaming/Sublime Text 3/Packages/User/sb3.sublime-snippet",
-		"/C/xampp/htdocs/jqui/index-copia.html",
-		"/C/xampp/htdocs/Flat-ui/Flat-UI-master/index.html",
-		"/C/xampp/htdocs/Flat-ui/Flat-UI-master/dist/css/flat-ui.css",
-		"/C/Users/José Luis/Desktop/jquery-ui/js/widgets.config.js",
-		"/C/Users/José Luis/Desktop/jquery-ui/css/main.css",
-		"/C/Users/José Luis/AppData/Roaming/Sublime Text 3/Packages/User/html5.sublime-snippet",
-		"/C/Users/José Luis/Desktop/jquery-ui/css/widgets.styles.css",
-		"/C/Users/José Luis/Desktop/jquery-ui/jquery/jquery-ui/js/jquery-ui.min.js",
-		"/C/Users/José Luis/Desktop/jquery-ui/jquery/jquery-ui/css/temas/smoothness/jquery-ui.theme.css",
-		"/C/Users/José Luis/Desktop/jquery-ui/jquery/jquery-ui/js/jquery-ui.js",
-		"/C/Program Files/Sublime Text 3/Packages/HTML.sublime-package",
-		"/C/xampp/htdocs/Dreamw/jQueryAssets/temas/humanity/jquery-ui.structure.css",
-		"/C/xampp/htdocs/master2/index.html",
-		"/C/xampp/htdocs/master/index.html",
-		"/C/xampp/htdocs/cetec1/js/misScript.js",
-		"/C/Users/José Luis/Desktop/video.html",
-		"/C/xampp/htdocs/cetec1/index.html",
-		"/C/Users/José Luis/Desktop/.htaccess",
-		"/C/Users/José Luis/Downloads/Teamtreehouse.com - How to Make a Website/01 - Beginning HTML and CSS/index.html",
-		"/C/Users/José Luis/Videos/Any Video Converter/HTML5/2.5.1_RIAs_x264.html",
-		"/C/Users/José Luis/Desktop/index.html",
-		"/C/Users/José Luis/OneDrive/Plan de Estudios Tco en Desarrollo Web 2014/3 CSS/Material de Aprendizaje/Capítulo 16 - Ejercicios/archivos_ejercicio7/ejercicio7.html",
-		"/C/Users/José Luis/OneDrive/Plan de Estudios Tco en Desarrollo Web 2014/3 CSS/Material de Aprendizaje/Capítulo 17 - Ejercicios Resueltos/ejercicio7_Sol.css",
-		"/C/Users/José Luis/OneDrive/Plan de Estudios Tco en Desarrollo Web 2014/3 CSS/Material de Aprendizaje/Capítulo 16 - Ejercicios/archivos_ejercicio7/css/ejercicio7.css",
-		"/C/Users/José Luis/OneDrive/Plan de Estudios Tco en Desarrollo Web 2014/3 CSS/Material de Aprendizaje/Capítulo 16 - Ejercicios/archivos_ejercicio7/css/ejercicio7_Sol.css",
-		"/C/Users/José Luis/OneDrive/Plan de Estudios Tco en Desarrollo Web 2014/3 CSS/Material de Aprendizaje/Capítulo 16 - Ejercicios/archivos_ejercicio5/ejercicio5.html",
-		"/C/Users/José Luis/OneDrive/Plan de Estudios Tco en Desarrollo Web 2014/3 CSS/Material de Aprendizaje/Capítulo 16 - Ejercicios/ejercicio6.html",
-		"/C/Users/José Luis/OneDrive/Plan de Estudios Tco en Desarrollo Web 2014/3 CSS/Material de Aprendizaje/Capítulo 17 - Ejercicios Resueltos/ejercicio6_Sol.html",
-		"/C/Users/José Luis/OneDrive/Plan de Estudios Tco en Desarrollo Web 2014/3 CSS/Material de Aprendizaje/Capítulo 17 - Ejercicios Resueltos/ejercicio5_Sol.css",
-		"/C/Users/José Luis/Desktop/Ejercicios/Resueltos/Resuelto2.html",
-		"/C/Users/José Luis/Desktop/Ejercicios/Ejercicio2.html",
-		"/C/Users/José Luis/OneDrive/Plan de Estudios Tco en Desarrollo Web 2014/3 CSS/Material de Aprendizaje/Capítulo 16 - Ejercicios/Lorem_ipsum_files/Lorem_ipsum.html",
-		"/C/Users/José Luis/OneDrive/Plan de Estudios Tco en Desarrollo Web 2014/3 CSS/Material de Aprendizaje/Capítulo 16 - Ejercicios/Lorem_ipsum_files/ejercicio3.css",
-		"/C/Users/José Luis/OneDrive/Plan de Estudios Tco en Desarrollo Web 2014/3 CSS/Material de Aprendizaje/Capítulo 17 - Ejercicios Resueltos/ejercicio3_Sol.css",
-		"/C/Users/José Luis/OneDrive/Plan de Estudios Tco en Desarrollo Web 2014/3 CSS/Material de Aprendizaje/Capítulo 17 - Ejercicios Resueltos/ejercicio4_Sol.css",
-		"/C/Users/José Luis/OneDrive/Plan de Estudios Tco en Desarrollo Web 2014/3 CSS/Material de Aprendizaje/Capítulo 16 - Ejercicios/archivosEjercicio4/pagina_completa.html",
-		"/C/Users/José Luis/Desktop/Ejercicios/Resueltos/Resuelto3.html",
-		"/C/Users/José Luis/OneDrive/Plan de Estudios Tco en Desarrollo Web 2014/3 CSS/Material de Aprendizaje/Capítulo 16 - Ejercicios/Lorem_ipsum.html",
-		"/C/Users/José Luis/OneDrive/Plan de Estudios Tco en Desarrollo Web 2014/3 CSS/Material de Aprendizaje/Capítulo 16 - Ejercicios/Lorem_ipsum_files/pagina_completa_estilos.css",
-		"/C/Users/José Luis/Desktop/Ejercicios/Ejercicio3.html",
-		"/C/Users/José Luis/Desktop/Ejecicio12.html",
-		"/C/Users/José Luis/Desktop/Ejercicio2.html",
-		"/C/Users/José Luis/Desktop/Ejecicio1.html",
-		"/C/xampp/htdocs/enc_Puebla_Estilismo_Docen_T2/sql/enc_Puebla_Ingles_Docen_T2.sql",
-		"/C/xampp/htdocs/enc_Puebla_Ingles_Docen_T2/sql/enc_Puebla_Compu_Docen_T2.sql",
-		"/C/xampp/htdocs/jqupload/js/jQUpLoad_8_8_1/jquery.blueimp-gallery.min.js",
-		"/C/Users/José Luis/Desktop/ejemplo.html"
+		"/opt/lampp/htdocs/jqui/test.html",
+		"/home/jl/.config/sublime-text-3/Packages/comentario.sublime-snippet",
+		"/home/jl/Escritorio/jquery-ui/jquery-ui/temas/jquery-ui.theme.css",
+		"/home/jl/Escritorio/jquery-ui/jquery-ui/jquery-ui.theme.css",
+		"/home/jl/Escritorio/jquery-ui/index.html",
+		"/home/jl/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/opt/lampp/htdocs/master2/index.html",
+		"/opt/lampp/htdocs/master2/includes/mainFunctions.inc.php",
+		"/opt/lampp/htdocs/master2/includes/phpAjaxUsers.inc.php",
+		"/opt/lampp/htdocs/master2/js/test.js",
+		"/opt/lampp/htdocs/master2/css/master.css",
+		"/opt/lampp/htdocs/master2/js/mainJavaScript.js",
+		"/opt/lampp/htdocs/master2/css/myEstilos.css",
+		"/opt/lampp/htdocs/master2/js/jquery-ui-1.10.4.custom/js/jquery-1.10.2.js",
+		"/opt/lampp/htdocs/enc_Plantel_Compu_Docen_T2/x.php",
+		"/opt/lampp/htdocs/enc_Plantel_Compu_Docen_T2/sql/enc_Tejalpa_Compu_Docen_T2.sql",
+		"/opt/lampp/htdocs/enc_Plantel_Compu_Docen_T2/Graphics/GIF/_notes/Logo_Eliminar_Profe.gif.mno",
+		"/opt/lampp/htdocs/enc_Plantel_Compu_Docen_T2/Graphics/GIF/_notes/Logo_Admin.gif.mno",
+		"/opt/lampp/htdocs/enc_Plantel_Compu_Docen_T2/actionscript/Loading.as",
+		"/opt/lampp/htdocs/enc_Plantel_Compu_Docen_T2/actionscript/LineDot.as",
+		"/opt/lampp/htdocs/enc_Plantel_Compu_Docen_T2/Agregar_Preguntas.php",
+		"/opt/lampp/htdocs/enc_Plantel_Compu_Docen_T2/.metadata/.plugins/org.eclipse.debug.ui/launchConfigurationHistory.xml",
+		"/opt/lampp/htdocs/enc_Plantel_Compu_Docen_T2/actionscript/ChartUtil.as",
+		"/opt/lampp/htdocs/enc_Plantel_Compu_Docen_T2/Background.as",
+		"/opt/lampp/htdocs/enc_Plantel_Compu_Docen_T2/mx/transitions/OnEnterFrameBeacon.as",
+		"/opt/lampp/htdocs/enc_Plantel_Compu_Docen_T2/CSS/BordeAzul05.css",
+		"/opt/lampp/htdocs/enc_Plantel_Compu_Docen_T2/.metadata/.plugins/org.eclipse.debug.core/.launches/Firefox - Internal Server.launch",
+		"/opt/lampp/htdocs/enc_Plantel_Compu_Docen_T2/.metadata/.plugins/org.eclipse.core.runtime/.settings/com.aptana.ide.intro.prefs",
+		"/opt/lampp/htdocs/enc_Plantel_Compu_Docen_T2/Graphics/GIF/_notes/Icono_Ver_Modificar_Preguntas.gif.mno",
+		"/opt/lampp/htdocs/enc_Plantel_Compu_Docen_T2/_notes/index.php.mno",
+		"/opt/lampp/htdocs/enc_Plantel_Compu_Docen_T2/index.php",
+		"/opt/lampp/htdocs/enc_Plantel_Compu_Docen_T2/LineDot.as",
+		"/opt/lampp/htdocs/enc_Plantel_Compu_Docen_T2/.metadata/.plugins/org.eclipse.ui.ide/dialog_settings.xml",
+		"/opt/lampp/htdocs/enc_Plantel_Compu_Docen_T2/Panel.php",
+		"/opt/lampp/htdocs/enc_Plantel_Compu_Docen_T2/Panel_Admin.php",
+		"/opt/lampp/htdocs/enc_Plantel_Compu_Docen_T2/CSS/PaginaCarrerasTec.css",
+		"/opt/lampp/htdocs/enc_Plantel_Compu_Docen_T2/preferences/prefBackup28_08_08.epr",
+		"/opt/lampp/htdocs/enc_Plantel_Compu_Docen_T2/actionscript/Background.as",
+		"/opt/lampp/htdocs/enc_Plantel_Compu_Docen_T2/LineStyle.as",
+		"/opt/lampp/htdocs/enc_Plantel_Compu_Docen_T2/PointScatter.as",
+		"/opt/lampp/htdocs/enc_Plantel_Compu_Docen_T2/Invisible.as",
+		"/opt/lampp/htdocs/enc_Plantel_Compu_Docen_T2/enc_Plantel_Compu_Docen_T2.sublime-project",
+		"/opt/lampp/htdocs/enc_Plantel_Compu_Docen_T2/index - copia  PARA BORRAR.php",
+		"/opt/lampp/htdocs/enc_Tejalpa_Ingles_Docen_T2/sql/enc_Tejalpa_Compu_Docen_T2.sql",
+		"/opt/lampp/htdocs/enc_Tejalpa_Ingles_Docen_T2/PassGen.html",
+		"/opt/lampp/htdocs/enc_CuernComp_Dosc_T1/sql/encuesta_adc_2t.sql",
+		"/opt/lampp/htdocs/encuesta_ad1/CSS/Layout_Encuestas.css",
+		"/opt/lampp/htdocs/encuesta_ad1/Panel.php",
+		"/opt/lampp/htdocs/encuesta_ad1/Charts/data-Preg15.php",
+		"/opt/lampp/htdocs/encuesta_ad1/Charts/data-total-votos.php",
+		"/opt/lampp/htdocs/encuesta_ad1/Scripts/AnalisisVotos.php",
+		"/opt/lampp/htdocs/encuesta_ad1/CSS/Encuestas_Styles.css",
+		"/opt/lampp/htdocs/encuesta_ad1/Encuesta_CalidadServicio.php",
+		"/home/jl/Escritorio/Encuesta_Cuernavaca/encuesta_adc_2t.sql",
+		"/opt/lampp/htdocs/encuesta_ad1/var.php",
+		"/opt/lampp/htdocs/encuesta_ad1/ofc-library/open_flash_chart_object.php",
+		"/opt/lampp/htdocs/encuesta_ad1/Charts/data-Preg14.php",
+		"/opt/lampp/htdocs/encuesta_ad1/Charts/data-Preg13.php",
+		"/opt/lampp/htdocs/encuesta_ad1/Charts/data-Preg3.php",
+		"/opt/lampp/htdocs/encuesta_ad1/Charts/data-Preg12.php",
+		"/opt/lampp/htdocs/encuesta_ad1/Charts/data-Preg11.php",
+		"/opt/lampp/htdocs/encuesta_ad1/Charts/data-Preg10.php",
+		"/opt/lampp/htdocs/encuesta_ad1/Charts/data-Preg9.php",
+		"/opt/lampp/htdocs/encuesta_ad1/Charts/data-Preg8.php",
+		"/opt/lampp/htdocs/encuesta_ad1/Charts/data-Preg7.php",
+		"/opt/lampp/htdocs/encuesta_ad1/Charts/data-Preg6.php",
+		"/opt/lampp/htdocs/encuesta_ad1/Charts/data-Preg5.php",
+		"/opt/lampp/htdocs/encuesta_ad1/Charts/data-Preg2.php",
+		"/home/jl/.config/sublime-text-3/Packages/User/PHP.sublime-settings",
+		"/home/jl/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/opt/lampp/htdocs/encuesta_ad1/Ver_Modif_Preguntas.php",
+		"/home/jl/Escritorio/Bases/encuestas.encuesta.sql",
+		"/home/jl/Escritorio/Bases/preguntas.sql",
+		"/home/jl/Escritorio/Bases/tabla_preguntas.sql",
+		"/home/jl/Escritorio/encuesta_adc_2t.sql"
 	],
 	"find":
 	{
-		"height": 46.0
+		"height": 27.0
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 102.0,
 		"where_history":
 		[
 		]
 	},
 	"find_state":
 	{
-		"case_sensitive": false,
+		"case_sensitive": true,
 		"find_history":
 		[
-			"quot",
-			"css/",
-			"<?php",
-			"* N",
-			"N O T I C I A S",
-			"FROM vwgalerias",
-			"vwgalerias",
-			"dan",
-			"$inicio",
-			"Total",
-			"totalRows_rsVwGalerias",
-			"$row_rsEventos",
-			"1ABC9C",
-			"font",
-			"Suspendido",
-			"suspendido",
-			"83",
-			"60",
-			"Compu",
-			"map",
-			".map"
+			"#agregarUser",
+			"agregarUser",
+			"hide",
+			"4",
+			"$row_Vot_2pts_P1",
+			"4",
+			"3",
+			"2",
+			"<!-- * * *  P A N E L  P R E G U N T A S  C O N  R E P E T I C I Ó N  * * * -->\n\n								<?php\n									// Recuperar todas las preguntas\n									$rsPreguntas = mysql_query(\"SELECT * FROM preguntas\", $cxn_Encuestas) or die (\"Problema con cadena de conexion<br><b>\" . mysql_error().\"</b>\");\n\n									// Resulset que contiene el numero total de preguntas\n									$totalNumPreguntas = mysql_num_rows($rsPreguntas);\n\n									//$filaPreguntas = mysql_fetch_assoc($rsPreguntas);\n\n									//$numPregunta = 0;\n\n								$rsPreguntax = mysql_query(\"SELECT Preg1, Preg2, Preg3, Preg4, Preg5, Preg6, Preg7, Preg8, Preg8, Preg9, Preg10, Preg11, Preg12, Preg13, Preg14, Preg15 FROM encuesta\", $cxn_Encuestas) or die (\"Problema con cadena de conexion<br><b>\" . mysql_error().\"</b>\");\n								$listaPreguntas = [$filaPreguntax = mysql_fetch_assoc($rsPreguntax)];\n\n								// Numero Total de Preguntas n\n								$rsNumPregN = mysql_query(\"SELECT * FROM preguntas WHERE No_Preg =\".'$i', $cxn_Encuestas) or die(mysql_error());\n								$row_rsNumPregN = mysql_fetch_assoc($rsNumPregX);\n								$totalPregN = mysql_num_rows($Preg.'$i');\n								// Puntos Obtenidos de Pregunta n\n								$puntosObtenido_PreguntaN = $totalPregN * 5;\n\n								// Puntos Posibles\n								$puntosPosibles = 5 * $puntosObtenidos_PreguntaN;\n\n\n								for ($i = 0; $i <= 2; $i++) {\n\n									//Puntos Obtenidos\n									$rsPuntosObtenidos = mysql_query(\"SELECT * FROM preguntas WHERE No_Preg =\".'$i');\n									$puntosObtenidos = mysql_fetch_assoc($rsPuntosObtenidos);\n\n																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											#while ($totalNumPreguntas = mysql_fetch_assoc($rsNumPreguntas)){\n									while ($filaPreguntas = mysql_fetch_assoc($rsPreguntas)){\n										$rsCalifActual = ($puntosObtenidos / $puntosPosibles)*10;\n									//$numPregunta++;\n									#for ($i = 0; $i <= $totalNumPreguntas; $i++) {\n									#for ($i = 0; $i <= 2; $i++) {\n\n										#$rsPreguntax = mysql_query(\"SELECT Preg1, Preg2, Preg3, Preg4, Preg5, Preg6, Preg7, Preg8, Preg8, Preg9, Preg10, Preg11, Preg12, Preg13, Preg14, Preg15 FROM encuesta\", $cxn_Encuestas) or die (\"Problema con cadena de conexion<br><b>\" . mysql_error().\"</b>\");\n										#$filaPreguntax = mysql_fetch_assoc($rsPreguntax)\n								?>\n\n								<div id=\"CollapsiblePanel<?php echo $filaPreguntas['No_Preg'];?>\" class=\"CollapsiblePanel<?php echo $filaPreguntas['No_Preg'];?>\">\n									<div class=\"CollapsiblePanelTab\" tabindex=\"0\">\n										<table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"2\">\n											<tr class=\"tituloPanel\">\n												<!-- Numero de Pregunta -->\n												<td width=\"2%\"><?php echo $filaPreguntas['No_Preg'];?>)</td>\n												<!-- Pregunta -->\n												<td width=\"87%\" align=\"left\"><?php echo $filaPreguntas['Pregunta'];?></td>\n												<!-- Calificación -->\n												<td width=\"11%\" align=\"right\" class=\"Borde_Izquierdo\">\n													<b>Calif. <?php echo $filaPreguntas['No_Preg'];?></b>\n												</td>\n											</tr>\n										</table>\n									</div>\n									<div class=\"CollapsiblePanelContent\">\n										<table border=\"0\" cellspacing=\"4\" cellpadding=\"0\">\n											<tr>\n												<td width=\"1\" height=\"15\"><img src=\"spacer.gif\" width=\"1\" height=\"1\" /></td>\n												<td height=\"5\" colspan=\"3\"><img src=\"spacer.gif\" width=\"1\" height=\"1\" /></td>\n												<td width=\"419\" rowspan=\"9\" align=\"center\"><?php\n													include_once 'ofc-library/open_flash_chart_object.php';\n													//open_flash_chart_object( 250, 200,  'http://'. $_SERVER['SERVER_NAME'] .':1091/Encuestas/Charts/data-Preg1.php', false );\n													//open_flash_chart_object( 250, 200,  'http://'. $_SERVER['SERVER_NAME'] .'/Encuestas/Charts/data-Preg1.php', false );\n													open_flash_chart_object( 250, 200,  'Charts/data-Preg1.php', false );\n\n												?></td>\n											</tr>\n											<tr>\n												<td height=\"19\" align=\"center\" valign=\"middle\">&nbsp;</td>\n												<td height=\"19\" colspan=\"2\" align=\"center\" valign=\"middle\" class=\"Encabezado_Tabla\">CRITERIOS</td>\n												<td width=\"58\" align=\"center\" class=\"Encabezado_Tabla\"> VOTOS</td>\n											</tr>\n\n											<!-- Resultados 1 Pts -->\n											<tr>\n												<td align=\"center\" valign=\"middle\" class=\"Texto_12px\">&nbsp;</td>\n												<td width=\"23\" height=\"19\" align=\"center\" valign=\"middle\" bgcolor=\"#FF7F7F\" class=\"Texto_12px\"><strong>1</strong></td>\n												<td width=\"164\" align=\"left\" valign=\"middle\" class=\"Texto_12px\"><?php echo $row_Preg1['Resp_1']; ?>:</td>\n												<td align=\"center\" class=\"Texto_12px\"><?php echo $row_Vot_1pts_P1['COUNT(Preg1)']; ?></td>\n											</tr>\n\n											<!-- Resultados 2 Pts -->\n											<tr>\n												<td align=\"center\" valign=\"middle\" class=\"Texto_12px\">&nbsp;</td>\n												<td height=\"19\" align=\"center\" valign=\"middle\" bgcolor=\"#FFB27F\" class=\"Texto_12px\"><img src=\"spacer.gif\" width=\"1\" height=\"1\" /><strong>2</strong></td>\n												<td align=\"left\" class=\"Texto_12px\"><?php echo $row_Preg1['Resp_2']; ?>:</td>\n												<td align=\"center\" class=\"Texto_12px\"><?php echo $row_Vot_2pts_P1['COUNT(Preg1)']; ?></td>\n											</tr>\n\n											<!-- Resultados 3 Pts -->\n											<tr>\n												<td align=\"center\" valign=\"middle\" class=\"Texto_12px\">&nbsp;</td>\n												<td height=\"19\" align=\"center\" valign=\"middle\" bgcolor=\"#FFE57F\" class=\"Texto_12px\"><strong>3</strong></td>\n												<td align=\"left\" class=\"Texto_12px\"><?php echo $row_Preg1['Resp_3']; ?>:</td>\n												<td align=\"center\" class=\"Texto_12px\"><?php echo $row_Vot_3pts_P1['COUNT(Preg1)']; ?></td>\n											</tr>\n\n											<!-- Resultados 4 Pts -->\n											<tr>\n												<td align=\"center\" valign=\"middle\" class=\"Texto_12px\">&nbsp;</td>\n												<td height=\"19\" align=\"center\" valign=\"middle\" bgcolor=\"#CCE57F\" class=\"Texto_12px\"><strong>4</strong></td>\n												<td align=\"left\" class=\"Texto_12px\"><?php echo $row_Preg1['Resp_4']; ?>:</td>\n												<td align=\"center\" valign=\"bottom\" class=\"Texto_12px\"><?php echo $row_Vot_4pts_P1['COUNT(Preg1)']; ?></td>\n											</tr>\n\n											<!-- Resultados 5 Pts -->\n											<tr>\n												<td align=\"center\" valign=\"middle\" class=\"Texto_12px\">&nbsp;</td>\n												<td height=\"19\" align=\"center\" valign=\"middle\" bgcolor=\"#7FCCFF\" class=\"Texto_12px\"><strong>5</strong></td>\n												<td align=\"left\" class=\"Texto_12px\"><?php echo $row_Preg1['Resp_5']; ?>:</td>\n												<td align=\"center\" valign=\"bottom\" class=\"Texto_12px\"><?php echo $row_Vot_5pts_P1['COUNT(Preg1)']; ?></td>\n											</tr>\n											<tr>\n												<td align=\"center\" valign=\"middle\" class=\"Texto_12px\">&nbsp;</td>\n												<td height=\"20\" align=\"center\" valign=\"middle\" class=\"Texto_12px\">&nbsp;</td>\n												<td align=\"center\" valign=\"middle\">&nbsp;</td>\n												<td align=\"center\" valign=\"middle\">&nbsp;</td>\n											</tr>\n											<tr>\n												<td>&nbsp;</td>\n												<td>&nbsp;</td>\n												<td align=\"center\" valign=\"middle\">&nbsp;</td>\n												<td align=\"center\" valign=\"middle\">&nbsp;</td>\n											</tr>\n										</table>\n									</div>\n								</div>\n								<?php } } ?>\n\n							</td>\n							<!-- /PANEL CON REPETICION -->",
+			"$row_Preg15",
+			"$row_Vot_1pts_P1",
+			"$row_Vot_1pts_P15['COUNT(Preg15)']",
+			"$row_Vot_1pts_P14['COUNT(Preg14)']",
+			"$row_Vot_1pts_P15['COUNT(Preg15)']",
+			"PREPARATORIA",
+			"P R E P A R A T O R I A",
+			"PREPARATORIA",
+			"utf",
+			"PREG",
+			"ENCUESTA",
+			"PREG",
+			"$T0",
+			"=0",
+			"$T0_P",
+			"TotalCeroPreg",
+			"Cero",
+			"ENCUESTA",
+			"PREG",
+			"VOTOS",
+			"swf",
+			".SWF",
+			".swf",
+			"TOTAL DE PUNTOS",
+			"$Vot_4pts_P14",
+			"$Vot_5pts_P14",
+			"VOTOS",
+			"$jPC1",
+			"$jPC5",
+			"TOTAL DE PUNTOS:",
+			"$jTot1",
+			"where",
+			"from",
+			"count",
+			"preg",
+			"$jTotalCincoPreg1",
+			"ENCUESTA",
+			"PREG",
+			"ENCUESTA",
+			"PREG",
+			"preg",
+			"from",
+			"where",
+			"count",
+			"$jTotalUnoPreg1",
+			"$jTotalCero",
+			"Preg14",
+			"P14",
+			"P13",
+			"Preg13",
+			"Preg12",
+			"P12",
+			"P11",
+			"Preg11",
+			"Preg10",
+			"P10",
+			"P9",
+			"Preg9",
+			"P8",
+			"Preg8",
+			"Preg7",
+			"PREG7",
+			"PREG8",
+			"P7",
+			"Preg7",
+			"P6",
+			"Preg6",
+			"P5",
+			"Preg5",
+			"P4",
+			"Preg4",
+			"P13",
+			"Preg13",
+			"P12",
+			"Preg12",
+			"P12",
+			"Preg12",
+			"P11",
+			"Preg11",
+			"P10",
+			"Preg10",
+			"P9",
+			"Preg9",
+			"P8",
+			"Preg8",
+			"P7",
+			"Preg7",
+			"P6",
+			"Preg6",
+			"P5",
+			"Preg5",
+			"P4",
+			"P",
+			"sum(Preg11",
+			"Preg2",
+			"SUM(Preg2)",
+			"Preg2",
+			"Preg1",
+			"Preg7",
+			"$row_Tot_Puntos_P7[",
+			"$row_Tot_Puntos_P8[",
+			"$totalRows_Tot_Puntos_P1",
+			"panel15",
+			"$totalRows_Vot5pts_P2",
+			"$totalRows_Vot_1pts_P15",
+			"$row_Vot_5pts_P3",
+			"Pts.",
+			"Calif.",
+			"88%",
+			"$calif_Preg2",
+			"Charts%2Fdata-Preg2.php",
+			"swf",
+			"$totalRows_Vot_5pts_P2",
+			"$totalRows_Vot_4pts_P2",
+			"$totalRows_Preg4\n",
+			"$totalRows_Preg3 = mysql_num_rows($Preg3);",
+			"$row_Vot_4pts_P2",
+			"$calif_Preg1",
+			"name=pregunta"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -322,10 +375,77 @@
 		"regex": false,
 		"replace_history":
 		[
-			"css3/",
-			"$row_rsVwGalerias",
-			"3498DB",
-			"Ingles"
+			"3",
+			"5",
+			"4",
+			"3",
+			"Preg",
+			"encuesta",
+			"Preg",
+			"$T5",
+			"=5",
+			"$T5_P",
+			"TotalCincoPreg",
+			"Cinco",
+			"encuesta",
+			"Preg",
+			"WHERE",
+			"FROM",
+			"COUNT",
+			"Preg",
+			"encuesta",
+			"Preg",
+			"encuesta",
+			"Preg",
+			"PREG",
+			"FROM",
+			"WHERE",
+			"COUNT",
+			"$jTotalCincoPreg1",
+			"$jTotalUno",
+			"Preg15",
+			"P15",
+			"P14",
+			"Preg14",
+			"Preg13",
+			"P13",
+			"P12",
+			"Preg12",
+			"Preg11",
+			"P11",
+			"P10",
+			"Preg10",
+			"P9",
+			"Preg9",
+			"P8",
+			"Preg8",
+			"P7",
+			"Preg7",
+			"P6",
+			"Preg6",
+			"P5",
+			"Preg5",
+			"P15",
+			"Preg15",
+			"P13",
+			"Preg13",
+			"Preg13P13",
+			"Preg13",
+			"P12",
+			"Preg12",
+			"P11",
+			"Preg11",
+			"P10",
+			"Preg10",
+			"P9",
+			"Preg9",
+			"P8",
+			"Preg8",
+			"P7",
+			"Preg7",
+			"P6",
+			"Preg6",
+			"P5"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -336,47 +456,18 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "css3/main.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 308,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								81,
-								81
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 30.0
+		"height": 27.0
 	},
 	"input":
 	{
-		"height": 36.0
+		"height": 34.0
 	},
 	"layout":
 	{
@@ -400,7 +491,7 @@
 			1.0
 		]
 	},
-	"menu_visible": false,
+	"menu_visible": true,
 	"output.find_results":
 	{
 		"height": 0.0
@@ -408,7 +499,7 @@
 	"project": "Curso_JavaScript.sublime-project",
 	"replace":
 	{
-		"height": 88.0
+		"height": 50.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -417,8 +508,8 @@
 		"selected_items":
 		[
 			[
-				"inde",
-				"index.php"
+				"install",
+				".metadata/.plugins/org.eclipse.debug.core/.launches/Firefox - Internal Server.launch"
 			]
 		],
 		"width": 0.0
@@ -430,7 +521,11 @@
 		[
 			[
 				"",
-				"C:\\xampp\\htdocs\\Blueberry2\\Blueberry2.sublime-project"
+				"/opt/lampp/htdocs/enc_Tejalpa_Compu_Docen_T2/enc_Tejalpa_Compu_Docen_T2.sublime-project"
+			],
+			[
+				"enc_",
+				"/opt/lampp/htdocs/enc_Tejalpa_Compu_Docen_T2/untitled.sublime-workspace"
 			]
 		],
 		"width": 380.0
@@ -448,10 +543,10 @@
 	{
 	},
 	"show_minimap": false,
-	"show_open_files": false,
+	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 220.0,
+	"side_bar_width": 176.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
