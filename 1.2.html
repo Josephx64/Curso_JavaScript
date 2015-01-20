@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Introducción a JavaScript</title>
+
+	<!-- *************************** B A S I C S *************************** -->
+	<meta charset="utf-8">
+	<meta name="author" content="JLRZ">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Plantilla para sistema asíncrono">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+	<!-- *************************** C S S *************************** -->
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="bootstrap/css3/bootstrap.min.css">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- Estilos Generales -->
+	<link rel="stylesheet" href="css3/principal.css">
+
+	<!-- Fuente Open Sans -->
+	<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'> -->
+	<!-- Script de cofiguraciones generales -->
+	<script src="js/config.js"></script>
+
+</head>
+
+	<body>
+
+		<!--Contenedor del contenido-->
+		<div class="container">
+
+			<!--Fila de contenido-->
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+
+					<div class="no-print col-md-1 col-md-offset-11 col-sm-1 col-sm-offset-11 col-xs-12 text-right">
+						<button id="btnImprimir" type="button" class="btn btn-default no-print" aria-label="Imprimir">
+	  						<span class="glyphicon glyphicon-print" aria-hidden="true"></span>
+						</button>
+					</div>
+
+					
+					<h3>1.2. Breve historia</h3>
+					<p>A principios de los años 90, la mayoría de usuarios que se conectaban a Internet lo hacían con módems a una velocidad máxima de 28.8 kbps. En esa época, empezaban a desarrollarse las primeras aplicaciones web y por tanto, las páginas web comenzaban a incluir formularios complejos.</p>
+
+					<p>A principios de los años 90, la mayoría de usuarios que se conectaban a Internet lo hacían con módems a una velocidad máxima de 28.8 kbps. En esa época, empezaban a desarrollarse las primeras aplicaciones web y por tanto, las páginas web comenzaban a incluir formularios complejos.</p>
+					
+					<p>Con unas aplicaciones web cada vez más complejas y una velocidad de navegación tan lenta, surgió la necesidad de un lenguaje de programación que se ejecutara en el navegador del usuario. De esta forma, si el usuario no rellenaba correctamente un formulario, no se le hacía esperar mucho tiempo hasta que el servidor volviera a mostrar el formulario indicando los errores existentes.</p>
+
+					<p>En 1995, <b>Brendan Eich</b>, un ingeniero que trabajaba en Netscape, pensó que podría solucionar este problema adaptando otras tecnologías existentes (como ScriptEase) al navegador Netscape Navigator 2.0, que iba a lanzarse a finales de ese mismo año. Inicialmente, Eich denominó a su lenguaje Mocha y renombrandolo posteriormente como LiveScript.</p>
+
+					<p>Posteriormente, Netscape firmó una alianza con Sun Microsystems para el desarrollo del nuevo lenguaje de programación. Justo antes del lanzamiento Netscape decidió cambiar el nombre por el de JavaScript. La razón del cambio de nombre fue exclusivamente por marketing, ya que Java era la palabra de moda en el mundo informático y de Internet de la época (este hecho ha producido una enorme confusión, dando la erronea idea de que JavaScript es una prolongación o parte de Java, confusión que ha perdurado hasta nuestros días, esto sin mencionar lo muy poco en común que tenían dichos lenguajes), además de que se coincidió en que Netscape había integrado compatibilidad con la tecnología Java en su navegador Netscape Navigator 2 en Diciembre del mismo año.</p>
+
+					<p>La primera versión de JavaScript fue un completo éxito y Netscape Navigator 3.0 ya incorporaba la siguiente versión del lenguaje, la versión 1.1. Al mismo tiempo, Microsoft lanzó JScript, su propio dialecto de JavaScript con su navegador Internet Explorer 3 en Agosto de 1996. JScript era una copia de JavaScript al que le cambiaron el nombre para evitar problemas legales.</p>
+
+					<p>En 1997, para evitar una guerra de tecnologías, Netscape decidió que lo mejor sería estandarizar el lenguaje JavaScript. De esta forma, se envió la especificación JavaScript 1.1 a <a class="notapie" tabindex="0" data-toggle="popover" data-trigger="focus" data-placement="top" title="Ecma International" data-content="Ecma International es una organización internacional fundada en 1961, para estandarizar los sistemas computarizados en Europa. Adquirió el nombre Ecma International en 1994, cuando la European Computer Manufacturers Association (ECMA) cambió su nombre para expresar su alcance internacional. Como consecuencia de esta decisión, el nombre ya no se considera un acrónimo y no se escribe completamente en mayúsculas.">Ecma Internacional</a><sup>1</sup></p>
+
+					<p>Ecma  Internacional creó el comité TC39 con el objetivo de "estandarizar un lenguaje de script multiplataforma e independiente de cualquier empresa". El primer estándar que creó el comité TC39 se denominó ECMA-262, en el que se definió por primera vez el lenguaje <b>ECMAScript</b>.</p>
+
+					<p>Por este motivo, algunos programadores prefieren la denominación ECMAScript para referirse al lenguaje JavaScript. De hecho, JavaScript no es más que la implementación que realizó la empresa Netscape del estándar ECMAScript.</p>
+
+					<p>La organización internacional para la estandarización (ISO) adoptó el estándar ECMA-262 a través de su comisión IEC, dando lugar al estándar ISO/IEC-16262.</p>
+
+					<blockquote class="blockquote-nota-pie">
+						<footer>
+							<sup>1</sup> Ecma International es una organización internacional fundada en 1961, para estandarizar los sistemas computarizados en Europa. Adquirió el nombre Ecma International en 1994, cuando la European Computer Manufacturers Association (ECMA) cambió su nombre para expresar su alcance internacional. Como consecuencia de esta decisión, el nombre ya no se considera un acrónimo y no se escribe completamente en mayúsculas.
+						</footer>
+					</blockquote>
+
+				</div>
+
+			</div><!--/Fila de contenido-->
+
+		</div>
+		<!-- Regla -->
+		<div class="container"> <div class="row"> <hr> </div> </div>
+		
+		
+		<!-- F O O T E R -->
+		<footer id="footer">
+
+			<!--Contenedor del footer-->
+			<div class="container text-center">
+				<h6 class="text-muted">Corporativo CETEC 2014</h6>
+			</div><!--/Contenedor del footer-->
+
+		</footer><!--/Footer-->
+
+
+		<!-- *************************** J S *************************** -->
+		
+		<!-- jQuery -->
+		<script src="jquery/jquery-1.11.1.min.js"></script>
+		<!-- jQuery UI-->
+		<script src="jquery/jquery-ui/js/jquery-ui.js"></script>
+
+		<!-- Bootstrap -->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+	</body>
+	</html>

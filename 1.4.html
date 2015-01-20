@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Introducción a JavaScript</title>
+
+	<!-- *************************** B A S I C S *************************** -->
+	<meta charset="utf-8">
+	<meta name="author" content="JLRZ">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Plantilla para sistema asíncrono">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+	<!-- *************************** C S S *************************** -->
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="bootstrap/css3/bootstrap.min.css">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- Estilos Generales -->
+	<link rel="stylesheet" href="css3/principal.css">
+
+	<!-- Fuente Open Sans -->
+	<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'> -->
+	<!-- Script de cofiguraciones generales -->
+	<script src="js/config.js"></script>
+
+</head>
+
+<body>
+
+	<!--Contenedor del contenido-->
+	<div class="container">
+
+		<!--Fila de contenido-->
+		<div class="row">
+
+			<div class="col-md-12 col-sm-12 col-xs-12">
+
+				<div class="no-print col-md-1 col-md-offset-11 col-sm-1 col-sm-offset-11 col-xs-12 text-right">
+					<button id="btnImprimir" type="button" class="btn btn-default no-print" aria-label="Imprimir">
+  						<span class="glyphicon glyphicon-print" aria-hidden="true"></span>
+					</button>
+				</div>
+
+				
+				<h3>1.4. Cómo incluir JavaScript en documentos HTML</h3>
+
+				<p>La integración de JavaScript y HTML es muy flexible, ya que existen al menos tres formas para incluir código JavaScript en las páginas web.</p>
+
+				<h4>1.4.1.	Incluir JavaScript en el mismo documento HTML</h4>
+
+				<p>El código JavaScript se encierra entre etiquetas  <code>&lt;script&gt;</code> y se incluye en cualquier parte del documento. Aunque es correcto incluir cualquier bloque de código en cualquier zona de la página, se recomienda definir el código JavaScript dentro de la cabecera del documento (dentro de la etiqueta <code>&lt;head&gt;</code>):</p>
+				<br>
+
+				<!-- Boton Copiar -->
+				<div id="btnCopiar" class="zero-clipboard" data-clipboard-target="elCodigo">
+					<a href="#" class="btn-clipboard">Copiar</a>
+				</div>
+
+				<!-- Bloque de cógio -->
+				<div class="highlight">
+						
+					<p id="elCodigo">
+						&lt;!DOCTYPE html&gt;<br>
+						&lt;html lang="es"&gt;<br>
+
+						&lt;head&gt;<br>
+							&emsp; &lt;meta charset="utf-8"&gt;<br>
+							&emsp; &lt;title&gt;Ejemplo de código JavaScript en el propio documento&lt;/title&gt;<br>
+							&emsp; &lt;script type=”text/javascript”&gt;<br>
+							&emsp; &emsp; alert("Un mensaje de prueba");<br>
+							&emsp; &lt;/script&gt;<br>
+						&lt;/head&gt;<br>
+
+						&lt;body&gt;<br>
+							&emsp; &lt;p&gt;Un párrafo de texto.&lt;/p&gt;<br>
+						&lt;/body&gt;<br>
+
+						&lt;/html&gt;
+					
+					</p>
+				</div> <!--/Bloque de código-->
+
+				<p>Este método se emplea cuando se define un bloque pequeño de código o cuando se quieren incluir instrucciones específicas en un determinado documento HTML que completen las instrucciones y funciones que se incluyen por defecto en todos los documentos del sitio web.</p>
+
+				<p>El principal inconveniente es que si se quiere hacer una modificación en el bloque de código, es necesario modificar todas las páginas que incluyen ese mismo bloque de código JavaScript.</p>
+
+				<p> <b>1.4.1.1 El argumento type.</b> En muchas páginas web y muchos libros verás que se escribe  <code>&lt;script&gt;</code> …  <code>&lt;/script&gt;</code> sin hacer uso del argumento type. El motivo para esto es que JavaScript se ha convertido en un estándar reconocido por todos los navegadores y ya no se considera necesario especificar  <code>type=”text/javascript”</code>. En versiones antiguas de HTML se consideraba necesario. Todos los navegadores actuales reconocerán JavaScript sin necesidad de la especificación type.</p>
+
+				<p>En algunas páginas web antiguas te podrás encontrar incluso otros tipos de sintaxis como <code>&lt;script language=“JavaScript”&gt;</code>....<code>&lt;/script&gt;</code>.</p>
+
+				<p>Los motivos por los que se introdujo la especificación type son varios:</p>
+
+				<ul class="list-unstyled">
+					<li><b>a)</b> Existían (y existen) distintos lenguajes de script, es decir, además de javascript nos podemos encontrar otros lenguajes. El uso de type se concibió para indicarle al navegador qué lenguaje era el que usaba el script. Por ejemplo <code>type="text/vbscript"</code> indicaría lenguaje VBscript, <code>type="text/tcl"</code> indicaría lenguaje TCL, etc.</li>
+
+					<li><b>b)</b> Fue parte de la especificación oficial de algunas versiones de HTML.
+					Desde el momento en que todos los navegadores reconocen JavaScript sin necesidad de la especificación type, usarla o no resulta indistinto al momento de ejecutar el código. Por otro lado especificar el argumento type es considerado una buena práctica.</li>
+				</ul>
+				
+				<h4>1.4.2. Definir JavaScript en un archivo externo</h4>
+				<p>Las instrucciones JavaScript se pueden incluir en un archivo externo de tipo JavaScript que los documentos HTML enlazan mediante la etiqueta <code>&lt;script&gt;</code>. Se pueden crear todos los archivos JavaScript que sean necesarios y cada documento HTML puede enlazar tantos archivos JavaScript como necesite.</p>
+				<p>Ejemplo:</p>
+
+				<blockquote> Archivo codigo.js </blockquote>
+
+				<pre>alert("Un mensaje de prueba");</pre>
+
+				<blockquote> Documento HTML </blockquote>
+				
+				<div class="highlight">
+					<p>
+						&lt;!DOCTYPE html&gt; <br>
+						&lt;html lang="es"&gt; <br>
+
+						&lt;head&gt; <br>
+						&emsp; &lt;meta charset="utf-8"&gt; <br>
+						&emsp; &lt;title&gt;Ejemplo de código JavaScript en el propio documento&lt;/title&gt; <br>
+						&emsp; &lt;script type=”text/javascript” src="/js/codigo.js"&gt;&lt;/script&gt; <br>
+						&lt;/head&gt; <br>
+
+						&lt;body&gt; <br>
+						&emsp; &lt;p&gt;Un párrafo de texto.&lt;/p&gt; <br>
+						&lt;/body&gt; <br>
+
+						&lt;/html&gt;
+					</p>
+				</div>
+
+				<p>Además del atributo type, este método requiere definir el atributo src, que es el que indica la URL  correspondiente  al  archivo  JavaScript  que  se  quiere  enlazar.  Cada  etiqueta  <code>&lt;script&gt;</code> solamente puede enlazar un único archivo, pero en una misma página se pueden incluir tantas etiquetas <code>&lt;script&gt;</code>	 como sean necesarias.</p>
+
+				<p>Los archivos de tipo JavaScript son documentos normales de texto con la extensión .js, que se pueden crear con cualquier editor de texto como Notepad, Notepad++, Sublime Text, Atom, Brackets, etc.</p>
+
+				<p>La principal ventaja de enlazar un archivo JavaScript externo es que se simplifica el código HTML de la página, que se puede reutilizar el mismo código JavaScript en todas las páginas del sitio web y que cualquier modificación realizada en el archivo JavaScript se ve reflejada inmediatamente en todas las páginas HTML que lo enlazan.</p>
+
+
+
+			</div>
+
+		</div><!--/Fila de contenido-->
+
+	</div>
+	<!-- Regla -->
+	<div class="container"> <div class="row"> <hr> </div> </div>
+	
+	
+	<!-- F O O T E R -->
+	<footer id="footer">
+
+		<!--Contenedor del footer-->
+		<div class="container text-center">
+			<h6 class="text-muted">Corporativo CETEC 2014</h6>
+		</div><!--/Contenedor del footer-->
+
+	</footer><!--/Footer-->
+
+
+
+
+
+	<!-- *************************** J S *************************** -->
+	
+	<!-- jQuery -->
+	<script src="jquery/jquery-1.11.1.min.js"></script>
+	
+	<!-- jQuery UI-->
+	<script src="jquery/jquery-ui/js/jquery-ui.js"></script>
+
+	<!-- Bootstrap -->
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- ZeroClipboard 2.2 -->
+	<script src="jquery/jqPlugins/zeroClipboard/ZeroClipboard.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			/*** ZeroClipboard ***/
+			$('#btnCopiar').zclip({
+			path:'jquery/jqPlugins/zeroClipboard/ZeroClipboard.swf',
+			copy:$('#elCodigo').text()
+			});
+			// The link with ID "copy-description" will copy
+			// the text of the paragraph with ID "description"
+			$('#btnCopiar').zclip({
+			path:'jquery/jqPlugins/zeroClipboard/ZeroClipboard.swf',
+			copy:function(){return $('#elCodigo').val();}
+			});
+			// The link with ID "copy-dynamic" will copy the current value
+			// of a dynamically changing input with the ID "dynamic"
+			//- See more at: http://www.steamdev.com/zclip/#sthash.EXnsnGRg.dpuf
+
+			var client = new ZeroClipboard( document.getElementById("copy-button") );
+
+			client.on( "ready", function( readyEvent ) {
+			  // alert( "ZeroClipboard SWF is ready!" );
+
+			  client.on( "aftercopy", function( event ) {
+			    // `this` === `client`
+			    // `event.target` === the element that was clicked
+			    event.target.style.display = "none";
+			    alert("Copied text to clipboard: " + event.data["text/plain"] );
+			  } );
+			} );
+		});
+	</script>
+
+</body>
+</html>
+
+
