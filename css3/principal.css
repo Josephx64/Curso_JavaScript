@@ -18,7 +18,7 @@ body{
 
 .container p {
 	font-size: 17px;
-	padding-bottom: 1em;
+	padding-bottom: 0em;
 }
 
 @media print {
@@ -128,7 +128,7 @@ pCodigoXXX {
 /* */
 .highlight {
 	padding: 9px 14px;
-	margin-bottom: 14px;
+	margin-bottom: 0px;
 	background-color: #f7f7f9;
 	border: 1px solid #e1e1e8;
 	border-radius: 4px;
@@ -156,6 +156,11 @@ h4, h3 {
 
 pre{
 	font-size: 17px;
-	font-family: Menlo,Monaco,Consolas,"Courier New",monospace; 
+	font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+	color: rgb(44, 62, 80);
+	-o-tab-size: 3;
+	-moz-tab-size: 3;
+	tab-size: 3;
+	padding: 15px;
 }
 /**************************************************************************/

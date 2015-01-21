@@ -75,6 +75,22 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "1.4.html",
+			"settings":
+			{
+				"buffer_size": 9631,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css3/principal.css",
+			"settings":
+			{
+				"buffer_size": 2708,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -144,10 +160,12 @@
 	},
 	"expanded_folders":
 	[
-		"/opt/lampp/htdocs/Curso_JavaScript"
+		"/opt/lampp/htdocs/Curso_JavaScript",
+		"/opt/lampp/htdocs/Curso_JavaScript/css3"
 	],
 	"file_history":
 	[
+		"/opt/lampp/htdocs/Curso_JavaScript/show.html",
 		"/opt/lampp/htdocs/jqui/test.html",
 		"/home/jl/.config/sublime-text-3/Packages/comentario.sublime-snippet",
 		"/home/jl/Escritorio/jquery-ui/jquery-ui/temas/jquery-ui.theme.css",
@@ -226,7 +244,7 @@
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 46.0
 	},
 	"find_in_files":
 	{
@@ -240,6 +258,9 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"pre",
+			"bottom",
+			">",
 			"#agregarUser",
 			"agregarUser",
 			"hide",
@@ -364,10 +385,7 @@
 			"$totalRows_Vot_5pts_P2",
 			"$totalRows_Vot_4pts_P2",
 			"$totalRows_Preg4\n",
-			"$totalRows_Preg3 = mysql_num_rows($Preg3);",
-			"$row_Vot_4pts_P2",
-			"$calif_Preg1",
-			"name=pregunta"
+			"$totalRows_Preg3 = mysql_num_rows($Preg3);"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -375,6 +393,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"&gt;",
 			"3",
 			"5",
 			"4",
@@ -456,14 +475,72 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "1.4.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9631,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7800,
+								7800
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 4224.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "css3/principal.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2708,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2624,
+								2624
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 3102.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 27.0
+		"height": 30.0
 	},
 	"input":
 	{
@@ -499,7 +576,7 @@
 	"project": "Curso_JavaScript.sublime-project",
 	"replace":
 	{
-		"height": 50.0
+		"height": 88.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -507,6 +584,10 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"",
+				"show.html"
+			],
 			[
 				"install",
 				".metadata/.plugins/org.eclipse.debug.core/.launches/Firefox - Internal Server.launch"

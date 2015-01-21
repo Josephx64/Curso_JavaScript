@@ -2,7 +2,9 @@
 <html lang="es">
 <head>
 	<meta charset="utf-8">
-	<title>Introducción a JavaScript</title>
+	<title>Introducción a JavaScript: 1.5 Etiqueta <noscript>
+
+	</noscript> </title>
 
 	<!-- *************************** B A S I C S *************************** -->
 	<meta charset="utf-8">
@@ -49,8 +51,22 @@
 					</button>
 				</div>
 
-				<h3>1.4. Cómo incluir JavaScript en documentos HTML</h3>
-				<p>La integración de JavaScript y HTML es muy flexible, ya que existen al menos tres formas para incluir código JavaScript en las páginas web.</p>
+				<h3>1.5 Etiqueta noscript</h3>
+				<p>Algunos navegadores no disponen de soporte completo de JavaScript, otros navegadores permiten bloquearlo parcialmente e incluso algunos usuarios bloquean completamente el uso de JavaScript porque creen que así navegan de forma más segura.</p>
+
+				<p>En estos casos, es habitual que si la página web requiere JavaScript para su correcto funcionamiento, se incluya un mensaje de aviso  al usuario indicándole que debería activar JavaScript para disfrutar completamente de la página. El siguiente ejemplo muestra una página web basada en JavaScript cuando se accede con JavaScript activado y cuando se accede con JavaScript completamente desactivado.</p>
+
+				<img class="img-thumbnail center-block img-responsive" src="img/f0101.gif" alt="Figura 1.1 Imagen de www.Netvibes.com con JavaScript activado" />
+				<p class="text-center text-muted">
+					Figura 1.1. Imagen de www.Netvibes.com con JavaScript activado
+				</p>
+				<br>
+
+				<img class="img-thumbnail center-block img-responsive" src="img/f0102.gif" alt="Figura 1.2 Imagen de www.Netvibes.com con JavaScript desactivado" />
+				<p class="text-center text-muted">
+					Figura 1.2 Imagen de www.Netvibes.com con JavaScript desactivado
+				</p>
+
 
 				<h4>1.4.1.	Incluir JavaScript en el mismo documento HTML</h4>
 				<p>El código JavaScript se encierra entre etiquetas  <code>&lt;script&gt;</code> y se incluye en cualquier parte del documento. Aunque es correcto incluir cualquier bloque de código en cualquier zona de la página, se recomienda definir el código JavaScript dentro de la cabecera del documento (dentro de la etiqueta <code>&lt;head&gt;</code>):</p>
