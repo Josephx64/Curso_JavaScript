@@ -7,7 +7,7 @@ window.onload = function(){
 
 	document.getElementById("btnImprimir").onclick = imprimir;
 
-	
+
 
 	/*** Popover de la nota alpie #1.2-1 ***/
 	$(function () {
@@ -18,7 +18,9 @@ window.onload = function(){
 
 
 	/*** ***/
-	
-	
-	
+	$(function () {
+		$('[data-toggle="tooltip"]').tooltip()
+	})
+
+
 }

@@ -2,13 +2,13 @@
 <html lang="es">
 <head>
 	<meta charset="utf-8">
-	<title>Introducción a JavaScript</title>
+	<title>Introducción a JavaScript: 1.4. Cómo incluir JavaScript en documentos HTML</title>
 
 	<!-- *************************** B A S I C S *************************** -->
 	<meta charset="utf-8">
 	<meta name="author" content="JLRZ">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="description" content="Plantilla para sistema asíncrono">
+	<meta name="description" content="Curso Introducción a JavaScript">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 	<!-- *************************** C S S *************************** -->
@@ -27,6 +27,11 @@
 
 	<!-- Fuente Open Sans -->
 	<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'> -->
+
+	<!-- glyphicons DevIcons -->
+	<link rel="stylesheet" href="glyphicons/css/devicons.min.css" media="all" title="no title" charset="utf-8">
+
+
 	<!-- Script de cofiguraciones generales -->
 	<script src="js/config.js"></script>
 
@@ -43,9 +48,10 @@
 			<!-- Columna 12 -->
 			<div class="col-md-12 col-sm-12 col-xs-12">
 
+				<!-- Boton Imprimir -->
 				<div class="no-print col-md-1 col-md-offset-11 col-sm-1 col-sm-offset-11 col-xs-12 text-right">
 					<button id="btnImprimir" type="button" class="btn btn-default no-print" aria-label="Imprimir">
-						<span class="glyphicon glyphicon-print" aria-hidden="true"></span>
+						<span class="glyphicon glyphicon-print" aria-hidden="true"> Imprimir</span>
 					</button>
 				</div>
 
@@ -101,11 +107,14 @@
 				<p>Las instrucciones JavaScript se pueden incluir en un archivo externo de tipo JavaScript que los documentos HTML enlazan mediante la etiqueta <code>&lt;script&gt;</code>. Se pueden crear todos los archivos JavaScript que sean necesarios y cada documento HTML puede enlazar tantos archivos JavaScript como necesite.</p>
 				<p>Ejemplo:</p>
 
-				<blockquote> Archivo codigo.js </blockquote>
+				<blockquote>
+					<span class="devicons devicons-javascript_badge" aria-hidden="true"></span>
+					Script codigo.js
+				</blockquote>
 
 				<pre>alert("Un mensaje de prueba");</pre>
 
-				<blockquote> Documento HTML </blockquote>
+				<blockquote> <span class="devicons devicons-html5"> Documento HTML </blockquote>
 
 				<pre>
 &lt;!DOCTYPE html&gt;
@@ -123,7 +132,7 @@
 
 &lt;/html&gt;</pre>
 
-				<p>Además del atributo type, este método requiere definir el atributo src, que es el que indica la URL  correspondiente  al  archivo  JavaScript  que  se  quiere  enlazar.  Cada  etiqueta  <code>&lt;script&gt;</code> solamente puede enlazar un único archivo, pero en una misma página se pueden incluir tantas etiquetas <code>&lt;script&gt;</code>	 como sean necesarias.</p>
+				<p>Además del atributo type, este método requiere definir el atributo src, que es el que indica la URL  correspondiente  al  archivo  JavaScript  que  se  quiere  enlazar.  Cada  etiqueta  <code>&lt;script&gt;</code> solamente puede enlazar un único archivo, pero en una misma página se pueden incluir tantas etiquetas <code>&lt;script&gt;</code>	como sean necesarias.</p>
 
 				<p>Los archivos de tipo JavaScript son documentos normales de texto con la extensión .js, que se pueden crear con cualquier editor de texto como Notepad, Notepad++, Sublime Text, Atom, Brackets, etc.</p>
 

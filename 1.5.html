@@ -2,15 +2,13 @@
 <html lang="es">
 <head>
 	<meta charset="utf-8">
-	<title>Introducción a JavaScript: 1.5 Etiqueta <noscript>
-
-	</noscript> </title>
+	<title>Introducción a JavaScript: 1.5 Etiqueta <noscript></title>
 
 	<!-- *************************** B A S I C S *************************** -->
 	<meta charset="utf-8">
 	<meta name="author" content="JLRZ">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="description" content="Plantilla para sistema asíncrono">
+	<meta name="description" content="Curso Introducción a JavaScript">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 	<!-- *************************** C S S *************************** -->
@@ -45,9 +43,10 @@
 			<!-- Columna 12 -->
 			<div class="col-md-12 col-sm-12 col-xs-12">
 
+				<!-- Boton Imprimir -->
 				<div class="no-print col-md-1 col-md-offset-11 col-sm-1 col-sm-offset-11 col-xs-12 text-right">
 					<button id="btnImprimir" type="button" class="btn btn-default no-print" aria-label="Imprimir">
-						<span class="glyphicon glyphicon-print" aria-hidden="true"></span>
+						<span class="glyphicon glyphicon-print" aria-hidden="true"> Imprimir</span>
 					</button>
 				</div>
 
@@ -58,18 +57,16 @@
 
 				<img class="img-thumbnail center-block img-responsive" src="img/f0101.gif" alt="Figura 1.1 Imagen de www.Netvibes.com con JavaScript activado" />
 				<p class="text-center text-muted">
-					Figura 1.1. Imagen de www.Netvibes.com con JavaScript activado
+					Figura 1.1. Imagen de www.netvibes.com con JavaScript activado
 				</p>
 				<br>
 
 				<img class="img-thumbnail center-block img-responsive" src="img/f0102.gif" alt="Figura 1.2 Imagen de www.Netvibes.com con JavaScript desactivado" />
 				<p class="text-center text-muted">
-					Figura 1.2 Imagen de www.Netvibes.com con JavaScript desactivado
+					Figura 1.2 Imagen de www.netvibes.com con JavaScript desactivado
 				</p>
 
-
-				<h4>1.4.1.	Incluir JavaScript en el mismo documento HTML</h4>
-				<p>El código JavaScript se encierra entre etiquetas  <code>&lt;script&gt;</code> y se incluye en cualquier parte del documento. Aunque es correcto incluir cualquier bloque de código en cualquier zona de la página, se recomienda definir el código JavaScript dentro de la cabecera del documento (dentro de la etiqueta <code>&lt;head&gt;</code>):</p>
+				<p>El lenguaje HTML define la etiqueta <code>&lt;noscript&gt;</code> para mostrar un mensaje al usuario cuando su navegador no puede ejecutar JavaScript. El siguiente código muestra un ejemplo del uso de la etiqueta <code>&lt;noscript&gt;</code>:</p>
 				<br>
 
 				<!-- Boton Copiar -->
@@ -79,91 +76,16 @@
 
 				<!-- Bloque de cógio -->
 				<pre>
-&lt;!DOCTYPE html&gt;
-&lt;html lang="es"&gt;
-
-&lt;head&gt;
-	&lt;meta charset="utf-8"&gt;
-	&lt;title&gt;Ejemplo de código JavaScript en el propio documento&lt;/title&gt;
-	&lt;script type=”text/javascript”&gt;
-	&emsp; alert("Un mensaje de prueba");
-	&lt;/script&gt;
-&lt;/head&gt;
-
+&lt;head&gt; ... &lt;/head&gt;
 &lt;body&gt;
-	&lt;p&gt;Un párrafo de texto.&lt;/p&gt;
-&lt;/body&gt;
-
-&lt;/html&gt;</pre> <!--/Bloque de código-->
-
-				<p>Este método se emplea cuando se define un bloque pequeño de código o cuando se quieren incluir instrucciones específicas en un determinado documento HTML que completen las instrucciones y funciones que se incluyen por defecto en todos los documentos del sitio web.</p>
-
-				<p>El principal inconveniente es que si se quiere hacer una modificación en el bloque de código, es necesario modificar todas las páginas que incluyen ese mismo bloque de código JavaScript.</p>
-
-				<p> <b>1.4.1.1 El argumento type.</b> En muchas páginas web y muchos libros verás que se escribe  <code>&lt;script&gt;</code> …  <code>&lt;/script&gt;</code> sin hacer uso del argumento type. El motivo para esto es que JavaScript se ha convertido en un estándar reconocido por todos los navegadores y ya no se considera necesario especificar  <code>type=”text/javascript”</code>. En versiones antiguas de HTML se consideraba necesario. Todos los navegadores actuales reconocerán JavaScript sin necesidad de la especificación type.</p>
-
-				<p>En algunas páginas web antiguas te podrás encontrar incluso otros tipos de sintaxis como <code>&lt;script language=“JavaScript”&gt;</code>....<code>&lt;/script&gt;</code>.</p>
-
-				<p>Los motivos por los que se introdujo la especificación type son varios:</p>
-
-				<ul class="list-unstyled">
-					<li><b>a)</b> Existían (y existen) distintos lenguajes de script, es decir, además de javascript nos podemos encontrar otros lenguajes. El uso de type se concibió para indicarle al navegador qué lenguaje era el que usaba el script. Por ejemplo <code>type="text/vbscript"</code> indicaría lenguaje VBscript, <code>type="text/tcl"</code> indicaría lenguaje TCL, etc.</li>
-
-					<li><b>b)</b> Fue parte de la especificación oficial de algunas versiones de HTML.
-					Desde el momento en que todos los navegadores reconocen JavaScript sin necesidad de la especificación type, usarla o no resulta indistinto al momento de ejecutar el código. Por otro lado especificar el argumento type es considerado una buena práctica.</li>
-				</ul>
-
-				<h4>1.4.2. Definir JavaScript en un archivo externo</h4>
-				<p>Las instrucciones JavaScript se pueden incluir en un archivo externo de tipo JavaScript que los documentos HTML enlazan mediante la etiqueta <code>&lt;script&gt;</code>. Se pueden crear todos los archivos JavaScript que sean necesarios y cada documento HTML puede enlazar tantos archivos JavaScript como necesite.</p>
-				<p>Ejemplo:</p>
-
-				<blockquote> Archivo codigo.js </blockquote>
-
-				<pre>alert("Un mensaje de prueba");</pre>
-
-				<blockquote> Documento HTML </blockquote>
-
-				<pre>
-&lt;!DOCTYPE html&gt;
-&lt;html lang="es"&gt;
-
-&lt;head&gt;
-&emsp; &lt;meta charset="utf-8"&gt;
-&emsp; &lt;title&gt;Ejemplo de código JavaScript en el propio documento&lt;/title&gt;
-&emsp; &lt;script type=”text/javascript” src="/js/codigo.js"&gt;&lt;/script&gt;
-&lt;/head&gt;
-
+	&lt;noscript&gt;
+		&lt;p&gt;Bienvenido a Mi Sitio&lt;/p&gt;
+		&lt;p&gt;La página que estás viendo requiere para su funcionamiento el uso de JavaScript. Si lo has deshabilitado intencionadamente, por favor vuelve a activarlo.&lt;/p&gt;
+	&lt;/noscript&gt;
 &lt;body&gt;
-&emsp; &lt;p&gt;Un párrafo de texto.&lt;/p&gt;
-&lt;/body&gt;
+</pre> <!--/Bloque de código-->
 
-&lt;/html&gt;</pre>
-
-				<p>Además del atributo type, este método requiere definir el atributo src, que es el que indica la URL  correspondiente  al  archivo  JavaScript  que  se  quiere  enlazar.  Cada  etiqueta  <code>&lt;script&gt;</code> solamente puede enlazar un único archivo, pero en una misma página se pueden incluir tantas etiquetas <code>&lt;script&gt;</code>	 como sean necesarias.</p>
-
-				<p>Los archivos de tipo JavaScript son documentos normales de texto con la extensión .js, que se pueden crear con cualquier editor de texto como Notepad, Notepad++, Sublime Text, Atom, Brackets, etc.</p>
-
-				<p>La principal ventaja de enlazar un archivo JavaScript externo es que se simplifica el código HTML de la página, que se puede reutilizar el mismo código JavaScript en todas las páginas del sitio web y que cualquier modificación realizada en el archivo JavaScript se ve reflejada inmediatamente en todas las páginas HTML que lo enlazan.</p>
-
-				<h4>1.4.3.	Incluir JavaScript en los elementos HTML</h4>
-				<p>Este último método es el menos utilizado, ya que consiste en incluir trozos de JavaScript dentro del código HTML de la página:</p>
-
-				<pre>
-&lt;!DOCTYPE html&gt;
-&lt;html lang="es"&gt;
-&lt;head&gt;
-	&lt;meta charset="utf-8"&gt;
-	&lt;title&gt;Ejemplo de código JavaScript&lt;/title&gt;
-&lt;/head&gt;
-
-&lt;body&gt;
-	&lt;p onclick="alert('Un mensaje de prueba')"&gt;Un párrafo de texto.&lt;/p&gt;
-&lt;/body&gt;
-
-&lt;/html&gt;</pre>
-
-
-				<p>El mayor inconveniente de este método es que ensucia innecesariamente el código HTML de la página y complica el mantenimiento del código JavaScript. En general, este método sólo se utiliza para definir algunos eventos y en algunos otros casos especiales, como se verá más adelante.</p>
+				<p>La etiqueta <code>&lt;noscript&gt;</code> se debe incluir en el interior de la etiqueta <code>&lt;body&gt;</code> (normalmente se incluye al principio de <code>&lt;body&gt;</code>). El mensaje que muestra <code>&lt;noscript&gt;</code> puede incluir cualquier elemento o etiqueta HTML.</p>
 
 			</div><!--/Columna 12-->
 
