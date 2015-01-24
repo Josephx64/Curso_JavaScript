@@ -79,16 +79,16 @@
 			"file": "1.4.html",
 			"settings":
 			{
-				"buffer_size": 9631,
-				"line_ending": "Unix"
+				"buffer_size": 9984,
+				"line_ending": "Windows"
 			}
 		},
 		{
 			"file": "css3/principal.css",
 			"settings":
 			{
-				"buffer_size": 2708,
-				"line_ending": "Unix"
+				"buffer_size": 2760,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -160,8 +160,7 @@
 	},
 	"expanded_folders":
 	[
-		"/opt/lampp/htdocs/Curso_JavaScript",
-		"/opt/lampp/htdocs/Curso_JavaScript/css3"
+		"/C/xampp/htdocs/Curso_JavaScript"
 	],
 	"file_history":
 	[
@@ -484,15 +483,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 9631,
+						"buffer_size": 9984,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7800,
-								7800
+								8135,
+								8135
 							]
 						],
 						"settings":
@@ -501,7 +500,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 4224.0,
+						"translation.y": 4136.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -513,15 +512,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2708,
+						"buffer_size": 2760,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2624,
-								2624
+								0,
+								0
 							]
 						],
 						"settings":
@@ -568,7 +567,7 @@
 			1.0
 		]
 	},
-	"menu_visible": true,
+	"menu_visible": false,
 	"output.find_results":
 	{
 		"height": 0.0
