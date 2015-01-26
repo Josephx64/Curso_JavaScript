@@ -1,0 +1,176 @@
+/*Eliminar el borde naranja en google chrome*/
+*:focus {
+	outline: none;
+}
+
+
+/*Quitar el recuadro azul de bootstrap en el evento :focus */
+button, a:focus {
+outline: none;
+/* outline: 5px auto -webkit-focus-ring-color; */
+outline-offset: -2px;
+}
+
+body{
+	/*margin-top: 60px;*/
+	/*background: rgb(245, 245, 245);*/
+	/*background: #f6f6f6;*/
+}
+
+.container p {
+	font-size: 17px;
+	padding-bottom: 0em;
+}
+
+@media print {
+	.no-print{ visibility: hidden; display: none; }
+}
+
+@media screen {
+	.no-print{ visibility: visible; }
+}
+
+@media handheld {
+	.no-print{ visibility: hidden; display: none; }
+}
+
+
+/*BLOCKQUOTES PERSONALIZADOS*/
+
+/*Blockquote Nota*/
+.blockquote-nota {
+	border-left: 5px solid rgb(52, 152, 219);
+}
+
+/*Blockquote Nota al pie*/
+.blockquote-nota-pie {
+	border-left: 5px solid rgb(22, 160, 133);
+}
+
+/*Superindice*/
+sup, footer sup {
+	color: rgb(22, 160, 133);
+	font-weight: bold;
+}
+
+.popover-content {
+	font-size: 14px;
+}
+
+.popover-title {
+	font-weight: bold;
+	background: rgb(22, 160, 133);
+	color: white;
+}
+
+/*Nota al pie*/
+.notapie {
+	color: rgb(22, 160, 133);
+}
+
+
+/* Bloques de código */
+
+pCodigoXXX {
+	padding: 2px 4px;
+	font-size: 95%;
+	color: rgb(44, 62, 80);
+	border-radius: 4px;
+}
+
+.zero-clipboard {
+    position: relative;
+    display: none
+}
+
+.btn-clipboard {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    display: block;
+    padding: 5px 8px;
+    font-size: 12px;
+    color: #777;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #e1e1e8;
+    border-radius: 0 4px 0 4px
+}
+
+.btn-clipboard:hover {
+    color: #fff;
+    background-color: #563d7c;
+    border-color: #563d7c
+}
+
+@media (min-width: 768px) {
+    .zero-clipboard {
+        display:block
+    }
+
+    .bs-example+.zero-clipboard .btn-clipboard {
+        top: -16px;
+        border-top-right-radius: 0
+    }
+}
+
+#focusedInput {
+    border-color: #ccc;
+    border-color: rgba(82,168,236,.8);
+    outline: 0;
+    outline: thin dotted \9;
+    -webkit-box-shadow: 0 0 8px rgba(82,168,236,.6);
+    box-shadow: 0 0 8px rgba(82,168,236,.6)
+}
+
+
+
+/* */
+.highlight {
+	padding: 9px 14px;
+	margin-bottom: 0px;
+	background-color: #f7f7f9;
+	border: 1px solid #e1e1e8;
+	border-radius: 4px;
+
+	color: rgb(44, 62, 80);
+	border-radius: 4px;
+
+	font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+
+}
+
+.highlight p{
+	font-size: 17px;
+}
+
+h4, h3 {
+	font-weight: bold;
+}
+
+.list-unstyled li{
+	font-size: 17px;
+	padding-left: 1em;
+	padding-bottom: 1em;
+}
+
+pre{
+	font-size: 17px;
+	font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+	color: rgb(44, 62, 80);
+	-o-tab-size: 3;
+	-moz-tab-size: 3;
+	tab-size: 3;
+	padding: 15px;
+	margin-bottom:2em;
+}
+
+#btnImprimir{
+	border: none;
+}
+
+button >span >span {
+	font-family: Arial !important;
+}
+/**************************************************************************/
