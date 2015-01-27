@@ -103,7 +103,7 @@
 			"file": "1.5.html",
 			"settings":
 			{
-				"buffer_size": 6215,
+				"buffer_size": 5108,
 				"line_ending": "Windows"
 			}
 		},
@@ -186,11 +186,7 @@
 	[
 		"/C/xampp/htdocs/Curso_JavaScript",
 		"/C/xampp/htdocs/Curso_JavaScript/my_assets",
-		"/C/xampp/htdocs/Curso_JavaScript/my_assets/bootstrap/css3",
-		"/C/xampp/htdocs/Curso_JavaScript/my_assets/bootstrap/fonts",
-		"/C/xampp/htdocs/Curso_JavaScript/my_assets/css3",
-		"/C/xampp/htdocs/Curso_JavaScript/my_assets/glyphicons/css",
-		"/C/xampp/htdocs/Curso_JavaScript/my_assets/glyphicons/fonts"
+		"/C/xampp/htdocs/Curso_JavaScript/my_assets/css3"
 	],
 	"file_history":
 	[
@@ -587,15 +583,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6215,
+						"buffer_size": 5108,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3597,
-								3597
+								2295,
+								2295
 							]
 						],
 						"settings":
@@ -604,7 +600,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1518.0,
+						"translation.y": 1188.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -638,7 +634,7 @@
 							"syntax": "Packages/CSS/CSS.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1114.0,
+						"translation.y": 1334.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
