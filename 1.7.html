@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Introducción a JavaScript: 1.7 Sintaxis</title>
+
+	<!-- *************************** B A S I C S *************************** -->
+	<meta charset="utf-8">
+	<meta name="author" content="JLRZ">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Curso Introducción a JavaScript">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+	<!-- *************************** C S S *************************** -->
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="my_assets/bootstrap/css3/bootstrap.min.css">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- Estilos Generales -->
+	<link rel="stylesheet" href="my_assets/css3/principal.css">
+
+	<!-- Fuente Open Sans -->
+	<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'> -->
+	<!-- Script de cofiguraciones generales -->
+	<script src="my_assets/js/config.js"></script>
+
+</head>
+
+<body>
+
+	<!--Contenedor del contenido-->
+	<div class="container">
+
+		<!--Fila de contenido-->
+		<div class="row">
+
+			<!-- Columna 12 -->
+			<div class="col-md-12 col-sm-12 col-xs-12">
+
+				<!-- Boton Imprimir -->
+				<div class="no-print col-md-1 col-md-offset-11 col-sm-1 col-sm-offset-11 col-xs-12 text-right">
+					<button id="btnImprimir" type="button" class="btn btn-default no-print" aria-label="Imprimir">
+						<span class="glyphicon glyphicon-print" aria-hidden="true"> <span>Imprimir</span></span>
+					</button>
+				</div>
+
+				<h3>1.7 Sintaxis</h3>
+				<p>La sintaxis de un lenguaje de programación se define como el conjunto de reglas que deben seguirse al escribir el código fuente de los programas para considerarse como correctos para ese lenguaje de programación.</p>
+
+				<p>La sintaxis de JavaScript es muy similar a la de otros lenguajes de programación como Java y C. Las normas básicas que definen la sintaxis de JavaScript son las siguientes:
+				</p>
+
+				<ul>
+					<li><b>No se tienen en cuenta los espacios en blanco y las nuevas líneas:</b> como sucede con HTML, el intérprete de JavaScript ignora cualquier espacio en blanco sobrante, por lo que el código se puede ordenar de forma adecuada para entenderlo mejor (tabulando las líneas, añadiendo espacios, creando nuevas líneas, etc.)</li><br>
+
+					<li><b>Se distinguen las mayúsculas y minúsculas:</b> al igual que sucede con la sintaxis de las etiquetas y elementos HTML. Sin embargo, si en una página HTML se utilizan indistintamente mayúsculas y minúsculas, la página se visualiza correctamente, siendo el único problema la no validación de la página. En cambio, si en JavaScript se intercambian mayúsculas y minúsculas el script no funciona.</li><br>
+
+					<li><b>No se define el tipo de las variables:</b> al crear una variable, no es necesario indicar el tipo de dato que almacenará. De esta forma, una misma variable puede almacenar diferentes tipos de datos durante la ejecución del script.</li><br>
+
+					<li><b>No es necesario terminar cada sentencia con el carácter de punto y coma (;):</b> en la mayoría de lenguajes de programación, es obligatorio terminar cada sentencia con el carácter ;. Aunque JavaScript no obliga a hacerlo, es conveniente seguir la tradición de terminar cada sentencia con el carácter del punto y coma (;).</li><br>
+
+					<li><b>Se pueden incluir comentarios:</b> los comentarios se utilizan para añadir información en el código fuente del programa. Aunque el contenido de los comentarios no se visualiza por pantalla, si que se envía al navegador del usuario junto con el resto del script, por lo que es necesario extremar las precauciones sobre la información incluida en los comentarios.</li><br>
+
+				</ul>
+
+				<p>
+					JavaScript define dos tipos de comentarios: los de una sola línea y los que ocupan varias líneas.
+				</p>
+
+				<p>
+					Ejemplo de comentario de una sola línea:
+				</p>
+
+				<!-- Bloque de código -->
+<pre>
+// a continuación se muestra un mensaje
+alert("mensaje de prueba");
+</pre>
+
+				<p>
+					Los comentarios de una sola línea se definen añadiendo dos barras oblicuas (<code>//</code>) al principio de la línea.
+				</p>
+
+				<p>
+					Ejemplo de comentario de varias líneas:
+				</p>
+
+<pre>
+/* Los comentarios de varias líneas son muy útiles cuando se necesita incluir bastante información
+en los comentarios */
+alert("mensaje de prueba");
+</pre>
+				<p>
+					Los comentarios multilínea se definen encerrando el texto del comentario entre los símbolos <code>/*</code> y <code>*/</code>.
+				</p>
+
+
+			</div><!--/Columna 12-->
+
+		</div><!--/Fila de contenido-->
+
+	</div>
+	<!-- Regla -->
+	<div class="container">
+		<div class="row">
+			<hr>
+		</div>
+	</div>
+
+
+	<!-- F O O T E R -->
+	<footer id="footer">
+
+		<!--Contenedor del footer-->
+		<div class="container text-center">
+			<h6 class="text-muted">Corporativo CETEC 2014</h6>
+		</div><!--/Contenedor del footer-->
+
+	</footer><!--/Footer-->
+
+
+
+	<!-- *************************** J S *************************** -->
+
+	<!-- jQuery -->
+	<script src="my_assets/jquery/jquery-1.11.1.min.js"></script>
+
+	<!-- jQuery UI-->
+	<!-- <script src="jquery/jquery-ui/js/jquery-ui.js"></script> -->
+
+	<!-- Bootstrap -->
+	<script src="my_assets/bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>

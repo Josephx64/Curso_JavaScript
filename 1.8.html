@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="utf-8">
-	<title>Introducción a JavaScript: 1.6 Glosario básico</title>
+	<title>Introducción a JavaScript: 1.8 Posibilidades y limitaciones</title>
 
 	<!-- *************************** B A S I C S *************************** -->
 	<meta charset="utf-8">
@@ -50,12 +50,34 @@
 					</button>
 				</div>
 
-				<h3>1.6 Glosario básico</h3>
-				<blockquote><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> <b>Script:</b> cada uno de los programas, aplicaciones o trozos de código creados con el lenguaje de programación JavaScript. Unas pocas líneas de código forman un script y un archivo de miles de líneas de JavaScript también se considera un script. A veces se traduce al español directamente como <i>"guión"</i>, aunque script es una palabra más adecuada y comúnmente aceptada.</blockquote>
+				<h3>1.8 Posibilidades y limitacionesd</h3>
+				<p>
+					Desde su aparición, JavaScript siempre fue utilizado de forma masiva por la mayoría de sitios de 					Internet. La aparición de Flash disminuyó su popularidad, ya que Flash permitía realizar algunas acciones imposibles de llevar a cabo mediante JavaScript.
+				</p>
 
-				<blockquote><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> <b>Sentencia:</b> cada una de las instrucciones u oraciones que forman un script.</blockquote>
+				<p>
+					Sin embargo, la aparición de las aplicaciones AJAX programadas con JavaScript le ha devuelto una popularidad sin igual dentro de los lenguajes de programación web.
+				</p>
 
-				<blockquote><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> <b>Palabras reservadas:</b> son las palabras (en inglés) que se utilizan para construir las sentencias de JavaScript y que por tanto no pueden ser utilizadas libremente. Las palabras actualmente reservadas por JavaScript son: <code>break</code>, <code>case</code>, <code>catch</code>, <code>continue</code>, <code>default</code>, <code>delete</code>, <code>do</code>, <code>else</code>, <code>finally</code>, <code>for</code>, <code>function</code>,  <code>if</code>, <code>in</code>, <code>instanceof</code>, <code>new</code>, <code>return</code>, <code>switch</code>, <code>this</code>, <code>throw</code>, <code>try</code>, <code>typeof</code>, <code>var</code>, <code>void</code>, <code>while</code>, <code>with</code>.</blockquote>
+				<p>
+					En cuanto a las limitaciones, JavaScript fue diseñado de forma que se ejecutara en un entorno muy limitado que permitiera a los usuarios confiar en la ejecución de los scripts.
+				</p>
+
+				<p>
+					De esta forma, los scripts de JavaScript no pueden comunicarse con recursos que no pertenezcan al mismo dominio desde el que se descargó el script. Los scripts tampoco pueden cerrar ventanas que no hayan abierto esos mismos scripts. Las ventanas que se crean no pueden ser demasiado pequeñas ni demasiado grandes ni colocarse fuera de la vista del usuario (aunque los detalles concretos dependen de cada navegador).
+				</p>
+
+				<p>
+					Además, los scripts no pueden acceder a los archivos del ordenador del usuario (ni en modo lectura ni en modo escritura) y tampoco pueden leer o modificar las preferencias del navegador.
+				</p>
+
+				<p>
+					Por último, si la ejecución de un script dura demasiado tiempo (por ejemplo por un error de programación) el navegador informa al usuario de que un script está consumiendo demasiados recursos y le da la posibilidad de detener su ejecución.
+				</p>
+
+				<p>
+					A pesar de todo, existen alternativas para poder saltarse algunas de las limitaciones anteriores. La alternativa más utilizada y conocida consiste en firmar digitalmente el script y solicitar al usuario el permiso para realizar esas acciones.
+				</p>
 
 
 			</div><!--/Columna 12-->

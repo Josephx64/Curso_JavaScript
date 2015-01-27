@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="utf-8">
-	<title>Introducción a JavaScript: 1.6 Glosario básico</title>
+	<title>Introducción a JavaScript: Capítulo 2- El primer script</title>
 
 	<!-- *************************** B A S I C S *************************** -->
 	<meta charset="utf-8">
@@ -50,13 +50,52 @@
 					</button>
 				</div>
 
-				<h3>1.6 Glosario básico</h3>
-				<blockquote><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> <b>Script:</b> cada uno de los programas, aplicaciones o trozos de código creados con el lenguaje de programación JavaScript. Unas pocas líneas de código forman un script y un archivo de miles de líneas de JavaScript también se considera un script. A veces se traduce al español directamente como <i>"guión"</i>, aunque script es una palabra más adecuada y comúnmente aceptada.</blockquote>
+				<h3>2.1 El primer script</h3>
+				<p>
+					A continuación, se muestra un primer script sencillo pero completo:
+				</p>
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+	&lt;meta charset="UTF-8"&gt;
+	&lt;title&gt;El primer script&lt;/title&gt;
+	&lt;script type="text/javascript"&gt;
+		alert("Hola Mundo!");
+	&lt;/script&gt;
+&lt;/head&gt;
 
-				<blockquote><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> <b>Sentencia:</b> cada una de las instrucciones u oraciones que forman un script.</blockquote>
+&lt;body&gt;
+	&lt;p&gt;Esta página contiene el primer script&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
 
-				<blockquote><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> <b>Palabras reservadas:</b> son las palabras (en inglés) que se utilizan para construir las sentencias de JavaScript y que por tanto no pueden ser utilizadas libremente. Las palabras actualmente reservadas por JavaScript son: <code>break</code>, <code>case</code>, <code>catch</code>, <code>continue</code>, <code>default</code>, <code>delete</code>, <code>do</code>, <code>else</code>, <code>finally</code>, <code>for</code>, <code>function</code>,  <code>if</code>, <code>in</code>, <code>instanceof</code>, <code>new</code>, <code>return</code>, <code>switch</code>, <code>this</code>, <code>throw</code>, <code>try</code>, <code>typeof</code>, <code>var</code>, <code>void</code>, <code>while</code>, <code>with</code>.</blockquote>
+			<p>
+				En este ejemplo, el script se incluye como un bloque de código dentro de una página HTML. Por tanto, en primer lugar se debe crear una página HTML correcta que incluya la declaración del DOCTYPE, el atributo xmlns, las secciones <code>&lt;head&gt;</code> y <code>&lt;body&gt;</code>, la etiqueta <code>&lt;title&gt;</code>, etc.
+			</p>
 
+			<p>
+				Aunque el código del script se puede incluir en cualquier parte de la página, se recomienda incluirlo en la cabecera del documento, es decir, dentro de la etiqueta <code>&lt;head&gt;</code>.
+			</p>
+
+			<p>
+				A continuación, el código JavaScript se debe incluir entre las etiquetas <code>&lt;script&gt;</code>...<code>&lt;/script&gt;</code>. Además, para que la página sea válida, es necesario definir el atributo type de la etiqueta <code>&lt;script&gt;</code>. Técnicamente, el atributo type se corresponde con "el tipo MIME", que es un estándar para identificar los diferentes tipos de contenidos. El "tipo MIME" correcto para JavaScript es <code>text/javascript</code>.
+			</p>
+
+			<p>
+				Una vez definida la zona en la que se incluirá el script, se escriben todas las sentencias que forman la aplicación. Este primer ejemplo es tan sencillo que solamente incluye una sentencia: <code>alert("Hola Mundo!");</code>.
+			</p>
+
+			<p>
+				La instrucción <code>alert()</code> es una de las utilidades que incluye JavaScript y permite mostrar un mensaje en la pantalla del usuario. Si se visualiza la página web de este primer script en cualquier navegador, automáticamente se mostrará una ventana con el mensaje "Hola Mundo!".
+			</p>
+
+			<p>
+				A continuación se muestra el resultado de ejecutar el script en diferentes navegadores:
+			</p>
+
+			<img class="img-thumbnail center-block img-responsive" src="my_assets/imagenes/2.1-1.png" alt="Figura 2.1. Mensaje mostrado con 'alert()'' en Google Chrome" />
 
 			</div><!--/Columna 12-->
 

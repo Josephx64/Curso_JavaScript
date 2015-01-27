@@ -1,6 +1,6 @@
 /*Eliminar el borde naranja en google chrome*/
 *:focus {
-	outline: none;
+	outline: none !important;
 }
 
 
@@ -182,4 +182,9 @@ pre{
 button >span >span {
 	font-family: Arial !important;
 }
+
+.btn-default:focus, .btn-default:active, .btn-default.active, .open>.dropdown-toggle.btn-default {
+	border: none;
+}
+
 /**************************************************************************/
