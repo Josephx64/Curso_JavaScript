@@ -111,7 +111,7 @@
 			"file": "my_assets/css3/principal.css",
 			"settings":
 			{
-				"buffer_size": 2918,
+				"buffer_size": 3047,
 				"line_ending": "Windows"
 			}
 		}
@@ -590,8 +590,8 @@
 						"selection":
 						[
 							[
-								2295,
-								2295
+								2159,
+								2159
 							]
 						],
 						"settings":
@@ -618,15 +618,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2918,
+						"buffer_size": 3047,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								717,
-								717
+								0,
+								0
 							]
 						],
 						"settings":
@@ -634,7 +634,7 @@
 							"syntax": "Packages/CSS/CSS.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1334.0,
+						"translation.y": 1422.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
@@ -712,6 +712,10 @@
 		"height": 500.0,
 		"selected_items":
 		[
+			[
+				"musta",
+				"C:\\xampp\\htdocs\\Mustang\\Mustang.sublime-project"
+			],
 			[
 				"",
 				"/opt/lampp/htdocs/enc_Tejalpa_Compu_Docen_T2/enc_Tejalpa_Compu_Docen_T2.sublime-project"
