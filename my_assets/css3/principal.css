@@ -24,17 +24,19 @@ body{
 
 @media print {
 	.no-print{ visibility: hidden; display: none; }
+	.screen-only{ visibility: hidden; display: none; }
 }
 
 @media screen {
 	.no-print{ visibility: visible; }
+	.print-only{ visibility: hidden; display: none; }
 }
 
 @media handheld {
 	.no-print{ visibility: hidden; display: none; }
 }
 
-
+.invisible{ display: none;}
 /*BLOCKQUOTES PERSONALIZADOS*/
 
 @media print {
@@ -185,6 +187,10 @@ button >span >span {
 
 .btn-default:focus, .btn-default:active, .btn-default.active, .open>.dropdown-toggle.btn-default {
 	border: none;
+}
+
+.print-only{
+
 }
 
 /**************************************************************************/
