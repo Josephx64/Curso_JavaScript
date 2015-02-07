@@ -20,20 +20,20 @@
 
 	<!-- *************************** C S S *************************** -->
 	<!-- Bootstrap -->
-	<link rel="stylesheet" href="my_assets/bootstrap/css3/bootstrap.min.css">
+	<link rel="stylesheet" href="//cetec1.net/lms/my_assets/bootstrap/css3/bootstrap.min.css">
 
 	<!-- Estilos Generales -->
-	<link rel="stylesheet" href="my_assets/css3/principal.css">
+	<link rel="stylesheet" href="//cetec1.net/lms/my_assets/css3/principal.css">
 
 	<!-- Fuente Open Sans -->
 	<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'> -->
 
 	<!-- glyphicons DevIcons -->
-	<link rel="stylesheet" href="my_assets/glyphicons/css/devicons.min.css" media="all" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="//cetec1.net/lms/my_assets/glyphicons/css/devicons.min.css" media="all" title="no title" charset="utf-8">
 
 
 	<!-- Script de cofiguraciones generales -->
-	<script src="my_assets/js/config.js"></script>
+	<script src="//cetec1.net/lms/my_assets/js/config.js"></script>
 
 </head>
 
@@ -49,16 +49,17 @@
 			<div class="col-md-12 col-sm-12 col-xs-12">
 
 				<!-- Boton Imprimir -->
-				<div class="no-print col-md-1 col-md-offset-11 col-sm-1 col-sm-offset-11 col-xs-12 text-right">
-					<button id="btnImprimir" type="button" class="btn btn-default no-print" aria-label="Imprimir">
+				<div id="filaBtnImprimir" class="no-print col-md-2 col-md-offset-10 col-sm-2 col-sm-offset-10 col-xs-12 text-right">
+					<button id="btnImprimir" type="button" class="btn btn-success no-print" aria-label="Imprimir">
 						<span class="glyphicon glyphicon-print" aria-hidden="true"> <span>Imprimir</span></span>
 					</button>
 				</div>
 
 				<h3>1.4. Cómo incluir JavaScript en documentos HTML</h3>
 				<p>La integración de JavaScript y HTML es muy flexible, ya que existen al menos tres formas para incluir código JavaScript en las páginas web.</p>
+				<br>
 
-				<h4>1.4.1.	Incluir JavaScript en el mismo documento HTML</h4>
+				<h4>1.4.1. Incluir JavaScript en el mismo documento HTML</h4>
 				<p>El código JavaScript se encierra entre etiquetas  <code>&lt;script&gt;</code> y se incluye en cualquier parte del documento. Aunque es correcto incluir cualquier bloque de código en cualquier zona de la página, se recomienda definir el código JavaScript dentro de la cabecera del documento (dentro de la etiqueta <code>&lt;head&gt;</code>):</p>
 				<br>
 
@@ -71,20 +72,20 @@
 
 				<!-- Bloque de cógio -->
 				<pre>
-&lt;!DOCTYPE html&gt;
-&lt;html lang="es"&gt;
+&lt;!DOCTYPE html&gt;<br>
+&lt;html lang="es"&gt;<br>
 
-&lt;head&gt;
-	&lt;meta charset="utf-8"&gt;
-	&lt;title&gt;Ejemplo de código JavaScript en el propio documento&lt;/title&gt;
-	&lt;script type=”text/javascript”&gt;
-	&emsp; alert("Un mensaje de prueba");
-	&lt;/script&gt;
-&lt;/head&gt;
-
-&lt;body&gt;
-	&lt;p&gt;Un párrafo de texto.&lt;/p&gt;
-&lt;/body&gt;
+&lt;head&gt;<br>
+	&lt;meta charset="utf-8"&gt;<br>
+	&lt;title&gt;Ejemplo de código JavaScript en el propio documento&lt;/title&gt;<br>
+	&lt;script type=”text/javascript”&gt;<br>
+	&Tab;alert("Un mensaje de prueba");<br>
+	&lt;/script&gt;<br>
+&lt;/head&gt;<br>
+<br>
+&lt;body&gt;<br>
+	&lt;p&gt;Un párrafo de texto.&lt;/p&gt;<br>
+&lt;/body&gt;<br>
 
 &lt;/html&gt;</pre> <!--/Bloque de código-->
 
@@ -116,21 +117,24 @@
 
 				<pre>alert("Un mensaje de prueba");</pre>
 
-				<blockquote> <span class="devicons devicons-html5"> Documento HTML </blockquote>
+				<blockquote>
+					<span class="devicons devicons-html5" aria-hidden="true"></span>
+					Documento HTML
+				</blockquote>
 
 				<pre>
-&lt;!DOCTYPE html&gt;
-&lt;html lang="es"&gt;
+&lt;!DOCTYPE html&gt;<br>
+&lt;html lang="es"&gt;<br>
 
-&lt;head&gt;
-&emsp; &lt;meta charset="utf-8"&gt;
-&emsp; &lt;title&gt;Ejemplo de código JavaScript en el propio documento&lt;/title&gt;
-&emsp; &lt;script type=”text/javascript” src="/js/codigo.js"&gt;&lt;/script&gt;
-&lt;/head&gt;
+&lt;head&gt;<br>
+&emsp; &lt;meta charset="utf-8"&gt;<br>
+&emsp; &lt;title&gt;Ejemplo de código JavaScript en el propio documento&lt;/title&gt;<br>
+&emsp; &lt;script type=”text/javascript” src="js/codigo.js"&gt;&lt;/script&gt;<br>
+&lt;/head&gt;<br>
 
-&lt;body&gt;
-&emsp; &lt;p&gt;Un párrafo de texto.&lt;/p&gt;
-&lt;/body&gt;
+&lt;body&gt;<br>
+&emsp; &lt;p&gt;Un párrafo de texto.&lt;/p&gt;<br>
+&lt;/body&gt;<br>
 
 &lt;/html&gt;</pre>
 
@@ -139,21 +143,23 @@
 				<p>Los archivos de tipo JavaScript son documentos normales de texto con la extensión .js, que se pueden crear con cualquier editor de texto como Notepad, Notepad++, Sublime Text, Atom, Brackets, etc.</p>
 
 				<p>La principal ventaja de enlazar un archivo JavaScript externo es que se simplifica el código HTML de la página, que se puede reutilizar el mismo código JavaScript en todas las páginas del sitio web y que cualquier modificación realizada en el archivo JavaScript se ve reflejada inmediatamente en todas las páginas HTML que lo enlazan.</p>
+				<br>
 
-				<h4>1.4.3.	Incluir JavaScript en los elementos HTML</h4>
+
+				<h4>1.4.3. Incluir JavaScript en los elementos HTML</h4>
 				<p>Este último método es el menos utilizado, ya que consiste en incluir trozos de JavaScript dentro del código HTML de la página:</p>
 
 				<pre>
-&lt;!DOCTYPE html&gt;
-&lt;html lang="es"&gt;
-&lt;head&gt;
-	&lt;meta charset="utf-8"&gt;
-	&lt;title&gt;Ejemplo de código JavaScript&lt;/title&gt;
-&lt;/head&gt;
+&lt;!DOCTYPE html&gt;<br>
+&lt;html lang="es"&gt;<br>
+&lt;head&gt;<br>
+	&lt;meta charset="utf-8"&gt;<br>
+	&lt;title&gt;Ejemplo de código JavaScript&lt;/title&gt;<br>
+&lt;/head&gt;<br>
 
-&lt;body&gt;
-	&lt;p onclick="alert('Un mensaje de prueba')"&gt;Un párrafo de texto.&lt;/p&gt;
-&lt;/body&gt;
+&lt;body&gt;<br>
+	&lt;p onclick="alert('Un mensaje de prueba')"&gt;Un párrafo de texto.&lt;/p&gt;<br>
+&lt;/body&gt;<br>
 
 &lt;/html&gt;</pre>
 
@@ -187,16 +193,16 @@
 	<!-- *************************** J S *************************** -->
 
 	<!-- jQuery -->
-	<script src="my_assets/jquery/jquery-1.11.1.min.js"></script>
+	<script src="//cetec1.net/lms/my_assets/jquery/jquery-1.11.1.min.js"></script>
 
 	<!-- jQuery UI-->
-	<!-- <script src="my_assets/jquery/jquery-ui/js/jquery-ui.js"></script> -->
+	<!-- <script src="//cetec1.net/lms/my_assets/jquery/jquery-ui/js/jquery-ui.js"></script> -->
 
 	<!-- Bootstrap -->
-	<script src="my_assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="//cetec1.net/lms/my_assets/bootstrap/js/bootstrap.min.js"></script>
 
 	<!-- ZeroClipboard 2.2 -->
-	<script src="my_assets/jquery/jqPlugins/zeroClipboard/ZeroClipboard.js"></script>
+	<script src="//cetec1.net/lms/my_assets/jquery/jqPlugins/zeroClipboard/ZeroClipboard.js"></script>
 
 	<!-- <script>
 		$(document).ready(function(){

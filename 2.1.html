@@ -20,7 +20,7 @@
 
 	<!-- *************************** C S S *************************** -->
 	<!-- Bootstrap -->
-	<link rel="stylesheet" href="http://cetec1.net/lms/my_assets/bootstrap/css3/bootstrap.min.css">
+	<link rel="stylesheet" href="//cetec1.net/lms/my_assets/bootstrap/css3/bootstrap.min.css">
 
 	<!-- Estilos Generales -->
 	<link rel="stylesheet" href="//cetec1.net/lms/my_assets/css3/principal.css">
@@ -44,8 +44,8 @@
 			<div class="col-md-12 col-sm-12 col-xs-12">
 
 				<!-- Boton Imprimir -->
-				<div class="no-print col-md-1 col-md-offset-11 col-sm-1 col-sm-offset-11 col-xs-12 text-right">
-					<button id="btnImprimir" type="button" class="btn btn-default no-print" aria-label="Imprimir">
+				<div id="filaBtnImprimir" class="no-print col-md-2 col-md-offset-10 col-sm-2 col-sm-offset-10 col-xs-12 text-right">
+					<button id="btnImprimir" type="button" class="btn btn-success no-print" aria-label="Imprimir">
 						<span class="glyphicon glyphicon-print" aria-hidden="true"> <span>Imprimir</span></span>
 					</button>
 				</div>
@@ -58,7 +58,16 @@
 				<p>
 					A continuación, se muestra un primer script sencillo pero completo:
 				</p>
-<pre>
+
+				<!-- Boton Copiar -->
+				<!-- <div id="copy-button" data-clipboard-text="Copy Me!" title="Click to copy me." data-clipboard-target="elCodigo">
+					<a href="#" class="btn-clipboard">Copiar</a>
+				</div> -->
+
+				<button id="copy-button" data-clipboard-target="bloqueCod1" data-clipboard-text="Copy Me!" title="Click to copy me.">Copy to Clipboard</button>
+
+
+<pre id="bloqueCod1">
 &lt;!DOCTYPE html&gt;<br>
 &lt;html lang="es"&gt;<br>
 &lt;head&gt;<br>
@@ -96,6 +105,9 @@
 			</p><br>
 
 
+			<!-- *** G A L E R I A *** -->
+
+			<!-- *** SCREEN-ONLY *** -->
 			<center class="screen-only">
 				<!-- Imágen 1 -->
 				<a class="fancybox-thumb" rel="fancybox-thumb" href="//cetec1.net/lms/my_assets/imagenes/2.1-1.jpg" title="Figura 2.1-1 Mensaje mostrado con <code>'alert()'</code> en Google Chrome">
@@ -105,6 +117,7 @@
 			</a>
 			</center>
 
+		<!-- *** INVISIBLE *** -->
 		<span class="invisible">
 
 			<!-- Imágen 2 -->
@@ -116,7 +129,7 @@
 		</span><!--/Invisible -->
 
 
-			<!-- Print-Only -->
+			<!-- *** PRINT-ONLY *** -->
 			<span class="print-only">
 
 				<!-- Imágen 2.1-1 -->
@@ -138,7 +151,7 @@
 				</p>
 
 			</span><!--/Print-Only-->
-			<br>
+			<br><!--/G A L E R I A-->
 
 			<p>
 				Como se puede observar en las imágenes anteriores, el funcionamiento de la utilidad alert() en los distintos navegadores es idéntico. Sin embargo, existen grandes diferencias visuales en la forma en la que se presentan los mensajes.
@@ -175,8 +188,11 @@
 	<!-- jQuery -->
 	<!-- <script src="//cetec1.net/lms/my_assets/jquery/jquery-1.11.1.min.js"></script> -->
 	<!-- <script src="../../../../main/inc/lib/javascript/jquery.min.js"></script> -->
-	<script src="http://cetec1.net/lms/campus_martinez/main/inc/lib/javascript/jquery.min.js"></script>
+	<script src="//cetec1.net/lms/campus_martinez/main/inc/lib/javascript/jquery.min.js"></script>
 
+	<!-- zClip -->
+	<script type="text/javascript" src="//cetec1.net/lms/my_assets/jquery/jqPlugins/zeroclipboard/dist/ZeroClipboard.min.js"></script>
+	<script type="text/javascript" src="//cetec1.net/lms/my_assets/js/zClip.config.js"></script>
 	<!-- jQuery UI-->
 	<!-- <script src="jquery/jquery-ui/js/jquery-ui.js"></script> -->
 

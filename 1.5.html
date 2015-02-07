@@ -20,15 +20,15 @@
 
 	<!-- *************************** C S S *************************** -->
 	<!-- Bootstrap -->
-	<link rel="stylesheet" href="my_assets/bootstrap/css3/bootstrap.min.css">
+	<link rel="stylesheet" href="//cetec1.net/lms/my_assets/bootstrap/css3/bootstrap.min.css">
 
 	<!-- Estilos Generales -->
-	<link rel="stylesheet" href="my_assets/css3/principal.css">
+	<link rel="stylesheet" href="//cetec1.net/lms/my_assets/css3/principal.css">
 
 	<!-- Fuente Open Sans -->
 	<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'> -->
 	<!-- Script de cofiguraciones generales -->
-	<script src="my_assets/js/config.js"></script>
+	<script src="//cetec1.net/lms/my_assets/js/config.js"></script>
 
 </head>
 
@@ -44,8 +44,8 @@
 			<div class="col-md-12 col-sm-12 col-xs-12">
 
 				<!-- Boton Imprimir -->
-				<div class="no-print col-md-1 col-md-offset-11 col-sm-1 col-sm-offset-11 col-xs-12 text-right">
-					<button id="btnImprimir" type="button" class="btn btn-default no-print" aria-label="Imprimir">
+				<div id="filaBtnImprimir" class="no-print col-md-2 col-md-offset-10 col-sm-2 col-sm-offset-10 col-xs-12 text-right">
+					<button id="btnImprimir" type="button" class="btn btn-success no-print" aria-label="Imprimir">
 						<span class="glyphicon glyphicon-print" aria-hidden="true"> <span>Imprimir</span></span>
 					</button>
 				</div>
@@ -55,16 +55,61 @@
 
 				<p>En estos casos, es habitual que si la página web requiere JavaScript para su correcto funcionamiento, se incluya un mensaje de aviso  al usuario indicándole que debería activar JavaScript para disfrutar completamente de la página. El siguiente ejemplo muestra una página web basada en JavaScript cuando se accede con JavaScript activado y cuando se accede con JavaScript completamente desactivado.</p>
 
-				<img class="img-thumbnail center-block img-responsive" src="my_assets/imagenes/1.5-1.png" alt="Figura 1.1 Imágen de twitter.com con JavaScript activado" />
+
+				<!-- *** G A L E R I A *** -->
+
+				<!-- *** SCREEN-ONLY *** -->
+				<center class="screen-only">
+
+					<!-- Imágen 1 -->
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="//cetec1.net/lms/my_assets/imagenes/1.5-1.png" title="Figura 1.5-1 Imágen de twitter.com con JavaScript activado">
+						<button type="button" class="btn btn-warning btn-lg">
+							<span class="glyphicon glyphicon-picture" aria-hidden="true"></span> Ver Imágenes
+						</button>
+					</a>
+
+				</center>
+
+				<!-- *** INVISIBLE *** -->
+				<span class="invisible">
+
+					<!-- Imágen 2 -->
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="//cetec1.net/lms/my_assets/imagenes/1.5-2.png" title="Figura 1.5-2 Imágen de twitter.com con JavaScript desactivado"></a>
+
+				</span><!--/Invisible -->
+
+
+				<!-- *** PRINT-ONLY *** -->
+				<span class="print-only">
+
+					<!-- Imágen 1.5-1 -->
+					<img class="img-thumbnail center-block img-responsive" src="//cetec1.net/lms/my_assets/imagenes/1.5-1.png" alt="Figura 1.5-1 Imágen de twitter.com con JavaScript activado" />
+					<p class="text-center text-muted">
+						Figura 1.5-1 Mensaje mostrado con <code>"alert()"</code> en Google Chrome
+					</p>
+
+					<!-- Imágen 1.5-2 -->
+					<img class="img-thumbnail center-block img-responsive" src="//cetec1.net/lms/my_assets/imagenes/1.5-2.png" alt="Figura 1.5-2 Imágen de twitter.com con JavaScript desactivado" />
+					<p class="text-center text-muted">
+						Figura 1.5-2 Mensaje mostrado con <code>"alert()"</code> en Mozilla Firefox
+					</p>
+
+				</span><!--/Print-Only-->
+				<br><!--/G A L E R I A-->
+
+
+				<!--
+				<img class="img-thumbnail center-block img-responsive" src="//cetec1.net/lms/my_assets/imagenes/1.5-1.png" alt="Figura 1.1 Imágen de twitter.com con JavaScript activado" />
 				<p class="text-center text-muted">
 					Figura 1.1. Imágen de <a href="https://twitter.com" target="blank" >https://twitter.com</a> con JavaScript habilitado
 				</p>
 				<br>
 
-				<img class="img-thumbnail center-block img-responsive" src="my_assets/imagenes/1.5-2.png" alt="Figura 1.2 Imágen de twitter.com con JavaScript desactivado" />
+				<img class="img-thumbnail center-block img-responsive" src="//cetec1.net/lms/my_assets/imagenes/1.5-2.png" alt="Figura 1.2 Imágen de twitter.com con JavaScript desactivado" />
 				<p class="text-center text-muted">
 					Figura 1.2 Imágen de <a href="https://twitter.com" target="blank" >https://twitter.com</a> con JavaScript deshabilitado
 				</p>
+				-->
 
 				<p>El lenguaje HTML define la etiqueta <code>&lt;noscript&gt;</code> para mostrar un mensaje al usuario cuando su navegador no puede ejecutar JavaScript. El siguiente código muestra un ejemplo del uso de la etiqueta <code>&lt;noscript&gt;</code>:</p>
 				<br>
@@ -78,12 +123,12 @@
 
 				<!-- Bloque de cógio -->
 				<pre>
-&lt;head&gt; ... &lt;/head&gt;
-&lt;body&gt;
-	&lt;noscript&gt;
-		&lt;p&gt;Bienvenido a Mi Sitio&lt;/p&gt;
-		&lt;p&gt;La página que estás viendo requiere para su funcionamiento el uso de JavaScript. Si lo has deshabilitado intencionadamente, por favor vuelve a activarlo.&lt;/p&gt;
-	&lt;/noscript&gt;
+&lt;head&gt; ... &lt;/head&gt;<br>
+&lt;body&gt;<br>
+	&lt;noscript&gt;<br>
+		&lt;p&gt;Bienvenido a Mi Sitio&lt;/p&gt;<br>
+		&lt;p&gt;La página que estás viendo requiere para su funcionamiento el uso de JavaScript. Si lo has deshabilitado intencionadamente, por favor vuelve a activarlo.&lt;/p&gt;<br>
+	&lt;/noscript&gt;<br>
 &lt;body&gt;
 </pre> <!--/Bloque de código-->
 
@@ -117,13 +162,47 @@
 	<!-- *************************** J S *************************** -->
 
 	<!-- jQuery -->
-	<script src="my_assets/jquery/jquery-1.11.1.min.js"></script>
+	<script src="//cetec1.net/lms/my_assets/jquery/jquery-1.11.1.min.js"></script>
 
 	<!-- jQuery UI-->
 	<script src="jquery/jquery-ui/js/jquery-ui.js"></script>
 
 	<!-- Bootstrap -->
-	<script src="my_assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="//cetec1.net/lms/my_assets/bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- *** fancyBox *** -->
+	<!-- Add mousewheel plugin (this is optional) -->
+	<script type="text/javascript" src="//cetec1.net/lms/my_assets/jquery/jqPlugins/fancyBox_2.1.5/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+	<!-- Add fancyBox -->
+	<link rel="stylesheet" href="//cetec1.net/lms/my_assets/jquery/jqPlugins/fancyBox_2.1.5/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+	<script type="text/javascript" src="//cetec1.net/lms/my_assets/jquery/jqPlugins/fancyBox_2.1.5/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+	<!-- Optionally add helpers - button, thumbnail and/or media -->
+	<link rel="stylesheet" href="//cetec1.net/lms/my_assets/jquery/jqPlugins/fancyBox_2.1.5/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+	<script type="text/javascript" src="//cetec1.net/lms/my_assets/jquery/jqPlugins/fancyBox_2.1.5/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+	<script type="text/javascript" src="//cetec1.net/lms/my_assets/jquery/jqPlugins/fancyBox_2.1.5/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+	<link rel="stylesheet" href="//cetec1.net/lms/my_assets/jquery/jqPlugins/fancyBox_2.1.5/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+	<script type="text/javascript" src="//cetec1.net/lms/my_assets/jquery/jqPlugins/fancyBox_2.1.5/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+	<style media="screen">
+		.fancybox-skin{
+			padding:0 !important;
+			margin:0;
+		}
+		.fancybox-title-over-wrap{
+			width: 100%;
+		}
+		.fancybox-wrap, .fancybox-opened .fancybox-skin{
+			/*box-shadow: none !important;*/
+			box-shadow: 4px 5px 3px rgba(0, 0, 0, 0.85);
+		}
+
+	</style>
+
+	<!-- Script de configuración de la galeria fancyBox -->
+	<script src="//cetec1.net/lms/my_assets/js/fancyBox_myGallery.config.js"></script>
 
 </body>
 </html>

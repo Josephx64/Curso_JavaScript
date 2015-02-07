@@ -178,7 +178,7 @@ pre{
 }
 
 #btnImprimir{
-	border: none;
+	/*border: none;*/
 }
 
 button >span >span {
@@ -187,10 +187,40 @@ button >span >span {
 
 .btn-default:focus, .btn-default:active, .btn-default.active, .open>.dropdown-toggle.btn-default {
 	border: none;
+	margin-top: 5px;
 }
 
 .print-only{
 
+}
+
+#filaBtnImprimir{
+	margin-top: 5px;
+}
+
+.btn-success {
+	color: #5cb85c;
+	background-color: #fff;
+	border: 2px solid  #5cb85c;
+
+	/*color: #fff;
+	background-color: #5cb85c;
+	border-color: #4cae4c;*/
+}
+.btn-success:hover {
+	border: 2px solid transparent;
+	background-color: #5cb85c;
+}
+
+.btn-warning {
+	color: #F0AD4E;
+	background-color: #fff;
+	border: 2px solid  #F0AD4E;
+}
+
+.btn-warning:hover {
+	border: 2px solid transparent;
+	background-color: #F0AD4E;
 }
 
 /**************************************************************************/
