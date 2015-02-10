@@ -59,29 +59,30 @@
 					A continuación, se muestra un primer script sencillo pero completo:
 				</p>
 
-				<!-- Boton Copiar -->
-				<!-- <div id="copy-button" data-clipboard-text="Copy Me!" title="Click to copy me." data-clipboard-target="elCodigo">
-					<a href="#" class="btn-clipboard">Copiar</a>
-				</div> -->
 
-				<button id="copy-button" data-clipboard-target="bloqueCod1" data-clipboard-text="Copy Me!" title="Click to copy me.">Copy to Clipboard</button>
+
+				<!-- Boton Copiar -->
+				<button type="button" id="btnCopiar" class="btn btn-lg screen-only" data-toggle="tooltip" data-placement="left" data-clipboard-target="bloqueCod1" data-clipboard-text="Copiar código al portapapeles" title="Copiar código al portapapeles" data-lang="html">
+					<span class="glyphicon glyphicon-copy" aria-hidden="true"></span>
+				</button>
+
 
 
 <pre id="bloqueCod1">
-&lt;!DOCTYPE html&gt;<br>
-&lt;html lang="es"&gt;<br>
-&lt;head&gt;<br>
-	&lt;meta charset="UTF-8"&gt;<br>
-	&lt;title&gt;El primer script&lt;/title&gt;<br>
-	&lt;script type="text/javascript"&gt;<br>
-		alert("Hola Mundo!");<br>
-	&lt;/script&gt;<br>
-&lt;/head&gt;<br>
+&lt;!DOCTYPE html&gt; &NewLine;
+&lt;html lang="es"&gt; &NewLine;
+&lt;head&gt; &NewLine;
+	&lt;meta charset="UTF-8"&gt; &NewLine;
+	&lt;title&gt;El primer script&lt;/title&gt; &NewLine;
+	&lt;script type="text/javascript"&gt; &NewLine;
+		alert("Hola Mundo!"); &NewLine;
+	&lt;/script&gt; &NewLine;
+&lt;/head&gt; &NewLine;
 
-&lt;body&gt;<br>
-	&lt;p&gt;Esta página contiene el primer script&lt;/p&gt;<br>
-&lt;/body&gt;<br>
-&lt;/html&gt;<br>
+&lt;body&gt; &NewLine;
+	&lt;p&gt;Esta página contiene el primer script&lt;/p&gt; &NewLine;
+&lt;/body&gt; &NewLine;
+&lt;/html&gt; &NewLine;
 </pre>
 
 			<p>
@@ -116,6 +117,27 @@
 				</button>
 			</a>
 			</center>
+
+
+			<!-- Small modal -->
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Small modal</button>
+
+			<!-- Modal -->
+			<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-sm">
+					<div class="modal-content">
+
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+						</div>
+						<div class="modal-body">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint assumenda quas earum, nam quod quidem sit, cupiditate libero maiores modi tempore quaerat perspiciatis. Vitae accusantium, aperiam porro at, labore nostrum?
+						</div>
+					</div>
+				</div>
+			</div>
+
 
 		<!-- *** INVISIBLE *** -->
 		<span class="invisible">
@@ -189,6 +211,18 @@
 	<!-- <script src="//cetec1.net/lms/my_assets/jquery/jquery-1.11.1.min.js"></script> -->
 	<!-- <script src="../../../../main/inc/lib/javascript/jquery.min.js"></script> -->
 	<script src="//cetec1.net/lms/campus_martinez/main/inc/lib/javascript/jquery.min.js"></script>
+	<!-- jQuery -->
+	<script src="//cetec1.net/lms/my_assets/jquery/jquery-1.11.1.min.js"></script>
+	<script>var $j = jQuery.noConflict(true);</script>
+
+	<!-- Ejemplo de codigo con ambas veriones de jQuery
+	<script>
+		$(document).ready(function(){
+		console.log($().jquery); //  v1.7.2 (versión de Chamillo)
+		console.log($j().jquery); // v1.11.1
+		});
+	</script>
+	-->
 
 	<!-- zClip -->
 	<script type="text/javascript" src="//cetec1.net/lms/my_assets/jquery/jqPlugins/zeroclipboard/dist/ZeroClipboard.min.js"></script>
@@ -197,7 +231,7 @@
 	<!-- <script src="jquery/jquery-ui/js/jquery-ui.js"></script> -->
 
 	<!-- Bootstrap -->
-	<script src="//cetec1.net/lms/my_assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="//cetec1.net/lms/my_assets/bootstrap/js/bootstrap.js"></script>
 
 	<!-- *** fancyBox *** -->
 	<!-- Add mousewheel plugin (this is optional) -->
