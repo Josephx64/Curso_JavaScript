@@ -18,7 +18,7 @@ client.on( "ready", function( readyEvent ) {
         //event.target.style.display = "none";
         event.target.style.display = "html";
         //alert("Texto copiado al portapapeles: " + event.data["text/html"] );
-        alert("Código copiado al portapapeles");
+        //alert("Código copiado al portapapeles");
       } );
 
 } );
