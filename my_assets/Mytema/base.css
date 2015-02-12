@@ -3594,13 +3594,16 @@ form .formw .freeze {
   background:url("../img/icon_completed_section.png")no-repeat 280px center #1abc9c;
   padding-right: 1.5em;
 }
+
+/*Capitulo*/
 .scorm_item_section{
   background: #1abc9c; /* Old browsers */
   color: #FFFFFF;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   font-size: 14px;
   font-weight: bold;
+  border-radius: 20px;
 }
 .scorm_item_section .scorm_section_level_0{
   padding-left: .5em;
@@ -5325,9 +5328,15 @@ img {
     max-width: 100%;
     vertical-align: middle;
     border: none;
+}
+
+ul.nav.pull-right > li > a > img{
     border-radius: 100%;
 }
 
+#author_image #author_icon img{
+    border-radius: 100%;
+}
 
 .scorm_item_normal .scorm_item_level_1 > a{
     text-decoration: none;

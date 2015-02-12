@@ -20,18 +20,42 @@
 
 	<!-- *************************** C S S *************************** -->
 	<!-- Bootstrap -->
-	<link rel="stylesheet" href="//cetec1.net/lms/my_assets/bootstrap/css3/bootstrap.min.css">
+	<link rel="stylesheet" href="http://cetec1.net/lms/my_assets/bootstrap/css3/bootstrap.min.css">
 
 	<!-- Estilos Generales -->
-	<link rel="stylesheet" href="//cetec1.net/lms/my_assets/css3/principal.css">
+	<link rel="stylesheet" href="http://cetec1.net/lms/my_assets/css3/principal.css">
 
 	<!-- Fuente Open Sans -->
 	<!-- <link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'> -->
 	<!-- Script de cofiguraciones generales -->
-	<script src="//cetec1.net/lms/my_assets/js/config.js"></script>
+	<!--<script src="//cetec1.net/lms/my_assets/js/config.js"></script>-->
 
 	<!-- Remodal (Plugin jQuery para ventanas modales) -->
-	<link rel="stylesheet" href="//cetec1.net/lms/my_assets/jquery/jqPlugins/remodal/dist/jquery.remodal.css">
+	<!--<link rel="stylesheet" href="//cetec1.net/lms/my_assets/jquery/jqPlugins/remodal/dist/jquery.remodal.css">-->
+
+	<!-- Formstone Scroller -->
+	<link href="http://cetec1.net/lms/my_assets/jquery/jqPlugins/scroller-master/jquery.fs.scroller.css" rel="stylesheet" type="text/css" media="all">
+	<script src="http://cetec1.net/lms/my_assets/jquery/jqPlugins/scroller-master/demo.js"></script>
+	<script src="http://cetec1.net/lms/my_assets/jquery/jqPlugins/scroller-master/jquery.fs.scroller.js"></script>
+
+	<!--[DEMO:START-RESOURCES]-->
+
+	<style>
+		.scrollbar { border: 1px solid #eee; width:500px; height: 200px; overflow: auto; margin: 20px 0 0; padding: 10px 20px 10px 20px; }
+		.scrollbar.scroller { padding: 0; }
+		.scrollbar.scroller .scroller-content,
+		.scrollbar.scroller-active .scroller-content { padding: 20px 40px 20px 20px; }
+
+		.scroller p { margin: 0 0 20px; }
+
+		.scrollbar.horizontal { height: 320px; padding: 0; }
+		.wide_load { width: 2400px; overflow: hidden; padding: 20px 0 20px 20px; }
+		.wide_load p { float: left; margin: 0 25px 0 0; width: 450px; }
+
+		.advanced .scroller-handle { background: #900; border: none; border-radius: 0; right: 0; width: 100%; }
+	</style>
+
+
 
 </head>
 
@@ -39,10 +63,8 @@
 
 
 	<!-- Main jumbotron for a primary marketing message or call to action -->
-	<div class="jumbotron" style="margin-bottom:0; background-color: #1abc9c; background-image: url('//cetec1.net/lms/my_assets/imagenes/portada-javascript.jpg');">
-		<div class="container" style="height:150px; padding-top:20px;">
-
-		</div>
+	<div class="jumbotron" style="height:225px; margin-bottom:0; padding-left:20px; background-color: #1abc9c; background-image: url('//cetec1.net/lms/my_assets/imagenes/portada-javascript.jpg');">
+		<h1>Capítulo 2: El primer Script</h1>
 	</div>
 
 
@@ -53,32 +75,42 @@
 		<div class="row">
 
 			<!-- Columna 12 -->
-			<div class="col-md-12 col-sm-12 col-xs-12">
-
-			<br>
-			<div class="row">
-				<span class="glyphicon glyphicon-flag" style="color: #1abc9c; float: left;">
+			<div class="col-md-11 col-sm-11 col-xs-11 col-md-offset-1 col-sm-offset-1 col-xs-offset-1" style="margin: 35px 0px;">
+				<span class="glyphicon glyphicon-flag" style="color: #1abc9c; font-size: 16px;">
 					<span style="color: #777; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;">Creaión de un primer script sencillo pero completo, utilizando el comando alert().</span>
 				</span>
 			</div>
 
-			<br>
-
-
-				<!-- F O O T E R -->
-				<footer id="footer">
-
-					<!--Contenedor del footer-->
-					<div class="container text-center">
-						<h6 class="text-muted">Corporativo CETEC 2014</h6>
-					</div><!--/Contenedor del footer-->
-
-				</footer><!--/Footer-->
-
-
-			</div><!--/Columna 12-->
-
 		</div><!--/Fila de contenido-->
+		<br>
+
+		<!--[DEMO:START-CONTENT]-->
+
+		<div class="scrollbar">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla porta aliquet gravida. Aenean pulvinar blandit orci vel fermentum. Phasellus viverra pulvinar viverra. Quisque et sagittis ante. Nulla sem neque, fermentum at laoreet vel, rhoncus sit amet nisl. Donec consectetur urna ac massa placerat ac pharetra sem mollis. Integer nibh urna, placerat vel placerat in, tempor at nisi. Aenean rutrum, enim sit amet rutrum fermentum, magna justo volutpat massa, lacinia adipiscing nisl magna eget nibh. In auctor, nibh eget faucibus tristique, arcu turpis molestie orci, placerat suscipit diam nibh et erat. Curabitur tempus lectus quis odio ornare porta.</p>
+			<p>Aenean odio libero, eleifend eu luctus quis, accumsan ac risus. Mauris egestas bibendum tortor vel semper. Ut egestas, erat ut rutrum tempus, massa erat commodo arcu, id congue justo odio ac erat. Quisque non purus et nunc consequat scelerisque. Vestibulum vitae tristique dolor. Suspendisse ac quam interdum libero euismod tempus. Sed a ante justo, varius commodo urna.</p>
+			<p>Ut ante felis, malesuada eu eleifend convallis, tempor eget tellus. Vestibulum rhoncus elementum dui a sagittis. Praesent eu nunc vitae massa cursus luctus ac eget massa. Etiam sagittis nibh nisi, vel sagittis felis. Aliquam vulputate mauris id nunc pellentesque at fermentum lacus dapibus. Donec pretium consectetur magna sit amet egestas. Ut dignissim adipiscing purus sit amet lobortis.</p>
+			<p>Curabitur ullamcorper, nisi quis convallis luctus, nunc nisi mollis felis, eu mattis nunc sapien sed sapien. Vestibulum in nisi mauris, mattis sagittis lacus. Pellentesque in sem augue, a blandit augue. Aliquam bibendum diam ac erat imperdiet vestibulum. Vivamus dignissim, quam in feugiat scelerisque, enim risus interdum turpis, in vehicula ante lorem eu erat. Mauris ac turpis luctus libero pulvinar ultricies. Praesent porttitor nulla non risus porta consequat. Nunc vulputate porta nulla non ultrices. Donec et magna eu nisl elementum scelerisque. Curabitur in vehicula dui.</p>
+			<p>Suspendisse eu nibh in libero euismod condimentum eget nec enim. Suspendisse nec ligula nec augue tristique semper sed suscipit erat. Integer et nunc a augue pellentesque fringilla. Nullam leo ligula, mattis id pretium ac, suscipit sed nunc. Duis ac lorem nec velit malesuada tempus hendrerit ut metus. Quisque a lacus vel lectus rhoncus luctus. Aliquam ornare, nunc sit amet porttitor ornare, libero lectus congue enim, vitae tincidunt sapien justo et ligula. Proin vestibulum blandit fringilla. </p>
+			<p>Ut ante felis, malesuada eu eleifend convallis, tempor eget tellus. Vestibulum rhoncus elementum dui a sagittis. Praesent eu nunc vitae massa cursus luctus ac eget massa. Etiam sagittis nibh nisi, vel sagittis felis. Aliquam vulputate mauris id nunc pellentesque at fermentum lacus dapibus. Donec pretium consectetur magna sit amet egestas. Ut dignissim adipiscing purus sit amet lobortis.</p>
+			<p>Curabitur ullamcorper, nisi quis convallis luctus, nunc nisi mollis felis, eu mattis nunc sapien sed sapien. Vestibulum in nisi mauris, mattis sagittis lacus. Pellentesque in sem augue, a blandit augue. Aliquam bibendum diam ac erat imperdiet vestibulum. Vivamus dignissim, quam in feugiat scelerisque, enim risus interdum turpis, in vehicula ante lorem eu erat. Mauris ac turpis luctus libero pulvinar ultricies. Praesent porttitor nulla non risus porta consequat. Nunc vulputate porta nulla non ultrices. Donec et magna eu nisl elementum scelerisque. Curabitur in vehicula dui.</p>
+			<p>Suspendisse eu nibh in libero euismod condimentum eget nec enim. Suspendisse nec ligula nec augue tristique semper sed suscipit erat. Integer et nunc a augue pellentesque fringilla. Nullam leo ligula, mattis id pretium ac, suscipit sed nunc. Duis ac lorem nec velit malesuada tempus hendrerit ut metus. Quisque a lacus vel lectus rhoncus luctus. Aliquam ornare, nunc sit amet porttitor ornare, libero lectus congue enim, vitae tincidunt sapien justo et ligula. Proin vestibulum blandit fringilla. </p>
+		</div>
+
+		<!--[DEMO:END-CONTENT]-->
+		<br>
+
+
+			<!-- F O O T E R -->
+			<footer id="footer">
+
+				<!--Contenedor del footer-->
+				<div class="container text-center">
+					<h6 class="text-muted">Corporativo CETEC 2014</h6>
+				</div><!--/Contenedor del footer-->
+
+			</footer><!--/Footer-->
+
 
 	</div><!--Contenedor del contenido principal-->
 
@@ -88,10 +120,13 @@
 	<!-- jQuery -->
 	<!-- <script src="//cetec1.net/lms/my_assets/jquery/jquery-1.11.1.min.js"></script> -->
 	<!-- <script src="../../../../main/inc/lib/javascript/jquery.min.js"></script> -->
-	<script src="//cetec1.net/lms/campus_martinez/main/inc/lib/javascript/jquery.min.js"></script>
-	<!-- jQuery -->
-	<script src="//cetec1.net/lms/my_assets/jquery/jquery-1.11.1.min.js"></script>
-	<script>var $j = jQuery.noConflict(true);</script>
+	<!--<script src="//cetec1.net/lms/campus_martinez/main/inc/lib/javascript/jquery.min.js"></script>-->
+
+	<!-- jQuery 1.7.2 (Chamilo)-->
+	<!--<script src="//cetec1.net/lms/campus_martinez/main/inc/lib/javascript/jquery.min.js"></script>-->
+	<!-- jQuery 1.11.1-->
+	<script src="http://cetec1.net/lms/my_assets/jquery/jquery-1.11.1.min.js"></script>
+	<!--<script>var $j = jQuery.noConflict(true);</script>-->
 
 	<!-- Ejemplo de codigo con ambas veriones de jQuery
 	<script>
@@ -103,31 +138,33 @@
 	-->
 
 	<!-- zClip -->
-	<script type="text/javascript" src="//cetec1.net/lms/my_assets/jquery/jqPlugins/zeroclipboard/dist/ZeroClipboard.min.js"></script>
-	<script type="text/javascript" src="//cetec1.net/lms/my_assets/js/zClip.config.js"></script>
+	<!--<script type="text/javascript" src="//cetec1.net/lms/my_assets/jquery/jqPlugins/zeroclipboard/dist/ZeroClipboard.min.js"></script>
+	<script type="text/javascript" src="//cetec1.net/lms/my_assets/js/zClip.config.js"></script>-->
 	<!-- jQuery UI-->
 	<!-- <script src="jquery/jquery-ui/js/jquery-ui.js"></script> -->
 
 	<!-- Bootstrap -->
-	<script src="//cetec1.net/lms/my_assets/bootstrap/js/bootstrap.js"></script>
+	<script src="http://cetec1.net/lms/my_assets/bootstrap/js/bootstrap.js"></script>
 
 	<!-- *** fancyBox *** -->
 	<!-- Add mousewheel plugin (this is optional) -->
-	<script type="text/javascript" src="//cetec1.net/lms/my_assets/jquery/jqPlugins/fancyBox_2.1.5/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+	<!--<script type="text/javascript" src="//cetec1.net/lms/my_assets/jquery/jqPlugins/fancyBox_2.1.5/lib/jquery.mousewheel-3.0.6.pack.js"></script>-->
 
 	<!-- Add fancyBox -->
-	<link rel="stylesheet" href="//cetec1.net/lms/my_assets/jquery/jqPlugins/fancyBox_2.1.5/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
-	<script type="text/javascript" src="//cetec1.net/lms/my_assets/jquery/jqPlugins/fancyBox_2.1.5/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+	<!--<link rel="stylesheet" href="//cetec1.net/lms/my_assets/jquery/jqPlugins/fancyBox_2.1.5/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />-->
+	<!--<script type="text/javascript" src="//cetec1.net/lms/my_assets/jquery/jqPlugins/fancyBox_2.1.5/source/jquery.fancybox.pack.js?v=2.1.5"></script>-->
 
 	<!-- Optionally add helpers - button, thumbnail and/or media -->
-	<link rel="stylesheet" href="//cetec1.net/lms/my_assets/jquery/jqPlugins/fancyBox_2.1.5/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
-	<script type="text/javascript" src="//cetec1.net/lms/my_assets/jquery/jqPlugins/fancyBox_2.1.5/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
-	<script type="text/javascript" src="//cetec1.net/lms/my_assets/jquery/jqPlugins/fancyBox_2.1.5/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+	<!--<link rel="stylesheet" href="//cetec1.net/lms/my_assets/jquery/jqPlugins/fancyBox_2.1.5/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />-->
+	<!--<script type="text/javascript" src="//cetec1.net/lms/my_assets/jquery/jqPlugins/fancyBox_2.1.5/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>-->
+	<!--<script type="text/javascript" src="//cetec1.net/lms/my_assets/jquery/jqPlugins/fancyBox_2.1.5/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>-->
 
-	<link rel="stylesheet" href="//cetec1.net/lms/my_assets/jquery/jqPlugins/fancyBox_2.1.5/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
-	<script type="text/javascript" src="//cetec1.net/lms/my_assets/jquery/jqPlugins/fancyBox_2.1.5/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+	<!--<link rel="stylesheet" href="//cetec1.net/lms/my_assets/jquery/jqPlugins/fancyBox_2.1.5/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />-->
+	<!--<script type="text/javascript" src="//cetec1.net/lms/my_assets/jquery/jqPlugins/fancyBox_2.1.5/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>-->
 
+	<!--
 	<style media="screen">
+
 		.fancybox-skin{
 			padding:0 !important;
 			margin:0;
@@ -141,13 +178,76 @@
 		}
 
 	</style>
+-->
 
 	<!-- Script de configuración de la galeria fancyBox -->
-	<script src="//cetec1.net/lms/my_assets/js/fancyBox_myGallery.config.js"></script>
+	<!--<script src="//cetec1.net/lms/my_assets/js/fancyBox_myGallery.config.js"></script>-->
 
 	<!-- Remodal (Plugin jQuery para ventanas modales) -->
-	<script src="//cetec1.net/lms/my_assets/jquery/jqPlugins/remodal/dist/jquery.remodal.js"></script>
-	<script src="//cetec1.net/lms/my_assets/js/remodal.config.js"></script>
+	<!--<script src="//cetec1.net/lms/my_assets/jquery/jqPlugins/remodal/dist/jquery.remodal.js"></script>
+	<script src="//cetec1.net/lms/my_assets/js/remodal.config.js"></script>-->
+
+	<!-- jQuery.scrollbar -->
+	<!--<script src="//cetec1.net/lms/my_assets/jquery/jqPlugins/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.scrollbar-inner').scrollbar();
+		});
+	</script>-->
+
+	<script>
+		$(document).ready(function() {
+			$(window).on("snap", function(e, data) {
+				$(".scrollbar").scroller("reset");
+			});
+
+			$(".scrollbar").scroller();
+
+			// Reset
+			$(".reset_click").on("click", function() {
+				$(".scrollbar_reset .scroller-content").append("<p>Suspendisse eu nibh in libero euismod condimentum eget nec enim. Suspendisse nec ligula nec augue tristique semper sed suscipit erat. Integer et nunc a augue pellentesque fringilla. Nullam leo ligula, mattis id pretium ac, suscipit sed nunc. Duis ac lorem nec velit malesuada tempus hendrerit ut metus. Quisque a lacus vel lectus rhoncus luctus. Aliquam ornare, nunc sit amet porttitor ornare, libero lectus congue enim, vitae tincidunt sapien justo et ligula. Proin vestibulum blandit fringilla.</p>");
+				$(".scrollbar_reset").scroller("reset");
+				return false;
+			});
+
+			// Scroll To Position
+			$(".scroll_top").on("click", function(e) {
+				e.preventDefault();
+				e.stopPropagation();
+				$(".scrollbar_scroll").scroller("scroll", 0);
+			});
+			$(".scroll_mid").on("click", function(e) {
+				e.preventDefault();
+				e.stopPropagation();
+				$(".scrollbar_scroll").scroller("scroll", 200);
+			});
+			$(".scroll_target").on("click", function(e) {
+				e.preventDefault();
+				e.stopPropagation();
+				$(".demo .scrollbar_scroll").scroller("scroll", $(this).attr("href"));
+			});
+			$(".scroll_animate").on("click", function(e) {
+				e.preventDefault();
+				e.stopPropagation();
+				$(".scrollbar_scroll").scroller("scroll", 300, 500);
+			});
+
+			$(".demo_tabbed").on("update.tabber", function() {
+				$(".scrollbar").scroller("reset");
+			});
+
+			$(window).one("pronto.load", function() {
+				$(window).off("snap.demo");
+				$(".scrollbar").scroller("destroy");
+				$(".reset_click").off("click");
+				$(".scroll_top").off("click");
+				$(".scroll_mid").off("click");
+				$(".scroll_target").off("click");
+				$(".scroll_animate").off("click");
+				$(".demo_tabbed").off("update.tabber");
+			}).trigger("snap");
+		});
+	</script>
 
 </body>
 </html>
