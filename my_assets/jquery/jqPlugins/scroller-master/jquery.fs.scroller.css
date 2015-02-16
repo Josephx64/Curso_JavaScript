@@ -1,9 +1,9 @@
-/* 
- * Scroller v3.1.2 - 2014-12-08 
- * A jQuery plugin for replacing default browser scrollbars. Part of the Formstone Library. 
- * http://formstone.it/scroller/ 
- * 
- * Copyright 2014 Ben Plum; MIT Licensed 
+/*
+ * Scroller v3.1.2 - 2014-12-08
+ * A jQuery plugin for replacing default browser scrollbars. Part of the Formstone Library.
+ * http://formstone.it/scroller/
+ *
+ * Copyright 2014 Ben Plum; MIT Licensed
  */
 
 
@@ -46,6 +46,21 @@
   background: transparent;
   opacity: 0;
 }
+
+.scroller-content::-moz-scrollbar,
+.scroller-content::-moz-scrollbar-button,
+.scroller-content::-moz-scrollbar-track,
+.scroller-content::-moz-scrollbar-track-piece,
+.scroller-content::-moz-scrollbar-thumb,
+.scroller-content::-moz-scrollbar-corner,
+.scroller-content::-moz-resizer {
+  background: transparent;
+  opacity: 0;
+}
+
+
+
+
 .scroller-bar {
   width: 16px;
   height: 100%;
@@ -53,17 +68,22 @@
   right: 0;
   top: 0;
   z-index: 2;
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-  border-width: 0 0 0 1px;
+  background: transparent;
+  -moz-background: transparent;
+  /*background: rgba(127, 140, 141,0.25);*/
+  /*border: 1px solid #eeeeee;
+  border-width: 0 0 0 1px;*/
   display: none;
 }
 .scroller-track {
   width: 100%;
   height: 100%;
   position: relative;
-  background: #ffffff;
+  /*background: rgba(255, 255, 255,0.1);*/
+  background: transparent;
+  -moz-backgrund: transparent;
   overflow: hidden;
+  padding:4px 0px 4px 0;
 }
 .scroller-handle {
   width: 10px;
@@ -72,10 +92,12 @@
   top: 0;
   right: 3px;
   z-index: 2;
-  background: #cccccc;
-  border: 1px solid #ffffff;
-  border-radius: 5px;
-  cursor: pointer;
+  background: transparent;
+  background-color: #1abc9c;
+  /*border: 1px solid #ffffff;*/
+  border-radius: 0px;
+  /*cursor: pointer;*/
+  margin: 10px 0px;
 }
 .scroller-horizontal .scroller-content {
   overflow: auto;

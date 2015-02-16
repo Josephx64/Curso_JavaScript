@@ -20,10 +20,10 @@
 
 	<!-- *************************** C S S *************************** -->
 	<!-- Bootstrap -->
-	<link rel="stylesheet" href="http://cetec1.net/lms/my_assets/bootstrap/css3/bootstrap.min.css">
+	<link rel="stylesheet" href="//cetec1.net/lms/my_assets/bootstrap/css3/bootstrap.min.css">
 
 	<!-- Estilos Generales -->
-	<link rel="stylesheet" href="http://cetec1.net/lms/my_assets/css3/principal.css">
+	<link rel="stylesheet" href="//cetec1.net/lms/my_assets/css3/principal.css">
 
 	<!-- Fuente Open Sans -->
 	<!-- <link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'> -->
@@ -34,33 +34,39 @@
 	<!--<link rel="stylesheet" href="//cetec1.net/lms/my_assets/jquery/jqPlugins/remodal/dist/jquery.remodal.css">-->
 
 	<!-- Formstone Scroller -->
-	<link href="http://cetec1.net/lms/my_assets/jquery/jqPlugins/scroller-master/jquery.fs.scroller.css" rel="stylesheet" type="text/css" media="all">
-	<script src="http://cetec1.net/lms/my_assets/jquery/jqPlugins/scroller-master/demo.js"></script>
-	<script src="http://cetec1.net/lms/my_assets/jquery/jqPlugins/scroller-master/jquery.fs.scroller.js"></script>
+	<script src="//cetec1.net/lms/my_assets/jquery/jqPlugins/scroller-master/demo.js"></script>
+	<!-- <script src="//cetec1.net/lms/my_assets/jquery/jqPlugins/scroller-master/modernizr.js"></script>-->
+	<link href="//cetec1.net/lms/my_assets/jquery/jqPlugins/scroller-master/jquery.fs.scroller.css" rel="stylesheet" type="text/css" media="all">
+	<!-- Scroller -->
+	<script src="//cetec1.net/lms/my_assets/jquery/jqPlugins/scroller-master/jquery.fs.scroller.js"></script>
+
+
 
 	<!--[DEMO:START-RESOURCES]-->
 
 	<style>
 		.scrollbar { border: 1px solid #eee; width:500px; height: 200px; overflow: auto; margin: 20px 0 0; padding: 10px 20px 10px 20px; }
 		.scrollbar.scroller { padding: 0; }
-		.scrollbar.scroller .scroller-content,
-		.scrollbar.scroller-active .scroller-content { padding: 20px 40px 20px 20px; }
+		.scrollbar.scroller .scroller-content, .scrollbar.scroller-active .scroller-content { padding: 20px 40px 20px 20px; }
 
 		.scroller p { margin: 0 0 20px; }
 
-		.scrollbar.horizontal { height: 320px; padding: 0; }
+		/*.scrollbar.horizontal { height: 320px; padding: 0; }
 		.wide_load { width: 2400px; overflow: hidden; padding: 20px 0 20px 20px; }
-		.wide_load p { float: left; margin: 0 25px 0 0; width: 450px; }
+		.wide_load p { float: left; margin: 0 25px 0 0; width: 450px; }*/
 
-		.advanced .scroller-handle { background: #900; border: none; border-radius: 0; right: 0; width: 100%; }
+		/*.advanced*/ .scroller-handle { background: #900; border: none; border-radius: 0; right: 0; width: 100%; }
 	</style>
 
-
+	<script>
+		$(document).ready(function() {
+			$(".scrollbar").scroller();
+		});
+	</script>
 
 </head>
 
 <body style="margin:0">
-
 
 	<!-- Main jumbotron for a primary marketing message or call to action -->
 	<div class="jumbotron" style="height:225px; margin-bottom:0; padding-left:20px; background-color: #1abc9c; background-image: url('//cetec1.net/lms/my_assets/imagenes/portada-javascript.jpg');">
@@ -125,7 +131,7 @@
 	<!-- jQuery 1.7.2 (Chamilo)-->
 	<!--<script src="//cetec1.net/lms/campus_martinez/main/inc/lib/javascript/jquery.min.js"></script>-->
 	<!-- jQuery 1.11.1-->
-	<script src="http://cetec1.net/lms/my_assets/jquery/jquery-1.11.1.min.js"></script>
+	<!-- <script src="//cetec1.net/lms/my_assets/jquery/jquery-1.11.1.min.js"></script> -->
 	<!--<script>var $j = jQuery.noConflict(true);</script>-->
 
 	<!-- Ejemplo de codigo con ambas veriones de jQuery
@@ -144,7 +150,7 @@
 	<!-- <script src="jquery/jquery-ui/js/jquery-ui.js"></script> -->
 
 	<!-- Bootstrap -->
-	<script src="http://cetec1.net/lms/my_assets/bootstrap/js/bootstrap.js"></script>
+	<!-- <script src="http://cetec1.net/lms/my_assets/bootstrap/js/bootstrap.js"></script> -->
 
 	<!-- *** fancyBox *** -->
 	<!-- Add mousewheel plugin (this is optional) -->
@@ -195,6 +201,12 @@
 		});
 	</script>-->
 
+	<!-- Scroller -->
+	<!-- <script src="//cetec1.net/lms/my_assets/jquery/jqPlugins/scroller-master/site.js"></script> -->
+	<!-- <script src="//cetec1.net/lms/my_assets/jquery/jqPlugins/scroller-master/jquery.fs.scroller.js"></script> -->
+
+
+	<!--
 	<script>
 		$(document).ready(function() {
 			$(window).on("snap", function(e, data) {
@@ -248,6 +260,8 @@
 			}).trigger("snap");
 		});
 	</script>
+-->
+
 
 </body>
 </html>
