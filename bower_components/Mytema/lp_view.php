@@ -462,7 +462,8 @@ if ($is_allowed_to_edit) {
         <script>
             $j(document).ready(function() {
 
-                $j("#toc_id").mCustomScrollbar({
+                $j("#toc_id").mCustomScrollbar(
+                    {
                     autoHideScrollbar:false,
                     scrollButtons:{ enable:false },
                     /*set_width:350,
