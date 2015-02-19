@@ -435,16 +435,16 @@ if ($is_allowed_to_edit) {
         <!-- mCustomScrollbar Plugin -->
         <link rel="stylesheet" href="//cetec1.net/lms/bower_components/malihu-custom-scrollbar-plugin-bower/jquery.mCustomScrollbar.css">
         <style>
-        #toc_id{/*margin:40px; width:860px; height:500px; padding:20px 0px 20px 20px;*/ float: left; overflow:auto; background: rgba(22, 160, 133,1.0);}
+        .cotenido{/*margin:40px; width:860px; height:500px; padding:20px 0px 20px 20px;*/ float: left; overflow:auto; background: rgba(22, 160, 133,1.0);}
         </style>
 
         <!-- * * * JQUERY * * * -->
         <!-- jQuery 1.7.2 (Chamilo)-->
-        <!--<script src="//cetec1.net/lms/campus_martinez/main/inc/lib/javascript/jquery.min.js"></script>-->
+        <script src="//cetec1.net/lms/campus_martinez/main/inc/lib/javascript/jquery.min.js"></script>
 
         <!-- jQuery 1.11.1-->
-        <script src="//cetec1.net/lms/bower_components/jquery/v1.11.1/jquery-1.11.1.min.js"></script>
-        <script>var $j = jQuery.noConflict(true);</script>
+        <!--<script src="//cetec1.net/lms/bower_components/jquery/v1.11.1/jquery-1.11.1.min.js"></script>
+        <script>var $j = jQuery.noConflict(true);</script>-->
 
         <!-- Ejemplo de codigo con ambas veriones de jQuery
         <script>
@@ -456,13 +456,13 @@ if ($is_allowed_to_edit) {
         -->
 
         <!-- mCustomScrollbar Plugin -->
-        <script src="//cetec1.net/lms/bower_components/malihu-custom-scrollbar-plugin-bower/jquery.mCustomScrollbar.js">    </script>
+        <script src="//cetec1.net/lms/bower_components/malihu-custom-scrollbar-plugin-bower/jquery.mCustomScrollbar.concat.min.js">    </script>
 
         <!-- mCustomScrollbar settings script -->
         <script>
-            $j(document).ready(function() {
+            $(document).ready(function() {
 
-                $j("#toc_id").mCustomScrollbar(
+                $(".cotenido").mCustomScrollbar(
                     {
                     autoHideScrollbar:false,
                     scrollButtons:{ enable:false },
@@ -479,7 +479,7 @@ if ($is_allowed_to_edit) {
 
 
         <!-- TOC layout -->
-        <div id="toc_id" name="toc_name" style="overflow: auto; padding:0;margin-top:0px;width:100%;float:left">
+        <div id="toc_id" name="toc_name" class="cotenido" style="overflow:auto; padding:0;margin-top:0px;width:100%;float:left">
             <div id="learning_path_toc">
                 <?php echo $_SESSION['oLP']->get_html_toc($get_toc_list); ?>
             </div>
