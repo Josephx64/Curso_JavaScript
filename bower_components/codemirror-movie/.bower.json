@@ -1,0 +1,14 @@
+{
+  "name": "codemirror-movie",
+  "homepage": "https://github.com/sergeche/codemirror-movie",
+  "_release": "c4ba8cda95",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "c4ba8cda95bef3f3bc9eeb44b0c32fef43ebe8ec"
+  },
+  "_source": "https://github.com/sergeche/codemirror-movie.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/sergeche/codemirror-movie.git",
+  "_direct": true
+}
