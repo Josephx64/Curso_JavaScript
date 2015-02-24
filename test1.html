@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS & OOP</title>
+    <!--<script src="bower_components\jquery\v1.11.1\jquery.min.js"></script>-->
+</head>
+<body>
+
+    <script>
+
+        //Prototipo
+        function Gladiator(name. attack, defence, hitPoints){
+            
+        }
+
+        //Función constructora
+        function gladiatorMaker(name, attack, defence, hitPoints){
+            return{
+                name: name,
+                attack: attack,
+                defence: defence,
+                hitPoints: hitPoints,
+                sayName: function(){
+                    console.log("My name is " + this.name);
+                }
+            }
+        }
+
+        var j = new gladiatorMaker("Joseph", 10, 12, 10);
+        var v = new gladiatorMaker("Viry", 12, 24, 20);
+
+        // var j = {name:"Joseph", attack:10, defence:12, hitPoints:10, sayName:function(){console.log("My name is " + this.name); } }
+        // var v = {name:"Viry", attack:12, defence:12, hitPoints:20, sayName:function(){console.log("My name is " + this.name); } }
+    </script>
+
+</body>
+</html>

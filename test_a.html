@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ACCESO DIRECTO A LOS NODOS</title>
+    <style>
+        #contenedor{ width:85%; margin: auto;}
+        .text{ color: #2c3e50; }
+        #parrafo1{ color: #7f8c8d; }
+    </style>
+</head>
+
+<body>
+
+    <div id="contenedor">
+        <h1>Tempore voluptate, ipsum perferendis eos</h1>
+        <p id="parrafo1" class="texto" name="normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore voluptate, ipsum perferendis eos molestias eum necessitatibus doloribus fugit quas, ratione dolorem reprehenderit magni nihil quod, assumenda voluptatibus sequi quis perspiciatis!</p>
+        <p id="parrafo2" class="texto" name="especial">Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</p>
+        <p id="parrafo3" name="especial">Sed adipiscing ornare risus. Morbi est est, blandit sit amet, sagittis vel, euismod vel, velit. Pellentesque egestas sem. Suspendisse commodo ullamcorper magna.</p>
+        <a href="#" class="texto">Link de jemplo</a>
+        <br></br>
+
+        <script>
+            //Crear un nodo de tipo Element
+            var parrafo = document.createElement("p");
+            parrafo.setAttribute("id", "px");
+            //Crear un nodo de tipo texto
+            var contenido = document.createTextNode("Hola, mundo!");
+            //Agregar el nodo Text como nodo hijo al nodo Element
+            parrafo.appendChild(contenido);
+            //Agregar el nodo Element como nodo hijo al documento
+            var contenedor = document.getElementById("contenedor");
+            contenedor.appendChild(parrafo);
+        </script>
+
+        <script>
+            //Remover un nodo (parrafo)
+            parrafo.parentNode.removeChild(parrafo);
+            // var px = document.getElementById("px");
+            // parrafo.parentNode.removeChild(px);
+        </script>
+
+        <!--
+        <script>
+            //Crear un nodo de tipo "Element"
+            var parrafo = document.createElement("p");
+            //Crear un nodo de tipo "Text"
+            var contenido = document.createTextNode("Hola, mundo!");
+
+            //Agregar el nodo de tipo text como nodo hijo del nodo element
+            parrafo.appendChild(contenido);
+            //Agregar el nodo de tipo element como nodo hijo de la página
+            var contenedor = document.getElementById("contenedor");
+            contenedor.appendChild(parrafo);
+        </script>
+        -->
+
+        <!--
+        <script>
+            //Recorrer todos los parrafos con nombre "especial"
+            var parrafoEspecial = document.getElementsByName("especial");
+            for(var i=0; i<parrafoEspecial.length; i++){
+                var pEsp = parrafoEspecial[i];
+                document.write(pEsp.innerHTML + "<br></br>");
+            }
+        </script>
+        -->
+
+        <!--
+        <script>
+            //Recorrer todos los parrafos
+            var parrafos = document.getElementsByTagName("p");
+            for(var i=0; i<parrafos.length; i++){
+                var parrafo = parrafos[i];
+                // document.write(parrafo.innerHTML + "<br>");
+                document.write(parrafo.innerHTML + "<br>");
+            }
+        </script>
+        -->
+
+    </div><br>
+
+</body>
+
+</html>
