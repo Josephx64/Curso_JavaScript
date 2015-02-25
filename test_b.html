@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ACCESO DIRECTO A LOS NODOS</title>
+    <style>
+        #contenedor{ width:85%; margin: auto;}
+        .text{ color: #2c3e50; }
+        #parrafo1{ color: #7f8c8d; }
+    </style>
+</head>
+
+<body>
+
+    <div id="contenedor">
+        <h1>Tempore voluptate, ipsum perferendis eos</h1>
+        <p id="parrafo1" class="texto" name="normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore voluptate, ipsum perferendis eos molestias eum necessitatibus doloribus fugit quas, ratione dolorem reprehenderit magni nihil quod, assumenda voluptatibus sequi quis perspiciatis!</p>
+        <p id="parrafo2" class="texto" name="especial">Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</p>
+        <p id="parrafo3" name="especial">Sed adipiscing ornare risus. Morbi est est, blandit sit amet, sagittis vel, euismod vel, velit. Pellentesque egestas sem. Suspendisse commodo ullamcorper magna.</p>
+        <a href="#" class="texto">Link de jemplo</a>
+        <br></br>
+    </div><br>
+
+    <script>
+
+        //Recorrer todos los parrafos
+        /*var parrafos = document.getElementsByTagName("p");
+        for(var i=0; i<parrafos.length; i++){
+            var parrafo = parrafos[i];
+            console.log(parrafo);
+        }*/
+
+        //Recorrer todos los parrafos con nombre "especial"
+        /*var parrafosEspecial = document.getElementsByName("especial");
+        for(var i=0; i<parrafosEspecial.length; i++){
+            var parrafoEsp = parrafosEspecial[i];
+            console.log(parrafoEsp);
+        }*/
+
+        //Crear un nodo de tipo "Element" (<p>)
+        /*var elemento = document.createElement("p");*/
+
+        //Crear un nodo de tipo "Text"
+        /*var contenido = document.createTextNode("Probando ando...");*/
+
+        //Agregar el nodo de tipo text como nodo hijo del nodo element
+        /*elemento.appendChild(contenido);*/
+
+        //Agregar el nodo de tipo element (<p>) como nodo hijo de la página
+        /*var contenedor = document.getElementById("contenedor");*/
+        /*contenedor.appendChild(elemento);*/
+
+        //Agregar el atributo ID="px" al parrafo recien creado
+        /*elemento.setAttribute("id","px");*/
+
+        //Remover el nodo (parrafo) con el ID="px"
+        /*var px = document.getElementById("px");
+        px.parentNode.removeChild(px);*/
+
+    </script>
+
+</body>
+
+</html>

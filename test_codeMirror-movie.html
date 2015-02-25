@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+    <title>CodeMirror Movie</title>
+
+    <!-- ***** C S S ****** -->
+
+    <!-- codemirror -->
+    <link rel="stylesheet" href="bower_components/codemirror/lib/codemirror.css" />
+
+    <!-- codemirror-movie -->
+    <link rel="stylesheet" href="bower_components/codemirror-movie/dist/cm-movie.css" />
+
+    <!-- codeMirror Addons -->
+    <!-- <link rel="stylesheet" href="bower_components/codemirror/addon/hint/show-hint.css" />
+    <link rel="stylesheet" href="bower_components/codemirror/addon/scroll/simplescrollbars.css" />
+    <link rel="stylesheet" href="bower_components/codemirror/addon/lint/lint.css" /> -->
+
+    <!-- ***** J S ****** -->
+
+    <!-- codemirror -->
+    <script src="bower_components/codemirror/lib/codemirror.js"></script>
+
+    <!-- codemirror-movie -->
+    <script src="bower_components/codemirror-movie/dist/cm-movie-full.js"></script>
+
+    <!-- codeMirror Addons -->
+    <!-- // <script src="bower_components/codemirror/addon/hint/show-hint.js"></script>
+    // <script src="bower_components/codemirror/addon/hint/xml-hint.js"></script>
+    // <script src="bower_components/codemirror/addon/hint/html-hint.js"></script>
+    // <script src="bower_components/codemirror/addon/hint/show-hint.js"></script>
+    // <script src="bower_components/codemirror/addon/hint/anyword-hint.js"></script>
+    // <script src="bower_components/codemirror/addon/hint/html-hint.js"></script>
+    // <script src="bower_components/codemirror/addon/hint/css-hint.js"></script>
+    // <script src="bower_components/codemirror/addon/hint/javascript-hint.js"></script>
+    // <script src="bower_components/codemirror/addon/selection/active-line.js"></script>
+    // <script src="bower_components/codemirror/addon/selection/mark-selection.js"></script>
+    // <script src="bower_components/codemirror/addon/selection/selection-pointer.js"></script>
+    // <script src="bower_components/codemirror/addon/scroll/simplescrollbars.js"></script>
+    // <script src="bower_components/codemirror/addon/lint/lint.js"></script>
+    // <script src="bower_components/codemirror/addon/lint/javascript-lint.js"></script>
+    // <script src="bower_components/codemirror/addon/lint/json-lint.js"></script>
+    // <script src="bower_components/codemirror/addon/lint/css-lint.js"></script> -->
+
+    <!-- Modos (modes) -->
+    <script src="bower_components/codemirror/mode/htmlembedded/htmlembedded.js"></script>
+    <script src="bower_components/codemirror/mode/css/css.js"></script>
+    <script src="bower_components/codemirror/mode/javascript/javascript.js"></script>
+    <script src="bower_components/codemirror/mode/xml/xml.js"></script>
+    <script src="bower_components/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+
+    <!-- codeMirror theme -->
+    <!-- <link rel="stylesheet" href="bower_components/codemirror/theme/monokai.css">
+    <link rel="stylesheet" href="bower_components/codemirror/theme/vibrant-ink.css">
+    <link rel="stylesheet" href="bower_components/codemirror/theme/twilight.css">
+    <link rel="stylesheet" href="bower_components/codemirror/theme/eclipse.css">
+    <link rel="stylesheet" href="bower_components/codemirror/theme/3024-day.css">
+    <link rel="stylesheet" href="bower_components/codemirror/theme/elegant.css">
+    <link rel="stylesheet" href="bower_components/codemirror/theme/paraiso-light.css">
+    <link rel="stylesheet" href="bower_components/codemirror/theme/xq-light.css">-->
+
+
+    <style type="text/css">
+        .CodeMirror {
+            font-size: 16px;
+            /* background: #f5f5f5; */
+            border: 1px solid #e3e3e3;
+            min-height: 200px;
+            padding-bottom:5px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>1.1 la función alert()</h1>
+
+    <!--
+    In textarea, separate initial editor content and movie scenario
+    with @@@ separator.
+    Use | character to indicate initial caret position
+    -->
+    <textarea id="code" name="code">
+&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+        |
+&lt;/body&gt;
+&lt;/html&gt;
+
+@@@
+
+#1) ************************
+wait: 250 ::: &lt;b&gt;1)&lt;/b&gt; Colocate dentro de la cabecera del documento HTML (dentro de las etiquetas head).
+wait: 3500
+
+run: {command: "goLineUp", times: 3}
+wait: 500
+
+run: goLineEnd
+wait: 2000
+
+run: newlineAndIndent
+
+
+#2) ************************
+wait: 2000 ::: &lt;b&gt;2)&lt;/b&gt; Abre y cierra la etiqueta script
+wait: 2000
+
+type: &lt;script&gt;
+wait: 200
+type: &lt;/script&gt;
+
+
+#3) ************************
+wait: 2000 ::: &lt;b&gt;3)&lt;/b&gt; Escribe la función alert()
+wait: 2000
+
+run: {command: "goWordLeft", times: 1}
+run: {command: "goCharLeft", times: 2}
+wait: 100
+
+#run: {command: "goLineDown", times: 1}
+run: newlineAndIndent
+run: newlineAndIndent
+run: {command: "goLineUp", times: 1}
+run: insertTab
+wait: 500
+
+type: alert();
+wait: 3000
+
+
+#4) ************************
+wait: 2000 ::: &lt;b&gt;4)&lt;/b&gt; Escribe el mensaje
+wait: 1000
+
+tooltip: { text: "El mensaje que deseamos mostrar debe ir dentro de los paréntesis ( )", pos: "5:8", wait: 4000 }
+
+run: {command: "goCharLeft", times: 2}
+
+wait: 900
+tooltip: { text: "A menos que el mensaje sea el valor de una variable o un valor numérico el mensaje debe estar entre comillas \"  \" ", pos: "5:8", wait: 8000 }
+
+type: "Hola mundo!"
+
+#run: {command: "goWordLeft", times: 2} ::: Move word left
+#run: {command: "goWordUp", times: 3}
+
+</textarea>
+
+<!--
+wait: 250 ::: 1) “Escribe un mensaje untilizando la función alert()”
+wait: 5000
+
+type: alert("Hola mundo!");
+wait: 3000
+
+tooltip: { text: "Alert() mostrará el mensaje \"Hola mundo!\" ", pos: "7:16", wait: 4000 }
+
+wait: 600
+
+# Perform CodeMirror pre-defined command
+#run: {command: "goWordLeft", times: 2} ::: Move word left
+
+-->
+
+    <button style="font-size: 2em;margin: 10px auto;display: block;">Play</button>
+
+    <!-- // <script>
+    //     var myCodeMirrorEditor = CodeMirror.fromTextArea(document.getElementById("code"), {
+    //         mode: "htmlmixed",
+    //         styleActiveLine: true,
+    //         lineNumbers: true,
+    //         matchBrackets: true,
+    //         lineWrapping: true,
+    //         extraKeys: {"Ctrl-Space": "autocomplete"},
+    //         //value: document.documentElement.innerHTML,
+    //         hints: true,
+    //         theme: "monokai",
+    //         // scrollbarStyle: "simple",
+    //         gutters: ["CodeMirror-lint-markers"],
+    //         // lint: true,
+    //     });
+    //
+    // </script> -->
+
+    <script>
+
+        var movie = CodeMirror.movie("code");
+
+        // Create simple UI to interact with movie
+        var btn = document.getElementsByTagName('button')[0];
+        btn.onclick = function() {
+            if (movie.state() == 'play') {
+                movie.pause();
+                this.innerHTML = 'Play';
+            } else {
+                movie.play();
+                this.innerHTML = 'Pause';
+            }
+        };
+
+        // Listen to events to change UI state
+        movie.on('stop', function(name) {
+            btn.innerHTML = 'Play';
+        });
+    </script>
+
+</body>
+</html>

@@ -17,11 +17,6 @@
     <link rel="stylesheet" href="bower_components/codemirror/addon/hint/show-hint.css" />
     <link rel="stylesheet" href="bower_components/codemirror/addon/scroll/simplescrollbars.css" />
     <link rel="stylesheet" href="bower_components/codemirror/addon/lint/lint.css" />
-    <link rel="stylesheet" href="">
-    <link rel="stylesheet" href="">
-    <link rel="stylesheet" href="">
-
-
 
     <!-- ***** J S ****** -->
 
@@ -48,12 +43,6 @@
     <script src="bower_components/codemirror/addon/lint/javascript-lint.js"></script>
     <script src="bower_components/codemirror/addon/lint/json-lint.js"></script>
     <script src="bower_components/codemirror/addon/lint/css-lint.js"></script>
-    <script src="https://rawgithub.com/zaach/jsonlint/79b553fb65c192add9066da64043458981b3972b/lib/jsonlint.js"></script>
-    <script src="https://rawgithub.com/stubbornella/csslint/master/release/csslint.js"></script>
-    <script src""></script>
-    <script src""></script>
-    <script src""></script>
-
 
     <!-- Modos (modes) -->
     <script src="bower_components/codemirror/mode/htmlembedded/htmlembedded.js"></script>
@@ -63,13 +52,13 @@
     <script src="bower_components/codemirror/mode/htmlmixed/htmlmixed.js"></script>
 
     <!-- codeMirror theme -->
-    <link rel="stylesheet" href="bower_components/codemirror/theme/monokai.css">
+    <!-- <link rel="stylesheet" href="bower_components/codemirror/theme/monokai.css">
     <link rel="stylesheet" href="bower_components/codemirror/theme/vibrant-ink.css">
     <link rel="stylesheet" href="bower_components/codemirror/theme/twilight.css">
     <link rel="stylesheet" href="bower_components/codemirror/theme/eclipse.css">
     <link rel="stylesheet" href="bower_components/codemirror/theme/3024-day.css">
     <link rel="stylesheet" href="bower_components/codemirror/theme/elegant.css">
-    <link rel="stylesheet" href="bower_components/codemirror/theme/paraiso-light.css">
+    <link rel="stylesheet" href="bower_components/codemirror/theme/paraiso-light.css"> -->
     <link rel="stylesheet" href="bower_components/codemirror/theme/xq-light.css">
 
 
@@ -124,6 +113,7 @@ run: newlineAndIndent
 #2) ************************
 wait: 2000 ::: &lt;b&gt;2)&lt;/b&gt; Abre y cierra la etiqueta script
 wait: 2000
+
 type: &lt;script&gt;
 wait: 200
 type: &lt;/script&gt;
@@ -190,7 +180,7 @@ https://github.com/sergeche/codemirror-movie/blob/master/dist/index.html
 http://codemirror.net/doc/manual.html#styling -->
 
     <button style="font-size: 2em;margin: 10px auto;display: block;">Play</button>
-    <!--
+
     <script>
 
         var movie = CodeMirror.movie('code');
@@ -212,9 +202,10 @@ http://codemirror.net/doc/manual.html#styling -->
             btn.innerHTML = 'Play';
         });
     </script>
-    -->
+
 
     <!-- codemirror instancia -->
+    <!--
     <script>
         /*
         CodeMirror.commands.autocomplete = function(cm) {
@@ -224,7 +215,7 @@ http://codemirror.net/doc/manual.html#styling -->
 
         //var myCodeMirror = CodeMirror.fromTextArea('code');
         var myCodeMirrorEditor = CodeMirror.fromTextArea(document.getElementById("code"), {
-            mode: "javascript",
+            mode: "htmlmixed",
             styleActiveLine: true,
             lineNumbers: true,
             matchBrackets: true,
@@ -240,6 +231,7 @@ http://codemirror.net/doc/manual.html#styling -->
         });
 
     </script>
+    -->
 
 
 </body>
