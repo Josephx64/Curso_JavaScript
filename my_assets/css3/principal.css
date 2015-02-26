@@ -267,13 +267,14 @@ button >span >span {
 	outline-style: none;
 	/*border-color: transparent;*/
 	position: absolute;
-	right:16px;
+	right:320px;/*19px*/
 	margin-top: 1px;
 	border-left-color: 1px solid #ccc;
 	border-bottom-color: 1px solid #ccc;
 	border-top: none;
 	border-right: none;
 	padding:0;
+	z-index:1;
 }
 
 /*#btnCopiar:hover{

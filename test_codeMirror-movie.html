@@ -5,7 +5,7 @@
 <meta charset="utf-8" />
     <title>CodeMirror Movie</title>
 
-    <!-- ***** C S S ****** -->
+    <!-- *************************** C S S *************************** -->
 
     <!-- codemirror -->
     <link rel="stylesheet" href="bower_components/codemirror/lib/codemirror.css" />
@@ -13,12 +13,27 @@
     <!-- codemirror-movie -->
     <link rel="stylesheet" href="bower_components/codemirror-movie/dist/cm-movie.css" />
 
-    <!-- codeMirror Addons -->
-    <!-- <link rel="stylesheet" href="bower_components/codemirror/addon/hint/show-hint.css" />
-    <link rel="stylesheet" href="bower_components/codemirror/addon/scroll/simplescrollbars.css" />
-    <link rel="stylesheet" href="bower_components/codemirror/addon/lint/lint.css" /> -->
+    <!-- mCustomScrollbar Plugin -->
+    <link rel="stylesheet" href="bower_components\malihu-custom-scrollbar-plugin-bower\jquery.mCustomScrollbar.css">
+    <style>
+        .container{
+            margin:40px; width:860px;
+            height:500px;
+            padding:2px 0px 2px 20px;
+            color: #666;
+            background-color: rgba(236, 240, 241,0.5); /*rgba(22, 160, 133,1.0);*/
+            overflow:auto;
+            border: 1px solid #e3e3e3;
+            font-family: 'Lucida Grande',arial,sans-serif;
+            font-size: 14px;
+        }
+    </style>
 
-    <!-- ***** J S ****** -->
+
+    <!-- *************************** J S *************************** -->
+
+    <!-- jQuery -->
+    <script src="bower_components/jquery/v1.11.1/jquery-1.11.1.min.js"></script>
 
     <!-- codemirror -->
     <script src="bower_components/codemirror/lib/codemirror.js"></script>
@@ -26,41 +41,12 @@
     <!-- codemirror-movie -->
     <script src="bower_components/codemirror-movie/dist/cm-movie-full.js"></script>
 
-    <!-- codeMirror Addons -->
-    <!-- // <script src="bower_components/codemirror/addon/hint/show-hint.js"></script>
-    // <script src="bower_components/codemirror/addon/hint/xml-hint.js"></script>
-    // <script src="bower_components/codemirror/addon/hint/html-hint.js"></script>
-    // <script src="bower_components/codemirror/addon/hint/show-hint.js"></script>
-    // <script src="bower_components/codemirror/addon/hint/anyword-hint.js"></script>
-    // <script src="bower_components/codemirror/addon/hint/html-hint.js"></script>
-    // <script src="bower_components/codemirror/addon/hint/css-hint.js"></script>
-    // <script src="bower_components/codemirror/addon/hint/javascript-hint.js"></script>
-    // <script src="bower_components/codemirror/addon/selection/active-line.js"></script>
-    // <script src="bower_components/codemirror/addon/selection/mark-selection.js"></script>
-    // <script src="bower_components/codemirror/addon/selection/selection-pointer.js"></script>
-    // <script src="bower_components/codemirror/addon/scroll/simplescrollbars.js"></script>
-    // <script src="bower_components/codemirror/addon/lint/lint.js"></script>
-    // <script src="bower_components/codemirror/addon/lint/javascript-lint.js"></script>
-    // <script src="bower_components/codemirror/addon/lint/json-lint.js"></script>
-    // <script src="bower_components/codemirror/addon/lint/css-lint.js"></script> -->
-
     <!-- Modos (modes) -->
     <script src="bower_components/codemirror/mode/htmlembedded/htmlembedded.js"></script>
     <script src="bower_components/codemirror/mode/css/css.js"></script>
     <script src="bower_components/codemirror/mode/javascript/javascript.js"></script>
     <script src="bower_components/codemirror/mode/xml/xml.js"></script>
     <script src="bower_components/codemirror/mode/htmlmixed/htmlmixed.js"></script>
-
-    <!-- codeMirror theme -->
-    <!-- <link rel="stylesheet" href="bower_components/codemirror/theme/monokai.css">
-    <link rel="stylesheet" href="bower_components/codemirror/theme/vibrant-ink.css">
-    <link rel="stylesheet" href="bower_components/codemirror/theme/twilight.css">
-    <link rel="stylesheet" href="bower_components/codemirror/theme/eclipse.css">
-    <link rel="stylesheet" href="bower_components/codemirror/theme/3024-day.css">
-    <link rel="stylesheet" href="bower_components/codemirror/theme/elegant.css">
-    <link rel="stylesheet" href="bower_components/codemirror/theme/paraiso-light.css">
-    <link rel="stylesheet" href="bower_components/codemirror/theme/xq-light.css">-->
-
 
     <style type="text/css">
         .CodeMirror {
@@ -78,12 +64,8 @@
 
     <h1>1.1 la función alert()</h1>
 
-    <!--
-    In textarea, separate initial editor content and movie scenario
-    with @@@ separator.
-    Use | character to indicate initial caret position
-    -->
-    <textarea id="code" name="code">
+
+    <textarea id="code" name="code" class="container" >
 &lt;!doctype html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
@@ -152,45 +134,26 @@ type: "Hola mundo!"
 
 #run: {command: "goWordLeft", times: 2} ::: Move word left
 #run: {command: "goWordUp", times: 3}
-
 </textarea>
-
-<!--
-wait: 250 ::: 1) “Escribe un mensaje untilizando la función alert()”
-wait: 5000
-
-type: alert("Hola mundo!");
-wait: 3000
-
-tooltip: { text: "Alert() mostrará el mensaje \"Hola mundo!\" ", pos: "7:16", wait: 4000 }
-
-wait: 600
-
-# Perform CodeMirror pre-defined command
-#run: {command: "goWordLeft", times: 2} ::: Move word left
-
--->
 
     <button style="font-size: 2em;margin: 10px auto;display: block;">Play</button>
 
-    <!-- // <script>
-    //     var myCodeMirrorEditor = CodeMirror.fromTextArea(document.getElementById("code"), {
-    //         mode: "htmlmixed",
-    //         styleActiveLine: true,
-    //         lineNumbers: true,
-    //         matchBrackets: true,
-    //         lineWrapping: true,
-    //         extraKeys: {"Ctrl-Space": "autocomplete"},
-    //         //value: document.documentElement.innerHTML,
-    //         hints: true,
-    //         theme: "monokai",
-    //         // scrollbarStyle: "simple",
-    //         gutters: ["CodeMirror-lint-markers"],
-    //         // lint: true,
-    //     });
-    //
-    // </script> -->
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi modi assumenda voluptatibus odit impedit nesciunt beatae alias error magni, praesentium molestias a, sit autem expedita quos libero vel reiciendis eius?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem blanditiis error reiciendis explicabo ex possimus, natus alias, maxime minima vero tenetur molestias, consectetur consequatur inventore incidunt rem laborum harum dolorum.</p>
+        <p>Enim facilis quasi dignissimos repellendus rem amet nobis, quidem dolorum, quisquam explicabo. Qui voluptatibus tempore nobis, id veritatis eos accusantium laboriosam unde ex, commodi dignissimos autem ipsum, officia nostrum repellat.</p>
+        <p>Eveniet illo dicta soluta recusandae. Aliquam autem, accusamus cupiditate nesciunt vero similique! Commodi vel, aliquid corrupti laudantium, dignissimos earum explicabo, ea dolores odio recusandae quasi alias blanditiis autem. Quas, cum.</p>
+        <p>Ex, animi, provident? Reprehenderit fuga provident iure consequatur nostrum cumque adipisci est, ea voluptatibus explicabo unde perspiciatis praesentium voluptas a sed iste incidunt veritatis illo magni odit obcaecati asperiores. A!</p>
+        <p>Perspiciatis nemo quod sit officia beatae. Quam tempora, nostrum. Tenetur a voluptas error tempora quam, facilis iste nobis reiciendis explicabo. Saepe beatae, accusamus laborum maiores, rerum facere adipisci ducimus maxime.</p>
+        <p>Ratione aspernatur nobis illum, reiciendis maiores eius, expedita omnis eos nemo consectetur, velit rerum, incidunt tempore quae et! Et repellat itaque nesciunt, iusto tempora sint maiores obcaecati minima sunt rem!</p>
+        <p>Suscipit impedit nostrum ipsum esse fugiat non, atque officia alias beatae tempora, dolorem ipsa laudantium delectus. Natus reprehenderit magni ut atque, similique aut cupiditate ea fugit rerum, nisi rem, iusto!</p>
+        <p>Maxime nemo similique sed ratione debitis aspernatur ullam magnam dolorem deleniti a voluptas tenetur, at tempore assumenda accusamus itaque sapiente, expedita repudiandae delectus voluptates doloribus possimus ipsam quasi, exercitationem! Iusto.</p>
+    </div>
 
+
+    <!-- *************************** J S *************************** -->
+
+    <!-- Script de configuracion de la pelicula -->
     <script>
 
         var movie = CodeMirror.movie("code");
@@ -211,6 +174,25 @@ wait: 600
         movie.on('stop', function(name) {
             btn.innerHTML = 'Play';
         });
+    </script>
+
+    <!-- mCustomScrollbar Plugin -->
+    <script src="bower_components\malihu-custom-scrollbar-plugin-bower\jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <!-- mCustomScrollbar settings script -->
+    <script>
+    	$(document).ready(function() {
+
+    		$(".container").mCustomScrollbar({
+    			// autoHideScrollbar:true,
+    			scrollButtons:{ enable:false },
+    			set_width:350,
+    			set_height:250,
+    			scrollInertia:1000,
+    			mouseWheelPixels:166,
+    		});
+
+    	});
     </script>
 
 </body>
