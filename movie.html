@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+    <title>CodeMirror Movie</title>
+
+    <!-- *************************** C S S *************************** -->
+
+    <!-- Bootstrap -->
+	<link rel="stylesheet" href="bower_components\bootstrap\dist\css\bootstrap.min.css">
+
+	<!-- Estilos Generales -->
+	<link rel="stylesheet" href="my_assets/css3/principal.css">
+
+    <!-- codemirror -->
+    <link rel="stylesheet" href="bower_components/codemirror/lib/codemirror.css" />
+
+    <!-- codemirror-movie -->
+    <link rel="stylesheet" href="bower_components/codemirror-movie/dist/cm-movie.css" />
+
+    <!-- mCustomScrollbar Plugin -->
+    <link rel="stylesheet" href="bower_components/malihu-custom-scrollbar-plugin-bower/jquery.mCustomScrollbar.css">
+    <style>
+        .container{
+            margin:40px; width:860px;
+            height:500px;
+            padding:2px 0px 2px 20px;
+            color: #666;
+            background-color: rgba(236, 240, 241,0.5); /*rgba(22, 160, 133,1.0);*/
+            overflow:auto;
+            border: 1px solid #e3e3e3;
+            font-family: 'Lucida Grande',arial,sans-serif;
+            font-size: 14px;
+        }
+    </style>
+
+
+    <!-- *************************** J S *************************** -->
+
+    <!-- jQuery -->
+    <!-- // <script src="bower_components/jquery/v1.11.1/jquery-1.11.1.min.js"></script> -->
+    <script src="bower_components\jquery\v1.11.1\jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+	<script src="bower_components\bootstrap\dist\js\bootstrap.js"></script>
+
+    <!-- codemirror -->
+    <script src="bower_components/codemirror/lib/codemirror.js"></script>
+
+    <!-- codemirror-movie -->
+    <script src="bower_components/codemirror-movie/dist/cm-movie-full.js"></script>
+
+    <!-- Modos (modes) -->
+    <script src="bower_components/codemirror/mode/htmlembedded/htmlembedded.js"></script>
+    <script src="bower_components/codemirror/mode/css/css.js"></script>
+    <script src="bower_components/codemirror/mode/javascript/javascript.js"></script>
+    <script src="bower_components/codemirror/mode/xml/xml.js"></script>
+    <script src="bower_components/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+
+    <style type="text/css">
+        .CodeMirror {
+            font-size: 16px;
+            /* background: #f5f5f5; */
+            border: 1px solid #e3e3e3;
+            min-height: 200px;
+            padding-bottom:5px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h3>1.1 la función alert()</h3>
+
+    <!-- Boton Copiar -->
+    <button type="button" id="btnCopiar" class="btn btn-lg screen-only"  data-toggle="tooltip" data-placement="left" data-clipboard-target="code" data-clipboard-text="Copiar código al portapapeles" title="Copiar código al portapapeles" data-lang="html">
+        <span class="glyphicon glyphicon-copy" aria-hidden="true"></span>
+    </button>
+
+    <textarea id="code" name="code" class="container" >
+&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+        |
+&lt;/body&gt;
+&lt;/html&gt;
+
+@@@
+
+#1) ************************
+wait: 250 ::: &lt;b&gt;1)&lt;/b&gt; Colocate dentro de la cabecera del documento HTML (dentro de las etiquetas head).
+wait: 3500
+
+run: {command: "goLineUp", times: 3}
+wait: 500
+
+run: goLineEnd
+wait: 2000
+
+run: newlineAndIndent
+
+
+#2) ************************
+wait: 2000 ::: &lt;b&gt;2)&lt;/b&gt; Abre y cierra la etiqueta script
+wait: 2000
+
+type: &lt;script&gt;
+wait: 200
+type: &lt;/script&gt;
+
+
+#3) ************************
+wait: 2000 ::: &lt;b&gt;3)&lt;/b&gt; Escribe la función alert()
+wait: 2000
+
+run: {command: "goWordLeft", times: 1}
+run: {command: "goCharLeft", times: 2}
+wait: 100
+
+#run: {command: "goLineDown", times: 1}
+run: newlineAndIndent
+run: newlineAndIndent
+run: {command: "goLineUp", times: 1}
+run: insertTab
+wait: 500
+
+type: alert();
+wait: 3000
+
+
+#4) ************************
+wait: 2000 ::: &lt;b&gt;4)&lt;/b&gt; Escribe el mensaje
+wait: 1000
+
+tooltip: { text: "El mensaje que deseamos mostrar debe ir dentro de los paréntesis ( )", pos: "5:8", wait: 4000 }
+
+run: {command: "goCharLeft", times: 2}
+
+wait: 900
+tooltip: { text: "A menos que el mensaje sea el valor de una variable o un valor numérico el mensaje debe estar entre comillas \"  \" ", pos: "5:8", wait: 8000 }
+
+type: "Hola mundo!"
+
+#run: {command: "goWordLeft", times: 2} ::: Move word left
+#run: {command: "goWordUp", times: 3}
+</textarea>
+
+    <button id="btnPlayPause" style="font-size: 2em;margin: 10px auto;display: block;">Play</button>
+
+
+
+    <!-- *************************** J S *************************** -->
+
+    <!-- zClip -->
+    <!-- // <script type="text/javascript" src="//cetec1.net/lms/my_assets/jquery/jqPlugins/zeroclipboard/dist/ZeroClipboard.min.js"></script> -->
+    <script src="my_assets\jquery\jqPlugins\zeroclipboard\dist\ZeroClipboard.min.js"></script>
+
+    <!-- // <script type="text/javascript" src="//cetec1.net/lms/my_assets/js/zClip.config.js"></script> -->
+    <script src="my_assets\js\zClip.config.js"></script>
+
+    <!-- Script de configuracion de la pelicula -->
+    <script>
+
+        var movie = CodeMirror.movie("code");
+
+        // Create simple UI to interact with movie
+        // var btn = document.getElementsByTagName('button')[0];
+        var btn = document.getElementById("btnPlayPause");
+        btn.onclick = function() {
+            if (movie.state() == 'play') {
+                movie.pause();
+                this.innerHTML = 'Play';
+            } else {
+                movie.play();
+                this.innerHTML = 'Pause';
+            }
+        };
+
+        // Listen to events to change UI state
+        movie.on('stop', function(name) {
+            btn.innerHTML = 'Play';
+        });
+    </script>
+
+</body>
+</html>
