@@ -1,9 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
-<meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>CodeMirror Movie</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Curso Introducción a JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
     <!-- *************************** C S S *************************** -->
 
@@ -42,6 +52,7 @@
     <!-- // <script src="bower_components/jquery/v1.11.1/jquery-1.11.1.min.js"></script> -->
     <script src="bower_components\jquery\v1.11.1\jquery.min.js"></script>
 
+
     <!-- Bootstrap -->
 	<script src="bower_components\bootstrap\dist\js\bootstrap.js"></script>
 
@@ -49,7 +60,7 @@
     <script src="bower_components/codemirror/lib/codemirror.js"></script>
 
     <!-- codemirror-movie -->
-    <script src="bower_components/codemirror-movie/dist/cm-movie-full.js"></script>
+    <!-- // <script src="bower_components/codemirror-movie/dist/cm-movie-full.js"></script> -->
 
     <!-- Modos (modes) -->
     <script src="bower_components/codemirror/mode/htmlembedded/htmlembedded.js"></script>
@@ -75,11 +86,30 @@
     <h3>1.1 la función alert()</h3>
 
     <!-- Boton Copiar -->
-    <button type="button" id="btnCopiar" class="btn btn-lg screen-only"  data-toggle="tooltip" data-placement="left" data-clipboard-target="code" data-clipboard-text="Copiar código al portapapeles" title="Copiar código al portapapeles" data-lang="html">
+    <button type="button" id="btnCopiar" class="btn btn-lg screen-only" data-clipboard-target="code" data-toggle="tooltip" data-placement="left" data-clipboard-text="Copiar código al portapapeles" title="Copiar código al portapapeles" data-lang="html">
         <span class="glyphicon glyphicon-copy" aria-hidden="true"></span>
     </button>
 
-    <textarea id="code" name="code" class="container" >
+    <pre id="code">
+    &lt;!DOCTYPE html&gt; &NewLine;
+    &lt;html lang="es"&gt; &NewLine;
+    &lt;head&gt; &NewLine;
+    	&lt;meta charset="UTF-8"&gt; &NewLine;
+    	&lt;title&gt;El primer script&lt;/title&gt; &NewLine;
+    	&lt;script type="text/javascript"&gt; &NewLine;
+    		alert("Hola Mundo!"); &NewLine;
+    	&lt;/script&gt; &NewLine;
+    &lt;/head&gt; &NewLine;
+
+    &lt;body&gt; &NewLine;
+    	&lt;p&gt;Esta página contiene el primer script&lt;/p&gt; &NewLine;
+    &lt;/body&gt; &NewLine;
+    &lt;/html&gt; &NewLine;
+    </pre>
+
+<!--
+    <pre id="code" name="code" class="container" >
+
 &lt;!doctype html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
@@ -148,23 +178,25 @@ type: "Hola mundo!"
 
 #run: {command: "goWordLeft", times: 2} ::: Move word left
 #run: {command: "goWordUp", times: 3}
-</textarea>
+
+</pre>
+-->
 
     <button id="btnPlayPause" style="font-size: 2em;margin: 10px auto;display: block;">Play</button>
-
 
 
     <!-- *************************** J S *************************** -->
 
     <!-- zClip -->
     <!-- // <script type="text/javascript" src="//cetec1.net/lms/my_assets/jquery/jqPlugins/zeroclipboard/dist/ZeroClipboard.min.js"></script> -->
-    <script src="my_assets\jquery\jqPlugins\zeroclipboard\dist\ZeroClipboard.min.js"></script>
+    <script src="my_assets/jquery/jqPlugins/zeroclipboard/dist/ZeroClipboard.min.js"></script>
 
     <!-- // <script type="text/javascript" src="//cetec1.net/lms/my_assets/js/zClip.config.js"></script> -->
-    <script src="my_assets\js\zClip.config.js"></script>
+    <!-- // <script src="my_assets/jquery/jqPlugins/zeroclipboard/dist/zClip.config.js"></script> -->
+	<script src="my_assets/js/zClip.config.js"></script>
 
     <!-- Script de configuracion de la pelicula -->
-    <script>
+<!--    <script>
 
         var movie = CodeMirror.movie("code");
 
@@ -185,7 +217,9 @@ type: "Hola mundo!"
         movie.on('stop', function(name) {
             btn.innerHTML = 'Play';
         });
+
     </script>
+-->
 
 </body>
 </html>
