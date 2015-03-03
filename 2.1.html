@@ -20,19 +20,58 @@
 	<![endif]-->
 
 	<!-- *************************** C S S *************************** -->
+	<!-- codemirror -->
+    <link rel="stylesheet" href="//cetec1.net/lms/bower_components/codemirror/lib/codemirror.css" />
+
+    <!-- codemirror-movie -->
+    <link rel="stylesheet" href="//cetec1.net/lms/bower_components/codemirror-movie/dist/cm-movie.css" />
+
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="//cetec1.net/lms/my_assets/bootstrap/css3/bootstrap.min.css">
 
 	<!-- Estilos Generales -->
-	<link rel="stylesheet" href="//cetec1.net/lms/my_assets/css3/principal.css">
+	<link rel="stylesheet" href="//cetec1.net/lms/bower_components/css/principal.css">
+
+	<link rel="stylesheet" href="//cetec1.net/lms/bower_components/css/codeMirror.css">
 
 	<!-- Fuente Open Sans -->
 	<!-- <link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'> -->
+
+	<!-- Remodal (Plugin jQuery para ventanas modales) -->
+	<!-- <link rel="stylesheet" href="//cetec1.net/lms/my_assets/jquery/jqPlugins/remodal/dist/jquery.remodal.css"> -->
+
+
+	<!-- *************************** J S *************************** -->
+
 	<!-- Script de cofiguraciones generales -->
 	<script src="//cetec1.net/lms/my_assets/js/config.js"></script>
 
-	<!-- Remodal (Plugin jQuery para ventanas modales) -->
-	<link rel="stylesheet" href="//cetec1.net/lms/my_assets/jquery/jqPlugins/remodal/dist/jquery.remodal.css">
+	<!-- jQuery -->
+	<script src="//cetec1.net/lms/bower_components/jquery/v1.11.1/jquery-1.11.1.min.js"></script>
+
+	<!-- codemirror -->
+	<script src="//cetec1.net/lms/bower_components/codemirror/lib/codemirror.js"></script>
+
+	<!-- codemirror-movie -->
+	<script src="//cetec1.net/lms/bower_components/codemirror-movie/dist/cm-movie-full.js"></script>
+
+	<!-- Modos (modes) -->
+	<script src="//cetec1.net/lms/bower_components/codemirror/mode/htmlembedded/htmlembedded.js"></script>
+	<script src="//cetec1.net/lms/bower_components/codemirror/mode/css/css.js"></script>
+	<script src="//cetec1.net/lms/bower_components/codemirror/mode/javascript/javascript.js"></script>
+	<script src="//cetec1.net/lms/bower_components/codemirror/mode/xml/xml.js"></script>
+	<script src="//cetec1.net/lms/bower_components/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+
+	<style type="text/css">
+		.CodeMirror {
+			font-size: 16px;
+			/* background: #f5f5f5; */
+			border: 1px solid #e3e3e3;
+			min-height: 200px;
+			padding-bottom:5px;
+		}
+	</style>
+
 
 </head>
 
@@ -60,43 +99,135 @@
 					A continuación, se muestra un primer script sencillo pero completo:
 				</p>
 
+				<textarea id="code" name="code" class="container" >
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+        |
+&lt;/body&gt;
+&lt;/html&gt;
 
-				<!-- **************** REMODAL *************** -->
-				<div class="remodal-bg">
-					<div class="remodal" data-remodal-id="modal">
-						<h1>¡Copiado!</h1>
-						<p>
-						El código ha sido copiado en el portapapeles, ahora puedes pegarlo en tu editor de código favorito.
-						</p>
-						<br>
-						<!--<a class="remodal-cancel" href="#">Cancel</a>-->
-						<a class="remodal-confirm" href="#">OK</a>
-					</div>
-				</div> <!--/Remodal-->
+@@@
+
+#1) ************************
+wait: 250 ::: &lt;b&gt;1)&lt;/b&gt; Colocarse dentro de la cabecera del documento HTML (dentro de las etiquetas head).
+wait: 3500
+
+run: {command: "goLineUp", times: 3}
+wait: 500
+
+run: goLineEnd
+wait: 2000
+
+run: newlineAndIndent
 
 
-				<!-- Boton Copiar -->
-				<button type="button" id="btnCopiar" class="btn btn-lg screen-only" data-remodal-target="modal" data-toggle="tooltip" data-placement="left" data-clipboard-target="bloqueCod1" data-clipboard-text="Copiar código al portapapeles" title="Copiar código al portapapeles" data-lang="html">
-					<span class="glyphicon glyphicon-copy" aria-hidden="true"></span>
-				</button>
+#2) ************************
+wait: 2000 ::: &lt;b&gt;2)&lt;/b&gt; Abrir y cerrar la etiqueta script
+wait: 2000
+
+type: &lt;script&gt;
+wait: 200
+type: &lt;/script&gt;
 
 
-<pre id="bloqueCod1">
-&lt;!DOCTYPE html&gt; &NewLine;
-&lt;html lang="es"&gt; &NewLine;
-&lt;head&gt; &NewLine;
-	&lt;meta charset="UTF-8"&gt; &NewLine;
-	&lt;title&gt;El primer script&lt;/title&gt; &NewLine;
-	&lt;script type="text/javascript"&gt; &NewLine;
-		alert("Hola Mundo!"); &NewLine;
-	&lt;/script&gt; &NewLine;
-&lt;/head&gt; &NewLine;
+#3) ************************
+wait: 2000 ::: &lt;b&gt;3)&lt;/b&gt; Escribir la función alert()
+wait: 2000
 
-&lt;body&gt; &NewLine;
-	&lt;p&gt;Esta página contiene el primer script&lt;/p&gt; &NewLine;
-&lt;/body&gt; &NewLine;
-&lt;/html&gt; &NewLine;
-</pre>
+run: {command: "goWordLeft", times: 1}
+run: {command: "goCharLeft", times: 2}
+wait: 100
+
+#run: {command: "goLineDown", times: 1}
+run: newlineAndIndent
+run: newlineAndIndent
+run: {command: "goLineUp", times: 1}
+run: insertTab
+wait: 500
+
+type: alert();
+wait: 3000
+
+
+#4) ************************
+wait: 2000 ::: &lt;b&gt;4)&lt;/b&gt; Escribir el mensaje
+wait: 1000
+
+tooltip: { text: "El mensaje que deseamos mostrar debe ir dentro de los paréntesis ( )", pos: "5:8", wait: 4000 }
+
+run: {command: "goCharLeft", times: 2}
+
+wait: 900
+tooltip: { text: "A menos que el mensaje sea el valor de una variable o un valor numérico el mensaje debe estar entre comillas \"  \" ", pos: "5:8", wait: 8000 }
+
+type: "Hola mundo!"
+
+#run: {command: "goWordLeft", times: 2} ::: Move word left
+#run: {command: "goWordUp", times: 3}
+				</textarea>
+
+			    <br>
+				<div class="no-print col-md-2 col-md-offset-5 col-sm-2 col-sm-offset-5 col-xs-12 ">
+					<!-- Botón Play -->
+					<button id="btnPlay" type="button" class="btn btn-success no-print" aria-label="Play/Pausa">
+						<span id="btnIcon" class="glyphicon glyphicon-play" aria-hidden="true"> <span id="lblPlay">Play</span>
+						</span>
+					</button>
+					<br><br>
+				</div>
+				<br class="no-print">
+				<br class="no-print">
+				<br class="no-print">
+
+				<!-- Script de configuracion de la pelicula -->
+				<script>
+
+					var movie = CodeMirror.movie("code");
+
+					// Create simple UI to interact with movie
+					var btnPlay = document.getElementById("btnPlay");
+					var btnIcon = document.getElementById("btnIcon");
+					var lblPlay = document.getElementById("lblPlay");
+
+					btnPlay.onclick = function() {
+						if (movie.state() == 'play') {
+							movie.pause();
+							//this.innerHTML = 'Play';
+							lblPlay.innerHTML = 'Play';
+							btnIcon.classList.remove('glyphicon-pause');
+							btnIcon.classList.add('glyphicon-play');
+
+							btnPlay.classList.remove('btn-warning');
+							btnPlay.classList.add('btn-success');
+
+						} else {
+							movie.play();
+							//this.innerHTML = 'Pause';
+							lblPlay.innerHTML = 'Pausa';
+							btnIcon.classList.remove('glyphicon-play');
+							btnIcon.classList.add('glyphicon-pause');
+
+							btnPlay.classList.remove('btn-success');
+							btnPlay.classList.add('btn-warning');
+
+						}
+					};
+
+					// Listen to events to change UI state
+					movie.on('stop', function(name) {
+						//btnPlay.innerHTML = 'Play';
+						lblPlay.innerHTML = 'Play';
+						this.classList.remove('glyphicon-pause');
+						btnIcon.classList.add('glyphicon-play');
+
+						btnPlay.classList.remove('btn-warning');
+						btnPlay.classList.add('btn-success');
+					});
+				</script>
 
 				<p>
 					En este ejemplo, el script se incluye como un bloque de código dentro de una página HTML. Por tanto, en primer lugar se debe crear una página HTML correcta que incluya la declaración del DOCTYPE, las secciones <code>&lt;head&gt;</code> y <code>&lt;body&gt;</code>, la etiqueta <code>&lt;title&gt;</code>, etc.
@@ -202,10 +333,11 @@
 	<!-- <script src="../../../../main/inc/lib/javascript/jquery.min.js"></script> -->
 
 	<!-- jQuery 1.7.2 (Chamilo)-->
-	<script src="//cetec1.net/lms/campus_martinez/main/inc/lib/javascript/jquery.min.js"></script>
+<!--	<script src="//cetec1.net/lms/campus_martinez/main/inc/lib/javascript/jquery.min.js"></script> -->
 	<!-- jQuery 1.11.1-->
-	<script src="//cetec1.net/lms/my_assets/jquery/jquery-1.11.1.min.js"></script>
+<!--	<script src="//cetec1.net/lms/my_assets/jquery/jquery-1.11.1.min.js"></script>
 	<script>var $j = jQuery.noConflict(true);</script>
+-->
 
 	<!-- Ejemplo de codigo con ambas veriones de jQuery
 	<script>
@@ -217,8 +349,8 @@
 	-->
 
 	<!-- zClip -->
-	<script type="text/javascript" src="//cetec1.net/lms/my_assets/jquery/jqPlugins/zeroclipboard/dist/ZeroClipboard.min.js"></script>
-	<script type="text/javascript" src="//cetec1.net/lms/my_assets/js/zClip.config.js"></script>
+	<!-- // <script type="text/javascript" src="//cetec1.net/lms/my_assets/jquery/jqPlugins/zeroclipboard/dist/ZeroClipboard.min.js"></script> -->
+	<!-- // <script type="text/javascript" src="//cetec1.net/lms/my_assets/js/zClip.config.js"></script> -->
 	<!-- jQuery UI-->
 	<!-- <script src="jquery/jquery-ui/js/jquery-ui.js"></script> -->
 
@@ -260,8 +392,9 @@
 	<script src="//cetec1.net/lms/my_assets/js/fancyBox_myGallery.config.js"></script>
 
 	<!-- Remodal (Plugin jQuery para ventanas modales) -->
-	<script src="//cetec1.net/lms/my_assets/jquery/jqPlugins/remodal/dist/jquery.remodal.js"></script>
-	<script src="//cetec1.net/lms/my_assets/js/remodal.config.js"></script>
+	<!-- // <script src="//cetec1.net/lms/my_assets/jquery/jqPlugins/remodal/dist/jquery.remodal.js"></script>
+	// <script src="//cetec1.net/lms/my_assets/js/remodal.config.js"></script> -->
+
 
 </body>
 </html>

@@ -1,27 +1,11 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 
 <head>
-    <meta charset="utf-8">
+<meta charset="utf-8" />
     <title>CodeMirror Movie</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Curso Introducción a JavaScript">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
 
     <!-- *************************** C S S *************************** -->
-
-    <!-- Bootstrap -->
-	<link rel="stylesheet" href="bower_components\bootstrap\dist\css\bootstrap.min.css">
-
-	<!-- Estilos Generales -->
-	<link rel="stylesheet" href="my_assets/css3/principal.css">
 
     <!-- codemirror -->
     <link rel="stylesheet" href="bower_components/codemirror/lib/codemirror.css" />
@@ -30,37 +14,20 @@
     <link rel="stylesheet" href="bower_components/codemirror-movie/dist/cm-movie.css" />
 
     <!-- mCustomScrollbar Plugin -->
-    <link rel="stylesheet" href="bower_components/malihu-custom-scrollbar-plugin-bower/jquery.mCustomScrollbar.css">
-    <style>
-        .container{
-            margin:40px; width:860px;
-            height:500px;
-            padding:2px 0px 2px 20px;
-            color: #666;
-            background-color: rgba(236, 240, 241,0.5); /*rgba(22, 160, 133,1.0);*/
-            overflow:auto;
-            border: 1px solid #e3e3e3;
-            font-family: 'Lucida Grande',arial,sans-serif;
-            font-size: 14px;
-        }
-    </style>
+    <link rel="stylesheet" href="bower_components\malihu-custom-scrollbar-plugin-bower\jquery.mCustomScrollbar.css">
 
+    <link rel="stylesheet" href="bower_components\css\codeMirror.css">
 
     <!-- *************************** J S *************************** -->
 
     <!-- jQuery -->
-    <!-- // <script src="bower_components/jquery/v1.11.1/jquery-1.11.1.min.js"></script> -->
-    <script src="bower_components\jquery\v1.11.1\jquery.min.js"></script>
-
-
-    <!-- Bootstrap -->
-	<script src="bower_components\bootstrap\dist\js\bootstrap.js"></script>
+    <script src="bower_components/jquery/v1.11.1/jquery-1.11.1.min.js"></script>
 
     <!-- codemirror -->
     <script src="bower_components/codemirror/lib/codemirror.js"></script>
 
     <!-- codemirror-movie -->
-    <!-- // <script src="bower_components/codemirror-movie/dist/cm-movie-full.js"></script> -->
+    <script src="bower_components/codemirror-movie/dist/cm-movie-full.js"></script>
 
     <!-- Modos (modes) -->
     <script src="bower_components/codemirror/mode/htmlembedded/htmlembedded.js"></script>
@@ -83,33 +50,10 @@
 
 <body>
 
-    <h3>1.1 la función alert()</h3>
+    <h1>1.1 la función alert()</h1>
 
-    <!-- Boton Copiar -->
-    <button type="button" id="btnCopiar" class="btn btn-lg screen-only" data-clipboard-target="code" data-toggle="tooltip" data-placement="left" data-clipboard-text="Copiar código al portapapeles" title="Copiar código al portapapeles" data-lang="html">
-        <span class="glyphicon glyphicon-copy" aria-hidden="true"></span>
-    </button>
 
-    <pre id="code">
-    &lt;!DOCTYPE html&gt; &NewLine;
-    &lt;html lang="es"&gt; &NewLine;
-    &lt;head&gt; &NewLine;
-    	&lt;meta charset="UTF-8"&gt; &NewLine;
-    	&lt;title&gt;El primer script&lt;/title&gt; &NewLine;
-    	&lt;script type="text/javascript"&gt; &NewLine;
-    		alert("Hola Mundo!"); &NewLine;
-    	&lt;/script&gt; &NewLine;
-    &lt;/head&gt; &NewLine;
-
-    &lt;body&gt; &NewLine;
-    	&lt;p&gt;Esta página contiene el primer script&lt;/p&gt; &NewLine;
-    &lt;/body&gt; &NewLine;
-    &lt;/html&gt; &NewLine;
-    </pre>
-
-<!--
-    <pre id="code" name="code" class="container" >
-
+    <textarea id="code" name="code" class="container" >
 &lt;!doctype html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
@@ -123,7 +67,7 @@
 @@@
 
 #1) ************************
-wait: 250 ::: &lt;b&gt;1)&lt;/b&gt; Colocate dentro de la cabecera del documento HTML (dentro de las etiquetas head).
+wait: 250 ::: &lt;b&gt;1)&lt;/b&gt; Colocarse dentro de la cabecera del documento HTML (dentro de las etiquetas head).
 wait: 3500
 
 run: {command: "goLineUp", times: 3}
@@ -136,7 +80,7 @@ run: newlineAndIndent
 
 
 #2) ************************
-wait: 2000 ::: &lt;b&gt;2)&lt;/b&gt; Abre y cierra la etiqueta script
+wait: 2000 ::: &lt;b&gt;2)&lt;/b&gt; Abrir y cerrar la etiqueta script
 wait: 2000
 
 type: &lt;script&gt;
@@ -145,7 +89,7 @@ type: &lt;/script&gt;
 
 
 #3) ************************
-wait: 2000 ::: &lt;b&gt;3)&lt;/b&gt; Escribe la función alert()
+wait: 2000 ::: &lt;b&gt;3)&lt;/b&gt; Escribir la función alert()
 wait: 2000
 
 run: {command: "goWordLeft", times: 1}
@@ -164,7 +108,7 @@ wait: 3000
 
 
 #4) ************************
-wait: 2000 ::: &lt;b&gt;4)&lt;/b&gt; Escribe el mensaje
+wait: 2000 ::: &lt;b&gt;4)&lt;/b&gt; Escribir el mensaje
 wait: 1000
 
 tooltip: { text: "El mensaje que deseamos mostrar debe ir dentro de los paréntesis ( )", pos: "5:8", wait: 4000 }
@@ -178,31 +122,20 @@ type: "Hola mundo!"
 
 #run: {command: "goWordLeft", times: 2} ::: Move word left
 #run: {command: "goWordUp", times: 3}
+</textarea>
 
-</pre>
--->
-
-    <button id="btnPlayPause" style="font-size: 2em;margin: 10px auto;display: block;">Play</button>
+    <button style="font-size: 2em;margin: 10px auto;display: block;">Play</button>
 
 
     <!-- *************************** J S *************************** -->
 
-    <!-- zClip -->
-    <!-- // <script type="text/javascript" src="//cetec1.net/lms/my_assets/jquery/jqPlugins/zeroclipboard/dist/ZeroClipboard.min.js"></script> -->
-    <script src="my_assets/jquery/jqPlugins/zeroclipboard/dist/ZeroClipboard.min.js"></script>
-
-    <!-- // <script type="text/javascript" src="//cetec1.net/lms/my_assets/js/zClip.config.js"></script> -->
-    <!-- // <script src="my_assets/jquery/jqPlugins/zeroclipboard/dist/zClip.config.js"></script> -->
-	<script src="my_assets/js/zClip.config.js"></script>
-
     <!-- Script de configuracion de la pelicula -->
-<!--    <script>
+    <script>
 
         var movie = CodeMirror.movie("code");
 
         // Create simple UI to interact with movie
-        // var btn = document.getElementsByTagName('button')[0];
-        var btn = document.getElementById("btnPlayPause");
+        var btn = document.getElementsByTagName('button')[0];
         btn.onclick = function() {
             if (movie.state() == 'play') {
                 movie.pause();
@@ -217,9 +150,7 @@ type: "Hola mundo!"
         movie.on('stop', function(name) {
             btn.innerHTML = 'Play';
         });
-
     </script>
--->
 
 </body>
 </html>
