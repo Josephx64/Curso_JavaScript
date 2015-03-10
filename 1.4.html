@@ -31,6 +31,8 @@
 	<!-- glyphicons DevIcons -->
 	<link rel="stylesheet" href="//cetec1.net/lms/my_assets/glyphicons/css/devicons.min.css" media="all" title="no title" charset="utf-8">
 
+	<!-- Remodal (Plugin jQuery para ventanas modales) -->
+	<link rel="stylesheet" href="//cetec1.net/lms/my_assets/jquery/jqPlugins/remodal/dist/jquery.remodal.css">
 
 	<!-- Script de cofiguraciones generales -->
 	<script src="//cetec1.net/lms/my_assets/js/config.js"></script>
@@ -64,14 +66,13 @@
 				<br>
 
 				<!-- Boton Copiar -->
-				<!--
 				<div id="btnCopiar" class="zero-clipboard" data-clipboard-target="elCodigo">
 					<a href="#" class="btn-clipboard">Copiar</a>
 				</div>
-				-->
 
-				<!-- Bloque de cógio -->
-				<pre>
+
+<!-- Bloque de cógio -->
+<pre id="elCodigo">
 &lt;!DOCTYPE html&gt;<br>
 &lt;html lang="es"&gt;<br>
 
@@ -201,31 +202,34 @@
 	<!-- Bootstrap -->
 	<script src="//cetec1.net/lms/my_assets/bootstrap/js/bootstrap.min.js"></script>
 
-	<!-- ZeroClipboard 2.2 -->
-	<script src="//cetec1.net/lms/my_assets/jquery/jqPlugins/zeroClipboard/ZeroClipboard.js"></script>
+		<!-- zClip -->
+	<script type="text/javascript" src="//cetec1.net/lms/my_assets/jquery/jqPlugins/zeroclipboard/dist/ZeroClipboard.min.js"></script>
+	<script type="text/javascript" src="//cetec1.net/lms/my_assets/js/zClip.config.js"></script>
 
-	<!-- <script>
+	<!-- Remodal (Plugin jQuery para ventanas modales) -->
+	<script src="//cetec1.net/lms/my_assets/jquery/jqPlugins/remodal/dist/jquery.remodal.js"></script>
+	<script src="//cetec1.net/lms/my_assets/js/remodal.config.js"></script>
+
+	<!--
+	<script>
 		$(document).ready(function(){
 			/*** ZeroClipboard ***/
 			$('#btnCopiar').zclip({
-			path:'jquery/jqPlugins/zeroClipboard/ZeroClipboard.swf',
+			path:'my_assets/jquery/jqPlugins/zeroClipboard/ZeroClipboard.swf',
 			copy:$('#elCodigo').text()
 			});
 			// The link with ID "copy-description" will copy
 			// the text of the paragraph with ID "description"
 			$('#btnCopiar').zclip({
-			path:'jquery/jqPlugins/zeroClipboard/ZeroClipboard.swf',
+			path:'my_assets/jquery/jqPlugins/zeroClipboard/ZeroClipboard.swf',
 			copy:function(){return $('#elCodigo').val();}
 			});
 			// The link with ID "copy-dynamic" will copy the current value
 			// of a dynamically changing input with the ID "dynamic"
 			//- See more at: http://www.steamdev.com/zclip/#sthash.EXnsnGRg.dpuf
-
 			var client = new ZeroClipboard( document.getElementById("copy-button") );
-
 			client.on( "ready", function( readyEvent ) {
 			  // alert( "ZeroClipboard SWF is ready!" );
-
 			  client.on( "aftercopy", function( event ) {
 				// `this` === `client`
 				// `event.target` === the element that was clicked
@@ -234,7 +238,11 @@
 			  } );
 			} );
 		});
-	</script>-->
+	</script>
+	-->
+
+
+
 
 </body>
 </html>

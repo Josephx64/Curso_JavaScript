@@ -104,7 +104,7 @@ pCodigoXXX {
 
 .zero-clipboard {
 	position: relative;
-	display: none
+	/*display: none*/
 }
 
 .btn-clipboard{

@@ -361,3 +361,5 @@ h2, h3, h4, h5, h6 {
 	background-color: rgba(26, 188, 156,1.0) !important;/*Turqouise*/
 	color: #fff !important;
 }
+/*Números de Lineas del edictor codeMirror*/
+.CodeMirror-linenumber{font-size:14px !important;}

@@ -168,6 +168,7 @@ type: "Hola mundo!"
 
 #run: {command: "goWordLeft", times: 2} ::: Move word left
 #run: {command: "goWordUp", times: 3}
+
 				</textarea>
 
 			    <br>
@@ -194,6 +195,7 @@ type: "Hola mundo!"
 					var lblPlay = document.getElementById("lblPlay");
 
 					btnPlay.onclick = function() {
+						this.blur();
 						if (movie.state() == 'play') {
 							movie.pause();
 							//this.innerHTML = 'Play';
