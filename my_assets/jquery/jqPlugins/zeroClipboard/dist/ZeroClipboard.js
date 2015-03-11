@@ -406,7 +406,7 @@
     activeClass: "zeroclipboard-is-active",
     forceHandCursor: false,
     title: null,
-    zIndex: 999999999
+    zIndex: 999999996/*999999999*/
   };
   /**
  * The underlying implementation of `ZeroClipboard.config`.
@@ -1707,7 +1707,7 @@
  * @see {@link https://github.com/zeroclipboard/zeroclipboard/issues/511}
  * @see {@link http://zeroclipboard.org/test-iframes.html}
  *
- * @returns `true` (is sandboxed), `false` (is not sandboxed), or `null` (uncertain) 
+ * @returns `true` (is sandboxed), `false` (is not sandboxed), or `null` (uncertain)
  * @private
  */
   var _detectSandbox = function(doNotReassessFlashSupport) {

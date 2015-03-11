@@ -29,7 +29,7 @@ html.remodal-is-locked {
 
 .remodal-overlay {
     position: fixed;
-    z-index: 9999;
+    z-index: 999999998;
     top: -5000px;
     right: -5000px;
     bottom: -5000px;
@@ -42,7 +42,7 @@ html.remodal-is-locked {
 
 .remodal-wrapper {
     position: fixed;
-    z-index: 10000;
+    z-index: 999999999;
     top: 0;
     right: 0;
     bottom: 0;
@@ -282,12 +282,13 @@ body.remodal-is-active .remodal {
 
 @media only screen and (min-width: 40.063em) /* min-width 641px */ {
     .remodal {
-        max-width: 700px;
+        /*max-width: 700px;*/
+        max-width: 100%;
         min-height: 0;
         margin: 20px auto;
 
-        -webkit-border-radius: 6px;
-        border-radius: 6px;
+        /*-webkit-border-radius: 6px;
+        border-radius: 6px;*/
     }
 }
 

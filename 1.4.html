@@ -23,7 +23,7 @@
 	<link rel="stylesheet" href="//cetec1.net/lms/my_assets/bootstrap/css3/bootstrap.min.css">
 
 	<!-- Estilos Generales -->
-	<link rel="stylesheet" href="//cetec1.net/lms/my_assets/css3/principal.css">
+	<link rel="stylesheet" href="//cetec1.net/lms/bower_components/css/principal.css">
 
 	<!-- Fuente Open Sans -->
 	<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'> -->
@@ -32,14 +32,16 @@
 	<link rel="stylesheet" href="//cetec1.net/lms/my_assets/glyphicons/css/devicons.min.css" media="all" title="no title" charset="utf-8">
 
 	<!-- Remodal (Plugin jQuery para ventanas modales) -->
-	<link rel="stylesheet" href="//cetec1.net/lms/my_assets/jquery/jqPlugins/remodal/dist/jquery.remodal.css">
+	<!--<link rel="stylesheet" href="//cetec1.net/lms/my_assets/jquery/jqPlugins/remodal/dist/jquery.remodal.css">-->
+	<link rel="stylesheet" href="//cetec1.net/lms/bower_components/remodal/dist/jquery.remodal.css">
+
 
 	<!-- Script de cofiguraciones generales -->
 	<script src="//cetec1.net/lms/my_assets/js/config.js"></script>
 
 </head>
 
-<body>
+<body class="remodal-bg">
 
 	<!--Contenedor del contenido-->
 	<div class="container">
@@ -65,30 +67,57 @@
 				<p>El código JavaScript se encierra entre etiquetas  <code>&lt;script&gt;</code> y se incluye en cualquier parte del documento. Aunque es correcto incluir cualquier bloque de código en cualquier zona de la página, se recomienda definir el código JavaScript dentro de la cabecera del documento (dentro de la etiqueta <code>&lt;head&gt;</code>):</p>
 				<br>
 
-				<!-- Boton Copiar -->
-				<div id="btnCopiar" class="zero-clipboard" data-clipboard-target="elCodigo">
-					<a href="#" class="btn-clipboard">Copiar</a>
+				<!-- V E N T A N A  M O D A L -->
+				<div class="remodal" data-remodal-id="modal">
+					<h1>CÓDIGO COPIADO</h1>
+					<p>
+					  Este código ha sido copiado al portapapeles.
+					</p>
+					<br>
+					<a class="remodal-confirm" href="#">OK</a>
 				</div>
 
+				<!-- Panel de código HTML -->
+				<div class="panel panel-info">
 
-<!-- Bloque de cógio -->
-<pre id="elCodigo">
-&lt;!DOCTYPE html&gt;<br>
-&lt;html lang="es"&gt;<br>
+					<!-- Boton Copiar -->
+					<div class="zero-clipboard btnCopiar" data-clipboard-target="blqCod1.4.1" data-remodal-target="modal" alt="Copiar al portapapeles">
+						<a href="#" class="btn-clipboard glyphicon glyphicon-copy"></a>
+					</div>
 
-&lt;head&gt;<br>
-	&lt;meta charset="utf-8"&gt;<br>
-	&lt;title&gt;Ejemplo de código JavaScript en el propio documento&lt;/title&gt;<br>
-	&lt;script type=”text/javascript”&gt;<br>
-	&Tab;alert("Un mensaje de prueba");<br>
-	&lt;/script&gt;<br>
-&lt;/head&gt;<br>
-<br>
-&lt;body&gt;<br>
-	&lt;p&gt;Un párrafo de texto.&lt;/p&gt;<br>
-&lt;/body&gt;<br>
+					<div class="panel-heading">
+					  	<h3 class="panel-title">
+					 		<span class="devicons devicons-html5 dvIconFile" aria-hidden="true"></span> documento141.html
+					 	</h3>
+					</div>
+
+					<div class="panel-body" style="padding:0;">
+
+
+
+<!-- Bloque de cógio 1.4.1 -->
+<pre id="blqCod1.4.1" class="blqCod">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+
+&lt;head&gt;
+	&lt;meta charset="utf-8"&gt;
+	&lt;title&gt;Ejemplo de código JavaScript en el propio documento&lt;/title&gt;
+	&lt;script type=”text/javascript”&gt;
+	&Tab;alert("Un mensaje de prueba");
+	&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+	&lt;p&gt;Un párrafo de texto.&lt;/p&gt;
+&lt;/body&gt;
 
 &lt;/html&gt;</pre> <!--/Bloque de código-->
+
+					</div>
+				</div><!--/Panel de código HTML-->
+
+
 
 				<p>Este método se emplea cuando se define un bloque pequeño de código o cuando se quieren incluir instrucciones específicas en un determinado documento HTML que completen las instrucciones y funciones que se incluyen por defecto en todos los documentos del sitio web.</p>
 
@@ -111,33 +140,71 @@
 				<p>Las instrucciones JavaScript se pueden incluir en un archivo externo de tipo JavaScript que los documentos HTML enlazan mediante la etiqueta <code>&lt;script&gt;</code>. Se pueden crear todos los archivos JavaScript que sean necesarios y cada documento HTML puede enlazar tantos archivos JavaScript como necesite.</p>
 				<p>Ejemplo:</p>
 
-				<blockquote>
-					<span class="devicons devicons-javascript_badge" aria-hidden="true"></span>
-					Script codigo.js
-				</blockquote>
+				<!-- Panel de código JS -->
+				<div class="panel panel-warning">
 
-				<pre>alert("Un mensaje de prueba");</pre>
+					<!-- Boton Copiar -->
+					<div class="zero-clipboard btnCopiar" data-clipboard-target="blqCod1.4.2-a" data-remodal-target="modal" alt="Copiar al portapapeles">
+						<a href="#" class="btn-clipboard glyphicon glyphicon-copy"></a>
+					</div>
 
-				<blockquote>
-					<span class="devicons devicons-html5" aria-hidden="true"></span>
-					Documento HTML
-				</blockquote>
+					<!-- Panel Heading -->
+					<div class="panel-heading">
+					  	<h3 class="panel-title">
+					 		<span class="devicons devicons-javascript_badge dvIconFile" aria-hidden="true"></span> codigo.js
+					 	</h3>
+					</div>
 
-				<pre>
-&lt;!DOCTYPE html&gt;<br>
-&lt;html lang="es"&gt;<br>
+					<!-- Panel Body -->
+					<div class="panel-body" style="padding:0;">
 
-&lt;head&gt;<br>
-&emsp; &lt;meta charset="utf-8"&gt;<br>
-&emsp; &lt;title&gt;Ejemplo de código JavaScript en el propio documento&lt;/title&gt;<br>
-&emsp; &lt;script type=”text/javascript” src="js/codigo.js"&gt;&lt;/script&gt;<br>
-&lt;/head&gt;<br>
+<!-- Bloque de Código  -->
+<pre id="blqCod1.4.2-a" class="blqCod">
+alert("Un mensaje de prueba");
+</pre>
 
-&lt;body&gt;<br>
-&emsp; &lt;p&gt;Un párrafo de texto.&lt;/p&gt;<br>
-&lt;/body&gt;<br>
+					</div>
+				</div><!--/Panel de código JS-->
+
+
+
+				<!-- Panel de código HTML -->
+				<div class="panel panel-info">
+
+					<!-- Boton Copiar -->
+					<div class="zero-clipboard btnCopiar" data-clipboard-target="blqCod1.4.2-b" data-remodal-target="modal" alt="Copiar al portapapeles">
+						<a href="#" class="btn-clipboard glyphicon glyphicon-copy"></a>
+					</div>
+
+					<div class="panel-heading">
+					  	<h3 class="panel-title">
+					 		<span class="devicons devicons-html5 dvIconFile" aria-hidden="true"></span> documento142.html
+					 	</h3>
+					</div>
+
+					<div class="panel-body" style="padding:0;">
+
+
+<!-- Bloque de Código  -->
+<pre id="blqCod1.4.2-b" class="blqCod">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+
+&lt;head&gt;
+&emsp; &lt;meta charset="utf-8"&gt;
+&emsp; &lt;title&gt;Ejemplo de código JavaScript en el propio documento&lt;/title&gt;
+&emsp; &lt;script type=”text/javascript” src="js/codigo.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&emsp; &lt;p&gt;Un párrafo de texto.&lt;/p&gt;
+&lt;/body&gt;
 
 &lt;/html&gt;</pre>
+					 </div>
+				</div><!--/Panel de código HTML-->
+
+
 
 				<p>Además del atributo type, este método requiere definir el atributo src, que es el que indica la URL  correspondiente  al  archivo  JavaScript  que  se  quiere  enlazar.  Cada  etiqueta  <code>&lt;script&gt;</code> solamente puede enlazar un único archivo, pero en una misma página se pueden incluir tantas etiquetas <code>&lt;script&gt;</code>	como sean necesarias.</p>
 
@@ -150,19 +217,39 @@
 				<h4>1.4.3. Incluir JavaScript en los elementos HTML</h4>
 				<p>Este último método es el menos utilizado, ya que consiste en incluir trozos de JavaScript dentro del código HTML de la página:</p>
 
-				<pre>
-&lt;!DOCTYPE html&gt;<br>
-&lt;html lang="es"&gt;<br>
-&lt;head&gt;<br>
-	&lt;meta charset="utf-8"&gt;<br>
-	&lt;title&gt;Ejemplo de código JavaScript&lt;/title&gt;<br>
-&lt;/head&gt;<br>
+				<!-- Panel de código HTML -->
+				<div class="panel panel-info">
 
-&lt;body&gt;<br>
-	&lt;p onclick="alert('Un mensaje de prueba')"&gt;Un párrafo de texto.&lt;/p&gt;<br>
-&lt;/body&gt;<br>
+					<!-- Boton Copiar -->
+					<div class="zero-clipboard btnCopiar" data-clipboard-target="blqCod1.4.3" data-remodal-target="modal" alt="Copiar al portapapeles">
+						<a href="#" class="btn-clipboard glyphicon glyphicon-copy"></a>
+					</div>
+
+					<div class="panel-heading">
+					  	<h3 class="panel-title">
+					 		<span class="devicons devicons-html5 dvIconFile" aria-hidden="true"></span> documento143.html
+					 	</h3>
+					</div>
+
+					<div class="panel-body" style="padding:0;">
+
+
+<!-- Bloque de cógio 1.4.3 -->
+<pre id="blqCod1.4.3" class="blqCod">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+	&lt;meta charset="utf-8"&gt;
+	&lt;title&gt;Ejemplo de código JavaScript&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+	&lt;p onclick="alert('Un mensaje de prueba')"&gt;Un párrafo de texto.&lt;/p&gt;
+&lt;/body&gt;
 
 &lt;/html&gt;</pre>
+					</div>
+				</div> <!--/Panel de código HTML-->
 
 				<p>El mayor inconveniente de este método es que ensucia innecesariamente el código HTML de la página y complica el mantenimiento del código JavaScript. En general, este método sólo se utiliza para definir algunos eventos y en algunos otros casos especiales, como se verá más adelante.</p>
 
@@ -202,13 +289,13 @@
 	<!-- Bootstrap -->
 	<script src="//cetec1.net/lms/my_assets/bootstrap/js/bootstrap.min.js"></script>
 
-		<!-- zClip -->
-	<script type="text/javascript" src="//cetec1.net/lms/my_assets/jquery/jqPlugins/zeroclipboard/dist/ZeroClipboard.min.js"></script>
+	<!-- zClip -->
+	<script type="text/javascript" src="//cetec1.net/lms/my_assets/jquery/jqPlugins/zeroclipboard/dist/ZeroClipboard.js"></script>
 	<script type="text/javascript" src="//cetec1.net/lms/my_assets/js/zClip.config.js"></script>
 
-	<!-- Remodal (Plugin jQuery para ventanas modales) -->
-	<script src="//cetec1.net/lms/my_assets/jquery/jqPlugins/remodal/dist/jquery.remodal.js"></script>
-	<script src="//cetec1.net/lms/my_assets/js/remodal.config.js"></script>
+	<!-- Remodal -->
+	<script src="//cetec1.net/lms/bower_components/remodal/dist/zepto.min.js"></script>
+	<script src="//cetec1.net/lms/bower_components/remodal/dist/jquery.remodal.js"></script>
 
 	<!--
 	<script>
@@ -240,7 +327,6 @@
 		});
 	</script>
 	-->
-
 
 
 

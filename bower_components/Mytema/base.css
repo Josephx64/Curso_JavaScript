@@ -3634,6 +3634,7 @@ form .formw .freeze {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
 .scorm_item_normal .scorm_item_level_1{
   padding-left: 1.8em;
   padding-right: 1.5em;
@@ -3659,7 +3660,15 @@ form .formw .freeze {
   color: #000;
   font-weight: bold;
   background-color: #fffdd1;
+  background-color: transparent;
 }
+
+/********************** Ajuste de elemento actual de lista de contenidos de #toc_id de chamilo **********************/
+.scorm_item_normal.scorm_highlight.scorm_item_1.scorm_completed> .scorm_item_level_1, .scorm_item_normal.scorm_highlight.scorm_item_2.scorm_completed> .scorm_item_level_1{
+  /*background-color: rgb(5, 125, 120);*/
+  background:rgb(5, 125, 120) url("../img/icon_completed.png") no-repeat right;
+}
+
 
 /* END SCORM CSS BASE*/
 

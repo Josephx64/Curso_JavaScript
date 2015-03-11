@@ -1,5 +1,7 @@
 // zClip.config.js
-var client = new ZeroClipboard( document.getElementById("btnCopiar") );
+//var client = new ZeroClipboard( document.getElementsByClassName("btnCopiar") );
+
+var client = new ZeroClipboard( $(".btnCopiar") );
 
 /*client.on( "mouseover", function() ){
     this.classList.add("btnCopiar-hover");
@@ -13,7 +15,7 @@ client.on( "ready", function( readyEvent ) {
         // `event.target` === the element that was clicked
         //event.target.style.display = "none";
         event.target.style.display = "html";
-        alert("Texto copiado al portapapeles: " + event.data["text/html"] );
+        //alert("Texto copiado al portapapeles: " + event.data["text/html"] );
         //alert("Código copiado al portapapeles");
       } );
 

@@ -108,40 +108,43 @@ pCodigoXXX {
 }
 
 .btn-clipboard{
-	position: absolute;
+	/*position: absolute;*/
 	top: 0;
 	right: 0;
-	z-index: 10;
+	z-index: 0;
 	display: block;
 	padding: 5px 8px;
 	font-size: 12px;
-	color: #777;
+	color: #fff; /*#777;*/
 	cursor: pointer;
-	background-color: #fff;
-	border: 1px solid #e1e1e8;
+	/*background-color: #fff;*/
+	/*border: 1px solid #e1e1e8;*/
 	border-radius: 0 4px 0 4px
 }
 
-/*.btn-clipboard:hover {
+.btn-clipboard:hover {
 	color: #fff;
-	background-color: #563d7c;
-	border-color: #563d7c
+	/*background-color: #563d7c;*/
+	/*border-color: #563d7c*/
+	text-decoration:none !important;
 }
 
 .btn-clipboard-hover {
 	color: #fff;
-	background-color: #563d7c;
-	border-color: #563d7c
-}*/
+	/*background-color: #563d7c;*/
+	/*border-color: #563d7c*/
+	text-decoration:none !important;
+}
 
-/*#btnCopiar>span{
+/*#btnCopiar>span{*/
+.btnCopiar>span{
 	width:100%;
 	background:#563d7c;
 	padding: 5px 8px;
 	margin: 0px;
-}*/
+}
 
-/*@media (min-width: 768px) {
+@media (min-width: 768px) {
 	.zero-clipboard {
 		display:block
 	}
@@ -150,7 +153,7 @@ pCodigoXXX {
 		top: -16px;
 		border-top-right-radius: 0
 	}
-}*/
+}
 
 #focusedInput {
 	border-color: #ccc;
@@ -250,7 +253,8 @@ button >span >span {
 	background-color: #F0AD4E;
 }
 
-#btnCopiar{
+/*#btnCopiar{*/
+.btnCopiar{
 	/*margin-top:-16px;
 	margin-right:0;
 	margin-left:0;*/
@@ -267,14 +271,13 @@ button >span >span {
 	outline-style: none;
 	/*border-color: transparent;*/
 	position: absolute;
-	right:320px;/*19px*/
+	right:16px;
 	margin-top: 1px;
 	border-left-color: 1px solid #ccc;
 	border-bottom-color: 1px solid #ccc;
 	border-top: none;
 	border-right: none;
 	padding:0;
-	z-index:1;
 }
 
 /*#btnCopiar:hover{
@@ -294,7 +297,7 @@ button >span >span {
 }
 /**************************************************************************/
 
-/*
+
 .zero-clipboard+.highlight{
 	margin:-15px -15px 15px;
 	border-width:0 0 1px;
@@ -310,11 +313,11 @@ button >span >span {
 	border-bottom-left-radius:4px
 }
 
-.zero-clipboard{
+/*.zero-clipboard{
 	position:relative;
 	display:none
-}
-*/
+}*/
+
 
 /***************** Tema Esmeralda *********************/
 /*Turqouise (claro) rgba(26, 188, 156,1.0); */
@@ -362,3 +365,5 @@ h2, h3, h4, h5, h6 {
 	background-color: rgba(26, 188, 156,1.0) !important;/*Turqouise*/
 	color: #fff !important;
 }
+/*Números de Lineas del edictor codeMirror*/
+.CodeMirror-linenumber{font-size:14px !important;}

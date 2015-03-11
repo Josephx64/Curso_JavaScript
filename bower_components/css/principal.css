@@ -104,44 +104,47 @@ pCodigoXXX {
 
 .zero-clipboard {
 	position: relative;
-	display: none
+	/*display: none*/
 }
 
 .btn-clipboard{
-	position: absolute;
+	/*position: absolute;*/
 	top: 0;
 	right: 0;
-	z-index: 10;
+	z-index: 0;
 	display: block;
 	padding: 5px 8px;
 	font-size: 12px;
-	color: #777;
+	color: #fff; /*#777;*/
 	cursor: pointer;
-	background-color: #fff;
-	border: 1px solid #e1e1e8;
+	/*background-color: #fff;*/
+	/*border: 1px solid #e1e1e8;*/
 	border-radius: 0 4px 0 4px
 }
 
-/*.btn-clipboard:hover {
+.btn-clipboard:hover {
 	color: #fff;
-	background-color: #563d7c;
-	border-color: #563d7c
+	/*background-color: #563d7c;*/
+	/*border-color: #563d7c*/
+	text-decoration:none !important;
 }
 
 .btn-clipboard-hover {
 	color: #fff;
-	background-color: #563d7c;
-	border-color: #563d7c
-}*/
+	/*background-color: #563d7c;*/
+	/*border-color: #563d7c*/
+	text-decoration:none !important;
+}
 
-/*#btnCopiar>span{
+/*#btnCopiar>span{*/
+.btnCopiar>span{
 	width:100%;
 	background:#563d7c;
 	padding: 5px 8px;
 	margin: 0px;
-}*/
+}
 
-/*@media (min-width: 768px) {
+@media (min-width: 768px) {
 	.zero-clipboard {
 		display:block
 	}
@@ -150,7 +153,7 @@ pCodigoXXX {
 		top: -16px;
 		border-top-right-radius: 0
 	}
-}*/
+}
 
 #focusedInput {
 	border-color: #ccc;
@@ -250,7 +253,8 @@ button >span >span {
 	background-color: #F0AD4E;
 }
 
-#btnCopiar{
+/*#btnCopiar{*/
+.btnCopiar{
 	/*margin-top:-16px;
 	margin-right:0;
 	margin-left:0;*/
@@ -258,7 +262,7 @@ button >span >span {
 	/*border-bottom-right-radius:4px;
 	border-bottom-left-radius:4px;*/
 	border-radius: 0 4px 0 4px;
-	background-color: #e67e22;
+	/*background-color: #e67e22;*/
 	/*height:29px;*/
 	width: 45px;
 	height:35px;
@@ -274,26 +278,48 @@ button >span >span {
 	border-top: none;
 	border-right: none;
 	padding:0;
+
+	border: none;
 }
 
-/*#btnCopiar:hover{
-	background-color: #563d7c;
-}*/
+.btn-clipboard.glyphicon{
+	color:rgba(44, 62, 80,0.5);
+}
+
+
+.btnCopiar:hover{
+	/*cursor: pointer;*/
+	/*background-color: #563d7c;*/
+}
 
 .btnCopiar-hover {
 	color: #fff;
-	background-color: #563d7c;
-	border-color: #563d7c
+	/*background-color: #563d7c;*/
+	border-color: #563d7c;
+	/*cursor: pointer;*/
 }
 
 .glyphicon-copy {
 	/*margin-top: 5px;
 	margin-bottom: 10px;*/
 	font-size: 24px;
+	cursor: pointer;
+}
+
+.zero-clipboard.btnCopiar{
+	cursor: pointer;
+}
+
+
+pre.blqCod{
+	background-color: rgba(236, 240, 241,0.25) !important;
+	border-radius: 0 !important;
+	border: none;
+	margin:0;
 }
 /**************************************************************************/
 
-/*
+
 .zero-clipboard+.highlight{
 	margin:-15px -15px 15px;
 	border-width:0 0 1px;
@@ -309,11 +335,11 @@ button >span >span {
 	border-bottom-left-radius:4px
 }
 
-.zero-clipboard{
+/*.zero-clipboard{
 	position:relative;
 	display:none
-}
-*/
+}*/
+
 
 /***************** Tema Esmeralda *********************/
 /*Turqouise (claro) rgba(26, 188, 156,1.0); */
@@ -363,3 +389,15 @@ h2, h3, h4, h5, h6 {
 }
 /*Números de Lineas del edictor codeMirror*/
 .CodeMirror-linenumber{font-size:14px !important;}
+
+
+/* *************** Correción de estilo de lista de temas en portada de capitulos *************** */
+.lstTema{
+	display: list-item !important;
+	line-height: 2 !important;
+	list-style: none !important;
+}
+
+.dvIconFile{
+	font-size:22px;
+}
