@@ -23,16 +23,25 @@
 	<link rel="stylesheet" href="//cetec1.net/lms/my_assets/bootstrap/css3/bootstrap.min.css">
 
 	<!-- Estilos Generales -->
-	<link rel="stylesheet" href="//cetec1.net/lms/my_assets/css3/principal.css">
+	<link rel="stylesheet" href="//cetec1.net/lms/bower_components/css/principal.css">
 
 	<!-- Fuente Open Sans -->
 	<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'> -->
+
+	<!-- glyphicons DevIcons -->
+	<link rel="stylesheet" href="//cetec1.net/lms/my_assets/glyphicons/css/devicons.min.css" media="all" title="no title" charset="utf-8">
+
+	<!-- Remodal (Plugin jQuery para ventanas modales) -->
+	<!--<link rel="stylesheet" href="//cetec1.net/lms/my_assets/jquery/jqPlugins/remodal/dist/jquery.remodal.css">-->
+	<link rel="stylesheet" href="//cetec1.net/lms/bower_components/remodal/dist/jquery.remodal.css">
+
+
 	<!-- Script de cofiguraciones generales -->
 	<script src="//cetec1.net/lms/my_assets/js/config.js"></script>
 
 </head>
 
-<body>
+<body class="remodal-bg">
 
 	<!--Contenedor del contenido-->
 	<div class="container">
@@ -42,6 +51,17 @@
 
 			<!-- Columna 12 -->
 			<div class="col-md-12 col-sm-12 col-xs-12">
+
+				<!-- V E N T A N A  M O D A L -->
+				<div class="remodal" data-remodal-id="modal">
+					<h1>CÓDIGO COPIADO</h1>
+					<p>
+					Este código ha sido copiado al portapapeles.
+					</p>
+					<br>
+					<a class="remodal-confirm" href="#">OK</a>
+				</div>
+
 
 				<!-- Boton Imprimir -->
 				<div id="filaBtnImprimir" class="no-print col-md-2 col-md-offset-10 col-sm-2 col-sm-offset-10 col-xs-12 text-right">
@@ -77,26 +97,64 @@
 					Los comentarios de una sola línea se definen añadiendo dos barras oblicuas (<code>//</code>) al principio de la línea.
 				</p>
 
-				<p>
-					Ejemplo de comentario de una sola línea:
-				</p>
 
-				<!-- Bloque de código -->
-<pre>
-// a continuación se muestra un mensaje <br>
+				<!-- Panel de código JS -->
+				<div class="panel panel-warning">
+
+					<!-- Boton Copiar -->
+					<div class="zero-clipboard btnCopiar no-print" data-clipboard-target="blqCod1.7-a" data-remodal-target="modal" alt="Copiar al portapapeles">
+						<a href="#" class="btn-clipboard glyphicon glyphicon-copy"></a>
+					</div>
+
+					<!-- Panel Heading -->
+					<div class="panel-heading">
+					  	<h3 class="panel-title">
+					 		<span class="devicons devicons-javascript_badge dvIconFile" aria-hidden="true"></span> Ejemplo de comentario de una sola línea:
+					 	</h3>
+					</div>
+
+					<!-- Panel Body -->
+					<div class="panel-body" style="padding:0;">
+
+<!-- Bloque de Código  -->
+<pre id="blqCod1.7-a" class="blqCod">
+// a continuación se muestra un mensaje
 alert("mensaje de prueba");
 </pre>
+					</div>
+				</div><!--/Panel de código JS-->
 
-				<p>
-					Ejemplo de comentario de varias líneas:
-				</p>
 
-<pre>
-/* Los comentarios de varias líneas son muy útiles<br>
-cuando se necesita incluir bastante información<br>
-en los comentarios */<br>
+				<!-- Panel de código JS -->
+				<div class="panel panel-warning">
+
+					<!-- Boton Copiar -->
+					<div class="zero-clipboard btnCopiar no-print" data-clipboard-target="blqCod1.7-b" data-remodal-target="modal" alt="Copiar al portapapeles">
+						<a href="#" class="btn-clipboard glyphicon glyphicon-copy"></a>
+					</div>
+
+					<!-- Panel Heading -->
+					<div class="panel-heading">
+						<h3 class="panel-title">
+							<span class="devicons devicons-javascript_badge dvIconFile" aria-hidden="true"></span> Ejemplo de comentario de varias líneas:
+						</h3>
+					</div>
+
+					<!-- Panel Body -->
+					<div class="panel-body" style="padding:0;">
+
+<!-- Bloque de Código  -->
+<pre id="blqCod1.7-b" class="blqCod">
+/* Los comentarios de varias líneas son muy útiles
+cuando se necesita incluir bastante información
+en los comentarios */
 alert("mensaje de prueba");
 </pre>
+				</div>
+			</div><!--/Panel de código JS-->
+
+
+
 				<p>
 					Los comentarios multilínea se definen encerrando el texto del comentario entre los símbolos <code>/*</code> y <code>*/</code>.
 				</p>
@@ -133,10 +191,18 @@ alert("mensaje de prueba");
 	<script src="//cetec1.net/lms/my_assets/jquery/jquery-1.11.1.min.js"></script>
 
 	<!-- jQuery UI-->
-	<!-- <script src="jquery/jquery-ui/js/jquery-ui.js"></script> -->
+	<!-- <script src="//cetec1.net/lms/my_assets/jquery/jquery-ui/js/jquery-ui.js"></script> -->
 
 	<!-- Bootstrap -->
 	<script src="//cetec1.net/lms/my_assets/bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- zClip -->
+	<script type="text/javascript" src="//cetec1.net/lms/my_assets/jquery/jqPlugins/zeroclipboard/dist/ZeroClipboard.js"></script>
+	<script type="text/javascript" src="//cetec1.net/lms/my_assets/js/zClip.config.js"></script>
+
+	<!-- Remodal -->
+	<script src="//cetec1.net/lms/bower_components/remodal/dist/zepto.min.js"></script>
+	<script src="//cetec1.net/lms/bower_components/remodal/dist/jquery.remodal.js"></script>
 
 </body>
 </html>
