@@ -1,0 +1,12 @@
+{
+  "transport": "ftp",
+  "hostname": "cetec1.netdf",
+  "port": "21",
+  "username": "cetecnet",
+  "password": "fk003Sw3Cg",
+  "target": "/public_html/lms/",
+  "uploadOnSave": true,
+  "ignore": [
+    ".git/**"
+  ]
+}

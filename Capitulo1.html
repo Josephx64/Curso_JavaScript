@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="utf-8">
-	<title>Introducción a JavaScript: Capítulo 2: El primer script</title>
+	<title>Introducción a JavaScript: Capítulo 1: Introducción</title>
 
 	<!-- *************************** B A S I C S *************************** -->
 	<meta charset="utf-8">
@@ -52,9 +52,9 @@
 <body style="margin:0">
 
 	<!-- Main jumbotron for a primary marketing message or call to action -->
-	<div class="jumbotron portadaCapitulo imgFondoCapitulo2">
-		<h1 class="tituloCapitulo">Capítulo 2</h1>
-		<span class="subTitulo">El primer script</span>
+	<div class="jumbotron portadaCapitulo imgFondoCapitulo1">
+		<h1 class="tituloCapitulo">Capítulo 1</h1>
+		<span class="subTitulo">Introducción</span>
 	</div>
 
 
@@ -68,14 +68,17 @@
 			<div class="col-md-11 col-sm-11 col-xs-11 col-md-offset-1 col-sm-offset-1 col-xs-offset-1" style="margin: 35px 0px;">
 				<h3 class="clrSunflower-dark">Objetivos:</h3>
 				<ul style="line-height:3em;">
-					<li class="glyphicon glyphicon-facetime-video icnListaTema clrSunflower-dark">
-						<span class="txtListaTema"> Creaión de un primer script sencillo, utilizando el comando alert().</span>
+					<li class="glyphicon glyphicon-flag icnListaTema clrSunflower-dark">
+						<span class="txtListaTema"> ¿Que es JavaScript?</span>
 					</li>
 					<li class="glyphicon glyphicon-flag icnListaTema clrSunflower-dark">
-						<span class="txtListaTema"> Mensaje alert(), visto desde distintos navegadores.</span>
+						<span style="color: #777; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;"> Breve historia de JavaScript.</span>
 					</li>
-					<li class="glyphicon glyphicon-flash icnListaTema clrSunflower-dark">
-						<span class="txtListaTema"> Ejercicio: Modificar el primer script para que realice diversas actividades.</span>
+					<li class="glyphicon glyphicon-flag icnListaTema clrSunflower-dark">
+						<span style="color: #777; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;"> Especificaciones oficiales.</span>
+					</li>
+					<li class="glyphicon glyphicon-flag icnListaTema clrSunflower-dark">
+						<span style="color: #777; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;"> Cómo incluir JavaScript en documentos HTML.</span>
 					</li>
 				</ul>
 
@@ -187,83 +190,6 @@
 	<!-- Scroller -->
 	<!-- <script src="//cetec1.net/lms/my_assets/jquery/jqPlugins/scroller-master/site.js"></script> -->
 	<!-- <script src="//cetec1.net/lms/my_assets/jquery/jqPlugins/scroller-master/jquery.fs.scroller.js"></script> -->
-
-
-	<!--
-	<script>
-		$(document).ready(function() {
-			$(window).on("snap", function(e, data) {
-				$(".scrollbar").scroller("reset");
-			});
-
-			$(".scrollbar").scroller();
-
-			// Reset
-			$(".reset_click").on("click", function() {
-				$(".scrollbar_reset .scroller-content").append("<p>Suspendisse eu nibh in libero euismod condimentum eget nec enim. Suspendisse nec ligula nec augue tristique semper sed suscipit erat. Integer et nunc a augue pellentesque fringilla. Nullam leo ligula, mattis id pretium ac, suscipit sed nunc. Duis ac lorem nec velit malesuada tempus hendrerit ut metus. Quisque a lacus vel lectus rhoncus luctus. Aliquam ornare, nunc sit amet porttitor ornare, libero lectus congue enim, vitae tincidunt sapien justo et ligula. Proin vestibulum blandit fringilla.</p>");
-				$(".scrollbar_reset").scroller("reset");
-				return false;
-			});
-
-			// Scroll To Position
-			$(".scroll_top").on("click", function(e) {
-				e.preventDefault();
-				e.stopPropagation();
-				$(".scrollbar_scroll").scroller("scroll", 0);
-			});
-			$(".scroll_mid").on("click", function(e) {
-				e.preventDefault();
-				e.stopPropagation();
-				$(".scrollbar_scroll").scroller("scroll", 200);
-			});
-			$(".scroll_target").on("click", function(e) {
-				e.preventDefault();
-				e.stopPropagation();
-				$(".demo .scrollbar_scroll").scroller("scroll", $(this).attr("href"));
-			});
-			$(".scroll_animate").on("click", function(e) {
-				e.preventDefault();
-				e.stopPropagation();
-				$(".scrollbar_scroll").scroller("scroll", 300, 500);
-			});
-
-			$(".demo_tabbed").on("update.tabber", function() {
-				$(".scrollbar").scroller("reset");
-			});
-
-			$(window).one("pronto.load", function() {
-				$(window).off("snap.demo");
-				$(".scrollbar").scroller("destroy");
-				$(".reset_click").off("click");
-				$(".scroll_top").off("click");
-				$(".scroll_mid").off("click");
-				$(".scroll_target").off("click");
-				$(".scroll_animate").off("click");
-				$(".demo_tabbed").off("update.tabber");
-			}).trigger("snap");
-		});
-	</script>
--->
-
-<!-- mCustomScrollbar Plugin -->
-<script src="//cetec1.net/lms/bower_components/malihu-custom-scrollbar-plugin-bower/jquery.mCustomScrollbar.concat.min.js">    </script>
-
-<!-- mCustomScrollbar settings script -->
-<script>
-	$(document).ready(function() {
-
-		$("#content_1 ").mCustomScrollbar({
-			autoHideScrollbar:true,
-			scrollButtons:{ enable:false },
-			set_width:350,
-			set_height:250,
-			scrollInertia:1000,
-			mouseWheelPixels:166,
-		});
-
-	});
-</script>
-
 
 </body>
 </html>

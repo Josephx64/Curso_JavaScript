@@ -283,7 +283,7 @@ button >span >span {
 }
 
 .btn-clipboard.glyphicon{
-	color:rgba(44, 62, 80,0.5);
+	color:rgba(44, 62, 80,0.25);
 }
 
 
@@ -374,7 +374,7 @@ h1{
 }
 
 h2, h3, h4, h5, h6 {
-	color: rgba(22, 160, 133,1.0); /*Green sea*/
+	color: rgba(22, 160, 133,1.0) /*Green sea*/
 }
 
 .jumbotron .h1, .jumbotron h1 {
@@ -392,12 +392,56 @@ h2, h3, h4, h5, h6 {
 
 
 /* *************** Correción de estilo de lista de temas en portada de capitulos *************** */
-.lstTema{
+.clrSunflower-dark{
+	color: #f6bb42;
+}
+.clrSunflower-light{
+	color: #ffce54;
+}
+
+.txtListaTema{
+	color: #777;
+	font-family: Helvetica Neue,
+	Helvetica, Arial, sans-serif;
+}
+
+.icnListaTema{
+	font-size: 16px !important;
 	display: list-item !important;
 	line-height: 2 !important;
 	list-style: none !important;
+	/*color: #f6bb42;*/
 }
 
 .dvIconFile{
 	font-size:22px;
+}
+
+.portadaCapitulo{
+	height:350px;
+	margin-bottom:0;
+	padding-left:75px;
+	/*background-color: #ffce54;*/
+	border-bottom: 5px solid #AAB2BD;
+}
+
+.imgFondoCapitulo1{
+	background:#ffce54 url('//cetec1.net/lms/bower_components/imagenes/PortadaCapitulo1_JavaScript.png') no-repeat !important;
+}
+
+.portadaCapitulo.imgFondoCapitulo2{
+	background:#ffce54 url('//cetec1.net/lms/bower_components/imagenes/PortadaCapitulo2_JavaScript.png') no-repeat !important;
+}
+
+.tituloCapitulo{
+	font-size: 85px !important;
+	line-height: 55px;
+}
+
+.subTitulo{
+	color: #fff;
+	font-size: 35px;
+	font-family: Georgia;
+	font-style: italic;
+	/*margin-left: 10px;*/
 }
