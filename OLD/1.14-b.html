@@ -64,6 +64,17 @@
 	<script src="//cetec1.net/lms/bower_components/codemirror/mode/xml/xml.js"></script>
 	<script src="//cetec1.net/lms/bower_components/codemirror/mode/htmlmixed/htmlmixed.js"></script>
 
+	<style type="text/css">
+		.CodeMirror {
+			font-size: 16px;
+			/* background: #f5f5f5; */
+			border: 1px solid #e3e3e3;
+			min-height: 200px;
+			padding-bottom:5px;
+		}
+	</style>
+
+
 </head>
 
 <body class="remodal-bg">
@@ -102,38 +113,31 @@
 					<a class="remodal-confirm" href="#">OK</a>
 				</div><!--/Ventana Modal-->
 
-
-				<!-- ********** PANEL 1.4.1 ********** -->
-
-				<!-- Panel de código HTML 1.4.1 -->
-				<div class="panel panel-info print-only">
+				<!-- Panel de código HTML -->
+				<div class="panel panel-info">
 
 					<!-- Boton Copiar -->
-					<!-- <div class="zero-clipboard btnCopiar no-print" data-clipboard-target="pnlCod1.4.1" data-remodal-target="modal" alt="Copiar al portapapeles" data-toggle="tooltip" data-placement="left" title="Copiar código al portapapeles">
+					<div class="zero-clipboard btnCopiar no-print" data-clipboard-target="blqCod1.4.1" data-remodal-target="modal" alt="Copiar al portapapeles" data-toggle="tooltip" data-placement="left" title="Copiar código al portapapeles">
 						<a href="#" class="btn-clipboard glyphicon glyphicon-copy"></a>
-					</div> -->
+					</div>
 
 					<div class="panel-heading">
-						<h3 class="panel-title">
-							<span class="devicons devicons-html5 dvIconFile" aria-hidden="true"></span>
-							<span class="devicons devicons devicons-javascript_badge dvIconFile" aria-hidden="true"></span> documento141.html
-						</h3>
+					  	<h3 class="panel-title">
+					 		<span class="devicons devicons-html5 dvIconFile" aria-hidden="true"></span> documento141.html
+					 	</h3>
 					</div>
 
 					<div class="panel-body" style="padding:0;">
 
 
 
-<!-- Código 1.4.1 -->
-<pre id="pnlCod1.4.1" class="blqCod">
+<!-- Bloque de cógio 1.4.1 -->
+<pre id="blqCod1.4.1X" class="blqCod">
 	&lt;!DOCTYPE html&gt;
 	&lt;html lang="en"&gt;
 	&lt;head&gt;
 		&lt;meta charset="UTF-8"&gt;
-		&lt;title&gt;JavaScript Incrustado&lt;/title&gt;
-		&lt;script type="text/javascript"&gt;
-			alert("Hola mundo!");
-		&lt;/script&gt;
+	    &lt;title&gt;JavaScript Incrustado&lt;/title&gt;
 	&lt;/head&gt;
 
 	&lt;body&gt;
@@ -146,26 +150,25 @@
 				</div><!--/Panel de código HTML-->
 
 
-				<!-- Panel Movie 1.4.1 -->
-				<div class="panel panel-info no-print">
+
+
+				<!-- Panel de código HTML -->
+				<div class="panel panel-info">
 
 					<!-- Boton Copiar -->
-					<div class="zero-clipboard btnCopiar no-print" data-clipboard-target="pnlMovie_1" data-remodal-target="modal" alt="Copiar al portapapeles" data-toggle="tooltip" data-placement="left" title="Copiar código base al portapapeles">
+					<div class="zero-clipboard btnCopiar no-print" data-clipboard-target="blqCod1.4.1" data-remodal-target="modal" alt="Copiar al portapapeles" data-toggle="tooltip" data-placement="left" title="Copiar código al portapapeles">
 						<a href="#" class="btn-clipboard glyphicon glyphicon-copy"></a>
 					</div>
 
-					<!-- Encabezado del panel -->
 					<div class="panel-heading">
 						<h3 class="panel-title">
-							<span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> documento141.html
+							<span class="devicons devicons-html5 dvIconFile" aria-hidden="true"></span> documento141.html
 						</h3>
 					</div>
 
-					<!-- Cuerpo del panel -->
 					<div class="panel-body" style="padding:0;">
 
-<!-- Movie 1.4.1 (Pelicula 1)-->
-<textarea id="pnlMovie_1" name="code" class="CodeMirror">
+<textarea id="blqCod1.4.1" name="code" class="no-visible" >
 &lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
@@ -198,7 +201,7 @@ wait: 1000 ::: &lt;b&gt;2)&lt;/b&gt; Escribir el código JavaScript
 
 tooltip: { text: "El código JS debe estar dentro las etiquetas script</code>", pos: "4:4", wait: 4000 }
 
-type: &lt;script type="text/javascript"&gt;
+type: &lt;script&gt;
 type: &lt;/script&gt;
 
 
@@ -223,7 +226,7 @@ type: "Hola mundo!"
 </textarea>
 
 </div>
-</div><!--/Panel Movie 1.4.1-->
+</div><!--/Panel de código HTML-->
 
 			    <!-- <br> -->
 				<div class="no-print col-md-2 col-md-offset-5 col-sm-2 col-sm-offset-5 col-xs-12 ">
@@ -237,7 +240,53 @@ type: "Hola mundo!"
 				<br class="no-print">
 				<br class="no-print">
 				<br class="no-print">
-			<!-- ********** PANEL 1.4.1 ********** -->
+
+				<!-- Script de configuracion de la pelicula -->
+				<script>
+
+					var movie = CodeMirror.movie("blqCod1.4.1");
+
+					// Create simple UI to interact with movie
+					var btnPlay = document.getElementById("btnPlay");
+					var btnIcon = document.getElementById("btnIcon");
+					var lblPlay = document.getElementById("lblPlay");
+
+					btnPlay.onclick = function() {
+						this.blur();
+						if (movie.state() == 'play') {
+							movie.pause();
+							//this.innerHTML = 'Play';
+							lblPlay.innerHTML = 'Play';
+							btnIcon.classList.remove('glyphicon-pause');
+							btnIcon.classList.add('glyphicon-play');
+
+							btnPlay.classList.remove('btn-warning');
+							btnPlay.classList.add('btn-success');
+
+						} else {
+							movie.play();
+							//this.innerHTML = 'Pause';
+							lblPlay.innerHTML = 'Pausa';
+							btnIcon.classList.remove('glyphicon-play');
+							btnIcon.classList.add('glyphicon-pause');
+
+							btnPlay.classList.remove('btn-success');
+							btnPlay.classList.add('btn-warning');
+						}
+					};
+
+					// La pelicula termino
+					movie.on('stop', function(name) {
+						btnIcon.classList.remove('glyphicon-pause');
+						btnPlay.classList.remove('btn-warning');
+						btnIcon.classList.add('glyphicon-play');
+						btnPlay.classList.add('btn-success');
+						lblPlay.innerHTML = 'Play';
+					});
+
+
+				</script>
+
 
 
 				<p>Este método se emplea cuando se define un bloque pequeño de código o cuando se quieren incluir instrucciones específicas en un determinado documento HTML que completen las instrucciones y funciones que se incluyen por defecto en todos los documentos del sitio web.</p>
@@ -261,15 +310,11 @@ type: "Hola mundo!"
 				<p>Las instrucciones JavaScript se pueden incluir en un archivo externo de tipo JavaScript que los documentos HTML enlazan mediante la etiqueta <code>&lt;script&gt;</code>. Se pueden crear todos los archivos JavaScript que sean necesarios y cada documento HTML puede enlazar tantos archivos JavaScript como necesite.</p>
 				<p>Ejemplo:</p>
 
-
-
-				<!-- ********** PANEL 1.4.2-a ********** -->
-
-				<!-- Panel de código JS 1.4.2-a -->
+				<!-- Panel de código JS -->
 				<div class="panel panel-warning">
 
 					<!-- Boton Copiar -->
-					<div class="zero-clipboard btnCopiar no-print" data-clipboard-target="pnlCod1.4.2-a" data-remodal-target="modal" alt="Copiar al portapapeles" data-toggle="tooltip" data-placement="left" title="Copiar código al portapapeles">
+					<div class="zero-clipboard btnCopiar no-print" data-clipboard-target="blqCod1.4.2-a" data-remodal-target="modal" alt="Copiar al portapapeles" data-toggle="tooltip" data-placement="left" title="Copiar código al portapapeles">
 						<a href="#" class="btn-clipboard glyphicon glyphicon-copy"></a>
 					</div>
 
@@ -283,147 +328,50 @@ type: "Hola mundo!"
 					<!-- Panel Body -->
 					<div class="panel-body" style="padding:0;">
 
-<!-- Código 1.4.2-a -->
-<pre id="pnlCod1.4.2-a" class="blqCod">
+<!-- Bloque de Código  -->
+<pre id="blqCod1.4.2-a" class="blqCod">
 alert("Un mensaje de prueba");
 </pre>
 
 					</div>
 				</div><!--/Panel de código JS-->
-				<br>
 
 
 
-				<!-- ********** PANEL 1.4.2-b ********** -->
-
-				<!-- Panel de código HTML 1.4.2-b-->
-				<div class="panel panel-info print-only">
+				<!-- Panel de código HTML -->
+				<div class="panel panel-info">
 
 					<!-- Boton Copiar -->
-					<!-- <div class="zero-clipboard btnCopiar no-print" data-clipboard-target="pnlCod1.4.2-b" data-remodal-target="modal" alt="Copiar al portapapeles" data-toggle="tooltip" data-placement="left" title="Copiar código al portapapeles">
+					<div class="zero-clipboard btnCopiar no-print" data-clipboard-target="blqCod1.4.2-b" data-remodal-target="modal" alt="Copiar al portapapeles" data-toggle="tooltip" data-placement="left" title="Copiar código al portapapeles">
 						<a href="#" class="btn-clipboard glyphicon glyphicon-copy"></a>
-					</div> -->
+					</div>
 
 					<div class="panel-heading">
-						<h3 class="panel-title">
-							<span class="devicons devicons-html5 dvIconFile" aria-hidden="true"></span>
-							<span class="devicons devicons devicons-javascript_badge dvIconFile" aria-hidden="true"></span> documento142.html
-						</h3>
+					  	<h3 class="panel-title">
+					 		<span class="devicons devicons-html5 dvIconFile" aria-hidden="true"></span> documento142.html
+					 	</h3>
 					</div>
 
 					<div class="panel-body" style="padding:0;">
 
 
-<!-- Código 1.4.2-b -->
-<pre id="pnlCod1.4.2-b" class="blqCod">
+<!-- Bloque de Código  -->
+<pre id="blqCod1.4.2-b" class="blqCod">
 &lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
+&lt;html lang="es"&gt;
+
 &lt;head&gt;
-	&lt;meta charset="UTF-8"&gt;
-	&lt;title&gt;JavaScript Vinculado&lt;/title&gt;
-	&lt;script type="text/javascript" src="/js/codigo.js"&gt;&lt;/script&gt;
+&emsp; &lt;meta charset="utf-8"&gt;
+&emsp; &lt;title&gt;Ejemplo de código JavaScript en el propio documento&lt;/title&gt;
+&emsp; &lt;script type=”text/javascript” src="js/codigo.js"&gt;&lt;/script&gt;
 &lt;/head&gt;
 
 &lt;body&gt;
-&lt;p&gt;Ejemplo de código JavaScript desde un archivo externo&lt;/p&gt;
+&emsp; &lt;p&gt;Un párrafo de texto.&lt;/p&gt;
 &lt;/body&gt;
-&lt;/html&gt;
-</pre> <!--/Bloque de código-->
-
-					</div>
+&lt;/html&gt;</pre>
+					 </div>
 				</div><!--/Panel de código HTML-->
-
-
-				<!-- Panel Movie 1.4.2-b -->
-				<div class="panel panel-info no-print">
-
-					<!-- Boton Copiar -->
-					<div class="zero-clipboard btnCopiar no-print" data-clipboard-target="pnlMovie_2" data-remodal-target="modal" alt="Copiar al portapapeles" data-toggle="tooltip" data-placement="left" title="Copiar código base al portapapeles">
-						<a href="#" class="btn-clipboard glyphicon glyphicon-copy"></a>
-					</div>
-
-					<!-- Encabezado del panel -->
-					<div class="panel-heading">
-						<h3 class="panel-title">
-							<span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> documento142.html
-						</h3>
-					</div>
-
-					<!-- Cuerpo del panel -->
-					<div class="panel-body" style="padding:0;">
-
-<!-- Movie 1.4.2-b (Pelicula 2)-->
-<textarea id="pnlMovie_2" name="code" class="CodeMirror">
-&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-&lt;head&gt;
-	&lt;meta charset="UTF-8"&gt;
-	&lt;title&gt;JavaScript Vinculado&lt;/title&gt;
-&lt;/head&gt;
-
-&lt;body&gt;
-&lt;p&gt;Ejemplo de código JavaScript desde un archivo externo&lt;/p&gt;|
-&lt;/body&gt;
-&lt;/html&gt;
-@@@
-
-#1) ************************
-wait: 250 ::: &lt;b&gt;1)&lt;/b&gt; Colocarse dentro de la cabecera del documento HTML (dentro de las etiquetas head).
-wait: 3500
-
-run: {command: "goLineUp", times: 4}
-wait: 500
-
-run: goLineEnd
-wait: 2000
-
-run: newlineAndIndent
-
-
-#2) ************************
-wait: 1000 ::: &lt;b&gt;2)&lt;/b&gt; Abrir un bloque de código JS sin nada dentro
-
-tooltip: { text: "Abrir un bloque de código JS vacio en una sola línea</code>", pos: "5:4", wait: 4000 }
-type: &lt;script type="text/javascript" &gt;&lt;/script&gt;
-
-
-#3) ************************
-wait: 2000 ::: &lt;b&gt;3)&lt;/b&gt; Agregar el parámetro src (source/fuente u origen)
-
-run: {command: "goWordLeft", times: 1}
-run: {command: "goCharLeft", times: 3}
-wait: 500
-
-type: src=""
-
-#4) ************************
-wait: 3000 ::: &lt;b&gt;4)&lt;/b&gt; Especificar la ruta y nombre del script js
-tooltip: { text: "En este ejemplo el script se encuentra dentro de un directorio llamado js", pos: "5:37", wait: 5000 }
-wait: 1000
-tooltip: { text: "Por lo tanto es necesario especificar la ruta antes del nombre del script", pos: "5:37", wait: 5000 }
-run: {command: "goCharLeft", times: 1}
-type: js/
-wait: 1000
-
-type: codigo.js
-</textarea>
-
-				</div>
-			</div><!--/Panel Movie 1.4.2-b-->
-
-				<!-- <br> -->
-				<div class="no-print col-md-2 col-md-offset-5 col-sm-2 col-sm-offset-5 col-xs-12 ">
-					<!-- Botón Play -->
-					<button id="btnPlay2" type="button" class="btn btn-success no-print" aria-label="Play/Pausa">
-						<span id="btnIcon2" class="glyphicon glyphicon-play" aria-hidden="true"> <span id="lblPlay2">Play</span>
-						</span>
-					</button>
-					<br><br>
-				</div>
-				<br class="no-print">
-				<br class="no-print">
-				<br class="no-print">
-				<!--/**********PANEL 1.4.2-b**********-->
 
 
 
@@ -516,9 +464,6 @@ type: codigo.js
 
 	<!-- Tooltips BS3 Initialize -->
 	<script src="//cetec1.net/lms/bower_components/js/BS3_Tooltip.init.js"></script>
-
-	<!-- cmMovie.config.js: Script de configuracion de la pelicula 1.4.1  -->
-	<script src="//cetec1.net/lms/bower_components/js/cmMovie.config.js"></script>
 
 </body>
 </html>
