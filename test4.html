@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    window.onload = function(){
+        function Movie(pnlMovie_N, btnPlay, btnIcon, lblPlay){
+            this.pnlMovie_N = pnlMovie_N;
+            this.btnPlay = btnPlay;
+            this.btnIcon = btnIcon;
+            this.lblPlay = lblPlay;
+        }
+        //Todos los botones con la clase .btnPlay
+        var  btnPlay = document.getElementsByClassName("btnPlay");
+        btnPlay.onclick = function() {
+            this.blur();
+            if (Movie.state() == 'play') {
+                Movie.pause();
+                //this.innerHTML = 'Play';
+                lblPlay.innerHTML = 'Play';
+                btnIcon.classList.remove('glyphicon-pause');
+                btnIcon.classList.add('glyphicon-play');
+
+                btnPlay.classList.remove('btn-warning');
+                btnPlay.classList.add('btn-success');
+            } else {
+                movie.play();
+                //this.innerHTML = 'Pause';
+                lblPlay.innerHTML = 'Pausa';
+                btnIcon.classList.remove('glyphicon-play');
+                btnIcon.classList.add('glyphicon-pause');
+
+                btnPlay.classList.remove('btn-success');
+                btnPlay.classList.add('btn-warning');
+            }
+
+        // Movie.prototype.sayName = function(){
+        //     console.log("Hello, my name is " + this.pnlMovie_N);
+        };
+        function movieMaker(name, lblPlay, btnIcon, lblPlay){
+            var instance = new Movie(pnlMovie_N, lblPlay, btnIcon, lblPlay);
+            return instance;
+        }
+        var Movie =document.querySelector(".btnPlay").closest(".near.ancestor")
+        var joseph = new movieMaker("Joseph", 10, 12, 10);
+        var viry = new movieMaker("Viry", 12, 14, 18);
+    }
+    </script>
+
+    <!-- -->
+</body>
+</html>

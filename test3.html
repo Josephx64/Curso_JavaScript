@@ -5,22 +5,35 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
-        function gladiatorMaker(name, attack, defense, hitPoints){
-            return{
-                name: name,
-                attack: attack,
-                defense: defense,
-                hitPoints: hitPoints,
-                sayName: function(){
-                    console.log("Hello, my name is " + this.name);
-                }
-            };
-        }
+<script>
+    function Gladiator(name, attack, defense, hitPoints){
+        this.name = name;
+        this.attack = attack;
+        this.defense = defense;
+        this.hitPoints = hitPoints;
+    }
+    Gladiator.prototype.sayName = function(){
+        console.log("Hello, my name is " + this.name);
+    };
+    function gladiatorMaker(name, attack, defense, hitPoints){
+        // return{
+        //     name: name,
+        //     attack: attack,
+        //     defense: defense,
+        //     hitPoints: hitPoints,
+        //     sayName: function(){
+        //         console.log("Hello, my name is " + this.name);
+        //     }
+        // };
 
-        var joseph = new gladiatorMaker("Joseph", 10, 12, 10);
-        var viry = new gladiatorMaker("Viry", 12, 14, 18);
-    </script>
+        var instance = new Gladiator(name, attack, defense, hitPoints);
+        return instance;
+    }
+
+    var joseph = new gladiatorMaker("Joseph", 10, 12, 10);
+    var viry = new gladiatorMaker("Viry", 12, 14, 18);
+</script>
+    <!-- -->
 
     <script>
         function movieMaker(peli, btnPlay, btnIcon, lblPlay){
@@ -67,5 +80,49 @@
             }
         };
     </script>
+-->
+
+    <script>
+    var movie = CodeMirror.movie("pnlMovie_1");
+
+    // Create simple UI to interact with movie
+    var btnPlay = document.getElementById("btnPlay");
+    var btnIcon = document.getElementById("btnIcon");
+    var lblPlay = document.getElementById("lblPlay");
+
+    btnPlay.onclick = function() {
+        this.blur();
+        if (movie.state() == 'play') {
+            movie.pause();
+            //this.innerHTML = 'Play';
+            lblPlay.innerHTML = 'Play';
+            btnIcon.classList.remove('glyphicon-pause');
+            btnIcon.classList.add('glyphicon-play');
+
+            btnPlay.classList.remove('btn-warning');
+            btnPlay.classList.add('btn-success');
+
+        } else {
+            movie.play();
+            //this.innerHTML = 'Pause';
+            lblPlay.innerHTML = 'Pausa';
+            btnIcon.classList.remove('glyphicon-play');
+            btnIcon.classList.add('glyphicon-pause');
+
+            btnPlay.classList.remove('btn-success');
+            btnPlay.classList.add('btn-warning');
+        }
+    };
+
+    // La pelicula termino
+    movie.on('stop', function(name) {
+        btnIcon.classList.remove('glyphicon-pause');
+        btnPlay.classList.remove('btn-warning');
+        btnIcon.classList.add('glyphicon-play');
+        btnPlay.classList.add('btn-success');
+        lblPlay.innerHTML = 'Play';
+    });
+    </script>
+
 </body>
 </html>
