@@ -25,10 +25,10 @@
     <link rel="stylesheet" href="//cetec1.net/lms/bower_components/codemirror-movie/dist/cm-movie.css">
 
 	<!-- Bootstrap -->
-	<link rel="stylesheet" href="//cetec1.net/lms/my_assets/bootstrap/css3/bootstrap.min.css">
+	<link rel="stylesheet" href="//cetec1.net/lms/bower_components/bootstrap/dist/css/bootstrap.min.css">
 
 	<!-- Estilos Generales -->
-	<link rel="stylesheet" href="//cetec1.net/lms/bower_components/css/principal.css">
+	<link rel="stylesheet" href="//cetec1.net/lms/my_assets/css/principal.css">
 
 	<!-- Fuente Open Sans -->
 	<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'> -->
@@ -438,38 +438,116 @@ type: codigo.js
 				<h4>1.4.3. Incluir JavaScript en los elementos HTML</h4>
 				<p>Este último método es el menos utilizado, ya que consiste en incluir trozos de JavaScript dentro del código HTML de la página:</p>
 
-				<!-- Panel de código HTML -->
-				<div class="panel panel-info">
+				<!-- ********** PANEL 1.4.3 ********** -->
 
-					<!-- Boton Copiar -->
-					<div class="zero-clipboard btnCopiar no-print" data-clipboard-target="blqCod1.4.3" data-remodal-target="modal" alt="Copiar al portapapeles" data-toggle="tooltip" data-placement="left" title="Copiar código al portapapeles">
-						<a href="#" class="btn-clipboard glyphicon glyphicon-copy"></a>
-					</div>
+				<!-- Panel de código HTML 1.3 -->
+				<div class="panel panel-info print-only">
 
 					<div class="panel-heading">
-					  	<h3 class="panel-title">
-					 		<span class="devicons devicons-html5 dvIconFile" aria-hidden="true"></span> documento143.html
-					 	</h3>
+						<h3 class="panel-title">
+							<span class="devicons devicons-html5 dvIconFile" aria-hidden="true"></span>
+							<span class="devicons devicons devicons-javascript_badge dvIconFile" aria-hidden="true"></span> documento143.html
+						</h3>
 					</div>
 
 					<div class="panel-body" style="padding:0;">
 
 
-<!-- Bloque de cógio 1.4.3 -->
-<pre id="blqCod1.4.3" class="blqCod">
+<!-- Código 1.4.3 -->
+<pre id="pnlCod1.4.3" class="blqCod">
 &lt;!DOCTYPE html&gt;
 &lt;html lang="es"&gt;
 &lt;head&gt;
 	&lt;meta charset="utf-8"&gt;
-	&lt;title&gt;Ejemplo de código JavaScript&lt;/title&gt;
+	&lt;title&gt;Ejemplo de código JavaScript en el propio documento&lt;/title&gt;
 &lt;/head&gt;
 
 &lt;body&gt;
 	&lt;p onclick="alert('Un mensaje de prueba')"&gt;Un párrafo de texto.&lt;/p&gt;
 &lt;/body&gt;
-&lt;/html&gt;</pre>
+&lt;/html&gt;
+</pre> <!--/Bloque de código-->
+
 					</div>
-				</div> <!--/Panel de código HTML-->
+				</div><!--/Panel de código HTML-->
+
+
+				<!-- Panel Movie 1.4.3 -->
+				<div class="panel panel-info no-print">
+
+					<!-- Boton Copiar -->
+					<div class="zero-clipboard btnCopiar no-print" data-clipboard-target="pnlMovie_3" data-remodal-target="modal" alt="Copiar al portapapeles" data-toggle="tooltip" data-placement="left" title="Copiar código base al portapapeles">
+						<a href="#" class="btn-clipboard glyphicon glyphicon-copy"></a>
+					</div>
+
+					<!-- Encabezado del panel -->
+					<div class="panel-heading">
+						<h3 class="panel-title">
+							<span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> documento143.html
+						</h3>
+					</div>
+
+					<!-- Cuerpo del panel -->
+					<div class="panel-body" style="padding:0;">
+
+<!-- Movie 1.4.3 (Pelicula 3)-->
+<textarea id="pnlMovie_3" name="code" class="CodeMirror">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+	&lt;meta charset="utf-8"&gt;
+	&lt;title&gt;Ejemplo de código JavaScript en el propio documento&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+	&lt;p &gt;Un párrafo de texto.&lt;/p&gt;|
+&lt;/body&gt;
+&lt;/html&gt;
+
+@@@
+
+#1) ************************
+wait: 250 ::: &lt;b&gt;1)&lt;/b&gt; Colocarse dentro de la etiqueta de apertura del elemento HTML que tendrá el código JS
+wait: 3500
+
+run: {command: "goWordLeft", times: 5}
+run: {command: "goCharLeft", times: 1}
+
+wait: 500
+
+
+#2) ************************
+wait: 1000 ::: &lt;b&gt;2)&lt;/b&gt; Escribir el script JS
+
+tooltip: { text: "Escribir el código JS", pos: "8:4", wait: 4000 }
+type: onclick=""
+
+#tooltip: { text: "El evento onclick ejecuta ", pos: "8:10", wait: 4000 }
+run: {command: "goCharLeft", times: 1}
+wait: 500
+
+type: alert('Un mensaje de prueba');
+wait: 1000
+tooltip: { text: "Este script manda un mensaje en cuanto el usuario haga click en el párrafo", pos: "8:5", wait: 6000 }
+
+</textarea>
+
+				</div>
+			</div><!--/Panel Movie 1.4.3 -->
+
+				<!-- <br> -->
+				<div class="no-print col-md-2 col-md-offset-5 col-sm-2 col-sm-offset-5 col-xs-12 ">
+					<!-- Botón Play -->
+					<button id="btnPlay3" type="button" class="btn btn-success no-print" aria-label="Play/Pausa">
+						<span id="btnIcon3" class="glyphicon glyphicon-play" aria-hidden="true"> <span id="lblPlay3">Play</span>
+						</span>
+					</button>
+					<br><br>
+				</div>
+				<br class="no-print">
+				<br class="no-print">
+				<br class="no-print">
+				<!--/**********PANEL 1.4.3**********-->
 
 				<p>El mayor inconveniente de este método es que ensucia innecesariamente el código HTML de la página y complica el mantenimiento del código JavaScript. En general, este método sólo se utiliza para definir algunos eventos y en algunos otros casos especiales, como se verá más adelante.</p>
 
@@ -504,7 +582,7 @@ type: codigo.js
 	<!-- <script src="//cetec1.net/lms/my_assets/jquery/jquery-ui/js/jquery-ui.js"></script> -->
 
 	<!-- Bootstrap -->
-	<script src="//cetec1.net/lms/my_assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="//cetec1.net/lms/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
 	<!-- zClip -->
 	<script type="text/javascript" src="//cetec1.net/lms/my_assets/jquery/jqPlugins/zeroclipboard/dist/ZeroClipboard.js"></script>
@@ -518,7 +596,7 @@ type: codigo.js
 	<script src="//cetec1.net/lms/bower_components/js/BS3_Tooltip.init.js"></script>
 
 	<!-- cmMovie.config.js: Script de configuracion de la pelicula 1.4.1  -->
-	<script src="//cetec1.net/lms/bower_components/js/cmMovie.config.js"></script>
+	<script src="//cetec1.net/lms/my_assets/js/cmMovie.config.js"></script>
 
 </body>
 </html>
