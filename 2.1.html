@@ -21,24 +21,25 @@
 
 	<!-- *************************** C S S *************************** -->
 	<!-- codemirror -->
-    <link rel="stylesheet" href="//cetec1.net/lms/bower_components/codemirror/lib/codemirror.css" />
-
-    <!-- codemirror-movie -->
-    <link rel="stylesheet" href="//cetec1.net/lms/bower_components/codemirror-movie/dist/cm-movie.css" />
+    <link rel="stylesheet" href="//cetec1.net/lms/bower_components/codemirror/lib/codemirror.css">
+    <link rel="stylesheet" href="//cetec1.net/lms/bower_components/codemirror-movie/dist/cm-movie.css">
 
 	<!-- Bootstrap -->
-	<link rel="stylesheet" href="//cetec1.net/lms/my_assets/bootstrap/css3/bootstrap.min.css">
+	<link rel="stylesheet" href="//cetec1.net/lms/bower_components/bootstrap/dist/css/bootstrap.min.css">
 
 	<!-- Estilos Generales -->
-	<link rel="stylesheet" href="//cetec1.net/lms/bower_components/css/principal.css">
-
-	<link rel="stylesheet" href="//cetec1.net/lms/bower_components/css/codeMirror.css">
+	<link rel="stylesheet" href="//cetec1.net/lms/my_assets/css/principal.css">
 
 	<!-- Fuente Open Sans -->
-	<!-- <link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'> -->
+	<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'> -->
+
+	<!-- glyphicons DevIcons -->
+	<link rel="stylesheet" href="//cetec1.net/lms/my_assets/glyphicons/css/devicons.min.css" media="all" title="no title" charset="utf-8">
 
 	<!-- Remodal (Plugin jQuery para ventanas modales) -->
-	<!-- <link rel="stylesheet" href="//cetec1.net/lms/my_assets/jquery/jqPlugins/remodal/dist/jquery.remodal.css"> -->
+	<link rel="stylesheet" href="//cetec1.net/lms/bower_components/remodal/dist/jquery.remodal.css">
+
+	<link rel="stylesheet" href="//cetec1.net/lms/bower_components/css/codeMirror.css">
 
 
 	<!-- *************************** J S *************************** -->
@@ -75,38 +76,102 @@
 
 </head>
 
-<body style="margin:0">
+<body class="remodal-bg">
 
-	<!-- Boton Imprimir -->
-	<div id="filaBtnImprimir" class="no-print col-md-2 col-md-offset-10 col-sm-2 col-sm-offset-10 col-xs-12 text-right">
-		<button id="btnImprimir" type="button" class="btn btn-success no-print" aria-label="Imprimir">
-			<span class="glyphicon glyphicon-print" aria-hidden="true"> <span>Imprimir</span></span>
-		</button>
-	</div>
-
-
-	<!--Contenedor del contenido principal -->
+	<!--Contenedor principal-->
 	<div class="container">
 
 		<!--Fila de contenido-->
 		<div class="row">
 
-			<!--/Columna 12-->
+			<!-- Columna 12 -->
 			<div class="col-md-12 col-sm-12 col-xs-12">
+
+				<!-- Boton Imprimir -->
+				<div id="filaBtnImprimir" class="no-print col-md-2 col-md-offset-10 col-sm-2 col-sm-offset-10 col-xs-12 text-right">
+					<button id="btnImprimir" type="button" class="btn btn-success no-print" aria-label="Imprimir">
+						<span class="glyphicon glyphicon-print" aria-hidden="true"> <span>Imprimir</span></span>
+					</button>
+				</div>
 
 				<h3>2.1 El primer script</h3>
 				<p>
 					A continuación, se muestra un primer script sencillo pero completo:
 				</p>
 
-				<textarea id="code" name="code" class="container" >
+				<!-- V E N T A N A  M O D A L -->
+				<div class="remodal" data-remodal-id="modal">
+					<h1>CÓDIGO COPIADO</h1>
+					<p>
+					  Este código ha sido copiado al portapapeles.
+					</p>
+					<br>
+					<a class="remodal-confirm" href="#">OK</a>
+				</div><!--/Ventana Modal-->
+
+				<!-- ********** PANEL 2.1 ********** -->
+
+				<!-- Panel de código HTML 2.1 -->
+				<div class="panel panel-info print-only">
+
+					<div class="panel-heading">
+						<h3 class="panel-title">
+							<span class="devicons devicons-html5 dvIconFile" aria-hidden="true"></span>
+							<span class="devicons devicons devicons-javascript_badge dvIconFile" aria-hidden="true"></span> documento21.html
+						</h3>
+					</div>
+
+					<div class="panel-body" style="padding:0;">
+
+
+<!-- Código 2.1 -->
+<pre id="pnlCod2.1" class="blqCod">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;El primer script&lt;/title&gt;
+    &lt;script&gt;
+    	alert("Hola Mundo!");
+    &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p&gt;Esta página contiene el primer script&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre> <!--/Bloque de código-->
+
+
+					</div>
+				</div><!--/Panel de código HTML-->
+
+
+				<!-- Panel Movie 2.1 -->
+				<div class="panel panel-info no-print">
+
+					<!-- Boton Copiar -->
+					<div class="zero-clipboard btnCopiar no-print" data-clipboard-target="pnlMovie_1" data-remodal-target="modal" alt="Copiar al portapapeles" data-toggle="tooltip" data-placement="left" title="Copiar código base al portapapeles">
+						<a href="#" class="btn-clipboard glyphicon glyphicon-copy"></a>
+					</div>
+
+					<!-- Encabezado del panel -->
+					<div class="panel-heading">
+						<h3 class="panel-title">
+							<span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> documento21.html
+						</h3>
+					</div>
+
+					<!-- Cuerpo del panel -->
+					<div class="panel-body" style="padding:0;">
+
+<!-- Movie 2.1 -->
+<textarea id="pnlMovie_1" name="code" class="CodeMirror">
 &lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
     &lt;title&gt;&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
-        |
+    |
 &lt;/body&gt;
 &lt;/html&gt;
 
@@ -169,9 +234,12 @@ type: "Hola mundo!"
 #run: {command: "goWordLeft", times: 2} ::: Move word left
 #run: {command: "goWordUp", times: 3}
 
-				</textarea>
+</textarea>
 
-			    <br>
+				</div>
+			</div><!--/Panel Movie 2.1 -->
+
+				<!-- <br> -->
 				<div class="no-print col-md-2 col-md-offset-5 col-sm-2 col-sm-offset-5 col-xs-12 ">
 					<!-- Botón Play -->
 					<button id="btnPlay" type="button" class="btn btn-success no-print" aria-label="Play/Pausa">
@@ -183,53 +251,7 @@ type: "Hola mundo!"
 				<br class="no-print">
 				<br class="no-print">
 				<br class="no-print">
-
-				<!-- Script de configuracion de la pelicula -->
-				<script>
-
-					var movie = CodeMirror.movie("code");
-
-					// Create simple UI to interact with movie
-					var btnPlay = document.getElementById("btnPlay");
-					var btnIcon = document.getElementById("btnIcon");
-					var lblPlay = document.getElementById("lblPlay");
-
-					btnPlay.onclick = function() {
-						this.blur();
-						if (movie.state() == 'play') {
-							movie.pause();
-							//this.innerHTML = 'Play';
-							lblPlay.innerHTML = 'Play';
-							btnIcon.classList.remove('glyphicon-pause');
-							btnIcon.classList.add('glyphicon-play');
-
-							btnPlay.classList.remove('btn-warning');
-							btnPlay.classList.add('btn-success');
-
-						} else {
-							movie.play();
-							//this.innerHTML = 'Pause';
-							lblPlay.innerHTML = 'Pausa';
-							btnIcon.classList.remove('glyphicon-play');
-							btnIcon.classList.add('glyphicon-pause');
-
-							btnPlay.classList.remove('btn-success');
-							btnPlay.classList.add('btn-warning');
-
-						}
-					};
-
-					// Listen to events to change UI state
-					movie.on('stop', function(name) {
-						//btnPlay.innerHTML = 'Play';
-						lblPlay.innerHTML = 'Play';
-						this.classList.remove('glyphicon-pause');
-						btnIcon.classList.add('glyphicon-play');
-
-						btnPlay.classList.remove('btn-warning');
-						btnPlay.classList.add('btn-success');
-					});
-				</script>
+				<!--/**********PANEL 2.1**********-->
 
 				<p>
 					En este ejemplo, el script se incluye como un bloque de código dentro de una página HTML. Por tanto, en primer lugar se debe crear una página HTML correcta que incluya la declaración del DOCTYPE, las secciones <code>&lt;head&gt;</code> y <code>&lt;body&gt;</code>, la etiqueta <code>&lt;title&gt;</code>, etc.
@@ -325,30 +347,10 @@ type: "Hola mundo!"
 
 		</div><!--/Fila de contenido-->
 
-	</div><!--Contenedor del contenido principal-->
+	</div><!--Contenedor principal-->
 
 
 	<!-- *************************** J S *************************** -->
-
-	<!-- jQuery -->
-	<!-- <script src="//cetec1.net/lms/my_assets/jquery/jquery-1.11.1.min.js"></script> -->
-	<!-- <script src="../../../../main/inc/lib/javascript/jquery.min.js"></script> -->
-
-	<!-- jQuery 1.7.2 (Chamilo)-->
-<!--	<script src="//cetec1.net/lms/campus_martinez/main/inc/lib/javascript/jquery.min.js"></script> -->
-	<!-- jQuery 1.11.1-->
-<!--	<script src="//cetec1.net/lms/my_assets/jquery/jquery-1.11.1.min.js"></script>
-	<script>var $j = jQuery.noConflict(true);</script>
--->
-
-	<!-- Ejemplo de codigo con ambas veriones de jQuery
-	<script>
-		$(document).ready(function(){
-		console.log($().jquery); //  v1.7.2 (versión de Chamillo)
-		console.log($j().jquery); // v1.11.1
-		});
-	</script>
-	-->
 
 	<!-- zClip -->
 	<!-- // <script type="text/javascript" src="//cetec1.net/lms/my_assets/jquery/jqPlugins/zeroclipboard/dist/ZeroClipboard.min.js"></script> -->
@@ -357,7 +359,7 @@ type: "Hola mundo!"
 	<!-- <script src="jquery/jquery-ui/js/jquery-ui.js"></script> -->
 
 	<!-- Bootstrap -->
-	<script src="//cetec1.net/lms/my_assets/bootstrap/js/bootstrap.js"></script>
+	<script src="//cetec1.net/lms/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
 	<!-- *** fancyBox *** -->
 	<!-- Add mousewheel plugin (this is optional) -->
@@ -393,10 +395,25 @@ type: "Hola mundo!"
 	<!-- Script de configuración de la galeria fancyBox -->
 	<script src="//cetec1.net/lms/my_assets/js/fancyBox_myGallery.config.js"></script>
 
-	<!-- Remodal (Plugin jQuery para ventanas modales) -->
-	<!-- // <script src="//cetec1.net/lms/my_assets/jquery/jqPlugins/remodal/dist/jquery.remodal.js"></script>
-	// <script src="//cetec1.net/lms/my_assets/js/remodal.config.js"></script> -->
+	<!-- jQuery UI-->
+	<!-- <script src="//cetec1.net/lms/my_assets/jquery/jquery-ui/js/jquery-ui.js"></script> -->
 
+	<!-- Bootstrap -->
+	<script src="//cetec1.net/lms/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+	<!-- zClip -->
+	<script type="text/javascript" src="//cetec1.net/lms/my_assets/jquery/jqPlugins/zeroclipboard/dist/ZeroClipboard.js"></script>
+	<script type="text/javascript" src="//cetec1.net/lms/my_assets/js/zClip.config.js"></script>
+
+	<!-- Remodal -->
+	<script src="//cetec1.net/lms/bower_components/remodal/dist/zepto.min.js"></script>
+	<script src="//cetec1.net/lms/bower_components/remodal/dist/jquery.remodal.js"></script>
+
+	<!-- Tooltips BS3 Initialize -->
+	<script src="//cetec1.net/lms/bower_components/js/BS3_Tooltip.init.js"></script>
+
+	<!-- cmMovie.config.js: Script de configuracion de la pelicula 1.4.1  -->
+	<script src="//cetec1.net/lms/my_assets/js/cmMovie.config.js"></script>
 
 </body>
 </html>

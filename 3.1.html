@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Introducción a JavaScript: 3.1 Variables</title>
+
+	<!-- *************************** B A S I C S *************************** -->
+	<meta charset="utf-8">
+	<meta name="author" content="JLRZ">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Curso Introducción a JavaScript">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- *************************** C S S *************************** -->
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="//cetec1.net/lms/my_assets/bootstrap/css3/bootstrap.min.css">
+
+	<!-- Estilos Generales -->
+	<link rel="stylesheet" href="//cetec1.net/lms/bower_components/css/principal.css">
+
+	<!-- Fuente Open Sans -->
+	<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'> -->
+
+	<!-- glyphicons DevIcons -->
+	<link rel="stylesheet" href="//cetec1.net/lms/my_assets/glyphicons/css/devicons.min.css" media="all" title="no title" charset="utf-8">
+
+	<!-- Remodal (Plugin jQuery para ventanas modales) -->
+	<!--<link rel="stylesheet" href="//cetec1.net/lms/my_assets/jquery/jqPlugins/remodal/dist/jquery.remodal.css">-->
+	<link rel="stylesheet" href="//cetec1.net/lms/bower_components/remodal/dist/jquery.remodal.css">
+
+
+	<!-- Script de cofiguraciones generales -->
+	<script src="//cetec1.net/lms/my_assets/js/config.js"></script>
+
+</head>
+
+<body class="remodal-bg">
+
+	<!--Contenedor del contenido-->
+	<div class="container">
+
+		<!--Fila de contenido-->
+		<div class="row">
+
+			<!-- Columna 12 -->
+			<div class="col-md-12 col-sm-12 col-xs-12">
+
+				<!-- V E N T A N A  M O D A L -->
+				<div class="remodal" data-remodal-id="modal">
+					<h1>CÓDIGO COPIADO</h1>
+					<p>
+					Este código ha sido copiado al portapapeles.
+					</p>
+					<br>
+					<a class="remodal-confirm" href="#">OK</a>
+				</div>
+
+
+				<!-- Boton Imprimir -->
+				<div id="filaBtnImprimir" class="no-print col-md-2 col-md-offset-10 col-sm-2 col-sm-offset-10 col-xs-12 text-right">
+					<button id="btnImprimir" type="button" class="btn btn-success no-print" aria-label="Imprimir">
+						<span class="glyphicon glyphicon-print" aria-hidden="true"> <span>Imprimir</span></span>
+					</button>
+				</div>
+
+				<p>Antes de comenzar a desarrollar programas y utilidades con JavaScript, es necesario conocer los elementos básicos con los que se construyen las aplicaciones. Si ya sabes programar en algún lenguaje de programación, este capítulo te servirá para conocer la sintaxis específica de JavaScript.</p>
+				<p>Si nunca has programado, este capítulo explica en detalle y comenzando desde cero los conocimientos básicos necesarios para poder entender posteriormente la programación avanzada, que es la que se utiliza para crear las aplicaciones reales.</p>
+
+				<h3>3.1 Variables</h3>
+				<p>Las variables en los lenguajes de programación siguen una lógica similar a las variables utilizadas en otros ámbitos como las matemáticas. Una variable es un elemento que se emplea para almacenar y hacer referencia a otro valor. Gracias a las variables es posible crear "programas genéricos", es decir, programas que funcionan siempre igual independientemente de los valores concretos utilizados.</p>
+				<p>De la misma forma que si en Matemáticas no existieran las variables no se podrían definir las ecuaciones y fórmulas, en programación no se podrían hacer programas realmente útiles sin las variables.</p>
+				<p>Si no existieran variables, un programa que suma dos números podría escribirse como:</p>
+
+				<blockquote class="blqCod">
+					resultado = 3 + 1
+				</blockquote>
+
+
+				<!-- Panel de código JS -->
+				<div class="panel panel-warning">
+
+					<!-- Boton Copiar -->
+					<div class="zero-clipboard btnCopiar no-print" data-clipboard-target="blqCod1.7-a" data-remodal-target="modal" alt="Copiar al portapapeles" data-toggle="tooltip" data-placement="left" title="Copiar código al portapapeles">
+						<a href="#" class="btn-clipboard glyphicon glyphicon-copy"></a>
+					</div>
+
+					<!-- Panel Heading -->
+					<div class="panel-heading">
+					  	<h3 class="panel-title">
+					 		<span class="devicons devicons-javascript_badge dvIconFile" aria-hidden="true"></span> Ejemplo de comentario de una sola línea:
+					 	</h3>
+					</div>
+
+					<!-- Panel Body -->
+					<div class="panel-body" style="padding:0;">
+
+<!-- Bloque de Código  -->
+<pre id="blqCod1.7-a" class="blqCod">
+// a continuación se muestra un mensaje
+alert("mensaje de prueba");
+</pre>
+					</div>
+				</div><!--/Panel de código JS-->
+
+
+				<!-- Panel de código JS -->
+				<div class="panel panel-warning">
+
+					<!-- Boton Copiar -->
+					<div class="zero-clipboard btnCopiar no-print" data-clipboard-target="blqCod1.7-b" data-remodal-target="modal" alt="Copiar al portapapeles" data-toggle="tooltip" data-placement="left" title="Copiar código al portapapeles">
+						<a href="#" class="btn-clipboard glyphicon glyphicon-copy"></a>
+					</div>
+
+					<!-- Panel Heading -->
+					<div class="panel-heading">
+						<h3 class="panel-title">
+							<span class="devicons devicons-javascript_badge dvIconFile" aria-hidden="true"></span> Ejemplo de comentario de varias líneas:
+						</h3>
+					</div>
+
+					<!-- Panel Body -->
+					<div class="panel-body" style="padding:0;">
+
+<!-- Bloque de Código  -->
+<pre id="blqCod1.7-b" class="blqCod">
+/* Los comentarios de varias líneas son muy útiles
+cuando se necesita incluir bastante información
+en los comentarios */
+alert("mensaje de prueba");
+</pre>
+				</div>
+			</div><!--/Panel de código JS-->
+
+
+
+				<p>
+					Los comentarios multilínea se definen encerrando el texto del comentario entre los símbolos <code>/*</code> y <code>*/</code>.
+				</p>
+
+
+			</div><!--/Columna 12-->
+
+		</div><!--/Fila de contenido-->
+
+	</div>
+	<!-- Regla -->
+	<div class="container">
+		<div class="row">
+			<hr>
+		</div>
+	</div>
+
+
+	<!-- F O O T E R -->
+	<footer id="footer">
+
+		<!--Contenedor del footer-->
+		<div class="container text-center">
+			<h6 class="text-muted">Corporativo CETEC 2014</h6>
+		</div><!--/Contenedor del footer-->
+
+	</footer><!--/Footer-->
+
+
+
+	<!-- *************************** J S *************************** -->
+
+	<!-- jQuery -->
+	<script src="//cetec1.net/lms/my_assets/jquery/jquery-1.11.1.min.js"></script>
+
+	<!-- jQuery UI-->
+	<!-- <script src="//cetec1.net/lms/my_assets/jquery/jquery-ui/js/jquery-ui.js"></script> -->
+
+	<!-- Bootstrap -->
+	<script src="//cetec1.net/lms/my_assets/bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- zClip -->
+	<script type="text/javascript" src="//cetec1.net/lms/my_assets/jquery/jqPlugins/zeroclipboard/dist/ZeroClipboard.js"></script>
+	<script type="text/javascript" src="//cetec1.net/lms/my_assets/js/zClip.config.js"></script>
+
+	<!-- Remodal -->
+	<script src="//cetec1.net/lms/bower_components/remodal/dist/zepto.min.js"></script>
+	<script src="//cetec1.net/lms/bower_components/remodal/dist/jquery.remodal.js"></script>
+
+	<!-- Tooltips BS3 Initialize -->
+	<script src="//cetec1.net/lms/bower_components/js/BS3_Tooltip.init.js"></script>
+
+</body>
+</html>
