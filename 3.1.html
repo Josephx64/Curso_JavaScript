@@ -23,7 +23,7 @@
 	<link rel="stylesheet" href="//cetec1.net/lms/my_assets/bootstrap/css3/bootstrap.min.css">
 
 	<!-- Estilos Generales -->
-	<link rel="stylesheet" href="//cetec1.net/lms/bower_components/css/principal.css">
+	<link rel="stylesheet" href="//cetec1.net/lms/my_assets/css/principal.css">
 
 	<!-- Fuente Open Sans -->
 	<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'> -->
@@ -77,72 +77,78 @@
 				<p>Las variables en los lenguajes de programación siguen una lógica similar a las variables utilizadas en otros ámbitos como las matemáticas. Una variable es un elemento que se emplea para almacenar y hacer referencia a otro valor. Gracias a las variables es posible crear "programas genéricos", es decir, programas que funcionan siempre igual independientemente de los valores concretos utilizados.</p>
 				<p>De la misma forma que si en Matemáticas no existieran las variables no se podrían definir las ecuaciones y fórmulas, en programación no se podrían hacer programas realmente útiles sin las variables.</p>
 				<p>Si no existieran variables, un programa que suma dos números podría escribirse como:</p>
-
-				<blockquote class="blqCod">
-					resultado = 3 + 1
+				<blockquote  class="snippet">
+					<span>resultado = 3 + 1</span>
 				</blockquote>
 
+				<p>El programa anterior es tan poco útil que sólo sirve para el caso en el que el primer número de la suma sea el 3 y el segundo número sea el 1. En cualquier otro caso, el programa obtiene un resultado incorrecto.</p>
+				<p>Sin embargo, el programa se puede rehacer de la siguiente manera utilizando variables para almacenar y referirse a cada número:</p>
+				<blockquote class="snippet">
+					<span>numero_1 = 3</span><br>
+					<span>numero_2 = 1</span><br>
+					<span>resultado = numero_1 + numero_2</span>
+				</blockquote>
 
-				<!-- Panel de código JS -->
-				<div class="panel panel-warning">
+				<p>Los elementos <code>numero_1</code> y <code>numero_2</code> son <strong>variables</strong> que almacenan los valores que utiliza el programa. El resultado se calcula siempre en función del valor almacenado por las variables, por lo que este programa funciona correctamente para cualquier par de números indicado. Si se modifica el valor de las variables <code>numero_1</code> y <code>numero_2</code>, el programa sigue funcionando correctamente.</p>
+				<p>Las variables en JavaScript se crean mediante la palabra reservada var. De esta forma, el ejemplo anterior se puede realizar en JavaScript de la siguiente manera:</p>
+				<blockquote class="snippet">
+					<span>var numero_1 = 3;</span><br>
+					<span>var numero_2 = 1;</span><br>
+					<span>var resultado = numero_1 + numero_2;</span>
+				</blockquote>
 
-					<!-- Boton Copiar -->
-					<div class="zero-clipboard btnCopiar no-print" data-clipboard-target="blqCod1.7-a" data-remodal-target="modal" alt="Copiar al portapapeles" data-toggle="tooltip" data-placement="left" title="Copiar código al portapapeles">
-						<a href="#" class="btn-clipboard glyphicon glyphicon-copy"></a>
-					</div>
+				<p>La palabra reservada <code>var</code> solamente se debe indicar al definir por primera vez la variable, lo que se denomina <strong>declarar</strong> una variable. Cuando se utilizan las variables en el resto de instrucciones del script, solamente es necesario indicar su nombre. En otras palabras, en el ejemplo anterior sería un error indicar lo siguiente:</p>
+				<blockquote class="snippet">
+					<span>var numero_1 = 3;</span><br>
+					<span>var numero_2 = 1;</span><br>
+					<span>var resultado = var numero_1 + var numero_2;</span>
+				</blockquote>
 
-					<!-- Panel Heading -->
-					<div class="panel-heading">
-					  	<h3 class="panel-title">
-					 		<span class="devicons devicons-javascript_badge dvIconFile" aria-hidden="true"></span> Ejemplo de comentario de una sola línea:
-					 	</h3>
-					</div>
+				<p>Si cuando se declara una variable se le asigna también un valor, se dice que la variable ha sido <strong>inicializada</strong>. En JavaScript no es obligatorio inicializar las variables, ya que se pueden declarar por una parte y asignarles un valor posteriormente. Por tanto, el ejemplo anterior se puede rehacer de la siguiente manera:</p>
+				<blockquote class="snippet">
+					<span>var numero_1;</span><br>
+					<span>var numero_2;</span><br>
+					<br>
+ 					<span>numero_1 = 3;</span><br>
+					<span>numero_2 = 1;</span><br>
+					<span>var resultado = numero_1 + numero_2;</span>
+				</blockquote>
 
-					<!-- Panel Body -->
-					<div class="panel-body" style="padding:0;">
+				<p>Una de las características más sorprendentes de JavaSript para los programadores habituados a otros lenguajes de programación es que tampoco es necesario declarar las variables. En otras palabras, se pueden utilizar variables que no se han definido anteriormente mediante la palabra reservada var. El ejemplo anterior también es correcto en JavaScript de la siguiente forma:</p>
+				<blockquote class="snippet">
+					<span>var numero_1 = 3;</span><br>
+					<span>var numero_2 = 1;</span><br>
+					<span>resultado = numero_1 + numero_2;</span>
+				</blockquote>
 
-<!-- Bloque de Código  -->
-<pre id="blqCod1.7-a" class="blqCod">
-// a continuación se muestra un mensaje
-alert("mensaje de prueba");
-</pre>
-					</div>
-				</div><!--/Panel de código JS-->
+				<p>La variable <em>resultado</em> no está declarada, por lo que JavaScript crea una variable global (más adelante se verán las diferencias entre variables locales y globales) y le asigna el valor correspondiente. De la misma forma, también sería correcto el siguiente código:</p>
+				<blockquote class="snippet">
+					<span>numero_1 = 3;</span><br>
+					<span>numero_2 = 1;</span><br>
+					<span>resultado = numero_1 + numero_2;</span>
+				</blockquote>
 
+				<p>En cualquier caso, se recomienda declarar todas las variables que se vayan a utilizar.</p>
+				<p>El nombre de una variable también se conoce como <strong>identificador</strong> y debe cumplir las siguientes normas:</p>
+				<ul class="lstDesordenada">
+					<li>Sólo puede estar formado por letras, números y los símbolos $ (dólar) y _ (guión bajo).</li>
+					<li>El primer carácter no puede ser un número.</li>
+				</ul>
 
-				<!-- Panel de código JS -->
-				<div class="panel panel-warning">
+				<p>Por tanto, las siguientes variables tienen nombres correctos:</p>
 
-					<!-- Boton Copiar -->
-					<div class="zero-clipboard btnCopiar no-print" data-clipboard-target="blqCod1.7-b" data-remodal-target="modal" alt="Copiar al portapapeles" data-toggle="tooltip" data-placement="left" title="Copiar código al portapapeles">
-						<a href="#" class="btn-clipboard glyphicon glyphicon-copy"></a>
-					</div>
+				<blockquote class="snippet">
+					<span>var $numero1;</span><br>
+					<span>var _$letra;</span><br>
+					<span>var $$$otroNumero;</span><br>
+					<span>var $_a__$4;</span>
+				</blockquote>
 
-					<!-- Panel Heading -->
-					<div class="panel-heading">
-						<h3 class="panel-title">
-							<span class="devicons devicons-javascript_badge dvIconFile" aria-hidden="true"></span> Ejemplo de comentario de varias líneas:
-						</h3>
-					</div>
-
-					<!-- Panel Body -->
-					<div class="panel-body" style="padding:0;">
-
-<!-- Bloque de Código  -->
-<pre id="blqCod1.7-b" class="blqCod">
-/* Los comentarios de varias líneas son muy útiles
-cuando se necesita incluir bastante información
-en los comentarios */
-alert("mensaje de prueba");
-</pre>
-				</div>
-			</div><!--/Panel de código JS-->
-
-
-
-				<p>
-					Los comentarios multilínea se definen encerrando el texto del comentario entre los símbolos <code>/*</code> y <code>*/</code>.
-				</p>
+				<p>Sin embargo, las siguientes variables tienen identificadores incorrectos:</p>
+				<blockquote class="snippet">
+					<span>var 1numero;        // Empieza por un número</span><br>
+					<span>var numero;1_123;  // Contiene un carácter ";"</span><br>
+				</blockquote>
 
 
 			</div><!--/Columna 12-->

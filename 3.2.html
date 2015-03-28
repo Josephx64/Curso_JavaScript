@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Introducción a JavaScript: 3.2 Tipos de variables</title>
+
+	<!-- *************************** B A S I C S *************************** -->
+	<meta charset="utf-8">
+	<meta name="author" content="JLRZ">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Curso Introducción a JavaScript">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- *************************** C S S *************************** -->
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="//cetec1.net/lms/my_assets/bootstrap/css3/bootstrap.min.css">
+
+	<!-- Estilos Generales -->
+	<link rel="stylesheet" href="//cetec1.net/lms/my_assets/css/principal.css">
+
+	<!-- Fuente Open Sans -->
+	<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'> -->
+
+	<!-- glyphicons DevIcons -->
+	<link rel="stylesheet" href="//cetec1.net/lms/my_assets/glyphicons/css/devicons.min.css" media="all" title="no title" charset="utf-8">
+
+	<!-- Remodal (Plugin jQuery para ventanas modales) -->
+	<!--<link rel="stylesheet" href="//cetec1.net/lms/my_assets/jquery/jqPlugins/remodal/dist/jquery.remodal.css">-->
+	<link rel="stylesheet" href="//cetec1.net/lms/bower_components/remodal/dist/jquery.remodal.css">
+
+
+	<!-- Script de cofiguraciones generales -->
+	<script src="//cetec1.net/lms/my_assets/js/config.js"></script>
+
+</head>
+
+<body class="remodal-bg">
+
+	<!--Contenedor del contenido-->
+	<div class="container">
+
+		<!--Fila de contenido-->
+		<div class="row">
+
+			<!-- Columna 12 -->
+			<div class="col-md-12 col-sm-12 col-xs-12">
+
+				<!-- V E N T A N A  M O D A L -->
+				<div class="remodal" data-remodal-id="modal">
+					<h1>CÓDIGO COPIADO</h1>
+					<p>
+					Este código ha sido copiado al portapapeles.
+					</p>
+					<br>
+					<a class="remodal-confirm" href="#">OK</a>
+				</div>
+
+
+				<!-- Boton Imprimir -->
+				<div id="filaBtnImprimir" class="no-print col-md-2 col-md-offset-10 col-sm-2 col-sm-offset-10 col-xs-12 text-right">
+					<button id="btnImprimir" type="button" class="btn btn-success no-print" aria-label="Imprimir">
+						<span class="glyphicon glyphicon-print" aria-hidden="true"> <span>Imprimir</span></span>
+					</button>
+				</div>
+
+				<h3>3.2 Tipos de variables</h3>
+
+				<p>Aunque todas las variables de JavaScript se crean de la misma forma (mediante la palabra reservada var), la forma en la que se les asigna un valor depende del tipo de valor que se quiere almacenar (números, textos, etc.)</p>
+
+				<h4>3.2.1. Numéricas</h4>
+				<p>Se utilizan para almacenar valores numéricos enteros (llamados integer en inglés) o decimales (llamados float en inglés). En este caso, el valor se asigna indicando directamente el número entero o decimal. Los números decimales utilizan el carácter . (punto) en vez de , (coma) para separar la parte entera y la parte decimal:</p>
+
+				<blockquote class="snippet">
+					<span>var iva = 16;        // variable tipo entero</span> <br>
+					<span>var total = 234.65;  // variable tipo decimal</span> <br>
+				</blockquote>
+
+				<h4>3.2.2. Cadenas de texto</h4>
+				<p>Se utilizan para almacenar caracteres, palabras y/o frases de texto. Para asignar el valor a la variable, se encierra el valor entre comillas dobles o simples, para delimitar su comienzo y su final:</p>
+				<blockquote class="snippet">
+					<span>var mensaje = "Bienvenido a nuestro sitio web";</span> <br>
+					<span>var nombreProducto = 'Producto ABC';</span> <br>
+					<span>var letraSeleccionada = 'c';</span> <br>
+				</blockquote>
+
+				<p>En ocasiones, el texto que se almacena en las variables no es tan sencillo. Si por ejemplo el propio texto contiene comillas simples o dobles, la estrategia que se sigue es la de encerrar el texto con las comillas (simples o dobles) que no utilice el texto:</p>
+
+				<blockquote class="snippet">
+					<span>/* El contenido de texto1 tiene comillas simples, por lo que</span> <br>
+    					<span>se encierra con comillas dobles */</span> <br>
+					<span>var texto1 = "Una frase con 'comillas simples' dentro";</span> <br><br>
+
+					<span>/* El contenido de texto2 tiene comillas dobles, por lo que</span> <br>
+						<span>se encierra con comillas simples */</span> <br>
+					<span>var texto2 = 'Una frase con "comillas dobles" dentro';</span> <br>
+
+					<p>No obstante, a veces las cadenas de texto contienen tanto comillas simples como dobles. Además, existen otros caracteres que son difíciles de incluir en una variable de texto (tabulador, ENTER, etc.) Para resolver estos problemas, JavaScript define un mecanismo para incluir de forma sencilla caracteres especiales y problemáticos dentro de una cadena de texto.</p>
+					<p>El mecanismo consiste en sustituir el carácter problemático por una combinación simple de caracteres. A continuación se muestra la tabla de conversión que se debe utilizar:</p>
+
+					<table>
+						<thead>
+							<tr>
+							  <th>Si se quiere incluir...</th>
+							  <th>Se debe incluir...</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+							  <td>Una nueva línea</td>
+							  <td><code>\n</code></td>
+							</tr>
+							<tr>
+							  <td>Un tabulador</td>
+							  <td><code>\t</code></td>
+							</tr>
+							<tr>
+							  <td>Una comilla simple</td>
+							  <td><code>\'</code></td>
+							</tr>
+							<tr>
+							  <td>Una comilla doble</td>
+							  <td><code>\"</code></td>
+							</tr>
+							<tr>
+							  <td>Una barra inclinada</td>
+							  <td><code>\\</code></td>
+							</tr>
+						</tbody>
+					</table>
+
+
+/* El contenido de texto2 tiene comillas dobles, por lo que
+    se encierra con comillas simples */
+var texto2 = 'Una frase con "comillas dobles" dentro';
+				</blockquote>
+
+
+
+			</div><!--/Columna 12-->
+
+		</div><!--/Fila de contenido-->
+
+	</div>
+	<!-- Regla -->
+	<div class="container">
+		<div class="row">
+			<hr>
+		</div>
+	</div>
+
+
+	<!-- F O O T E R -->
+	<footer id="footer">
+
+		<!--Contenedor del footer-->
+		<div class="container text-center">
+			<h6 class="text-muted">Corporativo CETEC 2014</h6>
+		</div><!--/Contenedor del footer-->
+
+	</footer><!--/Footer-->
+
+
+
+	<!-- *************************** J S *************************** -->
+
+	<!-- jQuery -->
+	<script src="//cetec1.net/lms/my_assets/jquery/jquery-1.11.1.min.js"></script>
+
+	<!-- jQuery UI-->
+	<!-- <script src="//cetec1.net/lms/my_assets/jquery/jquery-ui/js/jquery-ui.js"></script> -->
+
+	<!-- Bootstrap -->
+	<script src="//cetec1.net/lms/my_assets/bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- zClip -->
+	<script type="text/javascript" src="//cetec1.net/lms/my_assets/jquery/jqPlugins/zeroclipboard/dist/ZeroClipboard.js"></script>
+	<script type="text/javascript" src="//cetec1.net/lms/my_assets/js/zClip.config.js"></script>
+
+	<!-- Remodal -->
+	<script src="//cetec1.net/lms/bower_components/remodal/dist/zepto.min.js"></script>
+	<script src="//cetec1.net/lms/bower_components/remodal/dist/jquery.remodal.js"></script>
+
+	<!-- Tooltips BS3 Initialize -->
+	<script src="//cetec1.net/lms/bower_components/js/BS3_Tooltip.init.js"></script>
+
+</body>
+</html>
