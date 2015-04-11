@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="utf-8">
-	<title>Introducción a JavaScript: 3.2 Tipos de variables</title>
+	<title>Introducción a JavaScript: 3.3 Operadores</title>
 
 	<!-- *************************** B A S I C S *************************** -->
 	<meta charset="utf-8">
@@ -67,24 +67,28 @@
 					</button>
 				</div><!--/Boton Imprimir-->
 
-				<h3>3.2 Tipos de variables</h3>
+				<h3>3.3 Operadores</h3>
 
-				<p>Aunque todas las variables de JavaScript se crean de la misma forma (mediante la palabra reservada var), la forma en la que se les asigna un valor depende del tipo de valor que se quiere almacenar (números, textos, etc.)</p>
+				<p>Las variables por sí solas son de poca utilidad. Hasta ahora, sólo se ha visto cómo crear variables de diferentes tipos y cómo mostrar su valor mediante la función <code>alert()</code>. Para hacer programas realmente útiles, son necesarias otro tipo de herramientas.</p>
+				<p>Los operadores permiten manipular el valor de las variables, realizar operaciones matemáticas con sus valores y comparar diferentes variables. De esta forma, los operadores permiten a los programas realizar cálculos complejos y tomar decisiones lógicas en función de comparaciones y otros tipos de condiciones.</p>
 
-				<h4>3.2.1. Numéricas</h4>
-				<p>Se utilizan para almacenar valores numéricos enteros (llamados integer en inglés) o decimales (llamados float en inglés). En este caso, el valor se asigna indicando directamente el número entero o decimal. Los números decimales utilizan el carácter . (punto) en vez de , (coma) para separar la parte entera y la parte decimal:</p>
+				<h4>3.3.1. Asignación</h4>
+				<p>El operador de asignación es el más utilizado y el más sencillo. Este operador se utiliza para guardar un valor específico en una variable. El símbolo utilizado es = (no confundir con el operador == que se verá más adelante):</p>
 
 				<blockquote class="snippet">
-					<span>var iva = 16;        // variable tipo entero</span> <br>
-					<span>var total = 234.65;  // variable tipo decimal</span> <br>
+					<span>var numero1 = 3;</span> <br>
 				</blockquote>
 
-				<h4>3.2.2. Cadenas de texto</h4>
-				<p>Se utilizan para almacenar caracteres, palabras y/o frases de texto. Para asignar el valor a la variable, se encierra el valor entre comillas dobles o simples, para delimitar su comienzo y su final:</p>
+				<p>A la izquierda del operador, siempre debe indicarse el nombre de una variable. A la derecha del operador, se pueden indicar variables, valores, condiciones lógicas, etc:</p>
 				<blockquote class="snippet">
-					<span>var mensaje = "Bienvenido a nuestro sitio web";</span> <br>
-					<span>var nombreProducto = 'Producto ABC';</span> <br>
-					<span>var letraSeleccionada = 'c';</span> <br>
+					<span>var numero1 = 3;</span> <br>
+					<span>var numero2 = 4;</span> <br>
+					<span>/* Error, la asignación siempre se realiza a una variable, por lo que en la izquierda no se puede indicar un número */</span> <br>
+					<span>5 = numero1;</span> <br>
+					<span>// Ahora, la variable numero1 vale 5</span> <br>
+					<span>numero1 = 5;</span> <br>
+					<span>// Ahora, la variable numero1 vale 4</span> <br>
+					<span>numero1 = numero2;</span> br
 				</blockquote>
 
 				<p>En ocasiones, el texto que se almacena en las variables no es tan sencillo. Si por ejemplo el propio texto contiene comillas simples o dobles, la estrategia que se sigue es la de encerrar el texto con las comillas (simples o dobles) que no utilice el texto:</p>

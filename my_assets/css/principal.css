@@ -1,369 +1,924 @@
 /*Eliminar el borde naranja en google chrome*/
 *:focus {
+
 	outline: none !important;
+
 }
 
 
 /*Quitar el recuadro azul de bootstrap en el evento :focus */
+
 button, a:focus {
+
 outline: none;
-/* outline: 5px auto -webkit-focus-ring-color; */
+
+/* outline: 5px auto -webkit-focus-ring-colo<r; */
+
 outline-offset: -2px;
+
 }
+
+
 
 body{
+
 	/*margin-top: 60px;*/
+
 	/*background: rgb(245, 245, 245);*/
+
 	/*background: #f6f6f6;*/
+
 }
+
+
 
 .container p {
+
 	font-size: 17px;
+
 	padding-bottom: 0em;
+
 }
 
+
+
 @media print {
+
 	.no-print{ visibility: hidden; display: none; }
+
 	.screen-only{ visibility: hidden; display: none; }
+
 }
+
+
 
 @media screen {
+
 	.no-print{ visibility: visible; }
+
 	.print-only{ visibility: hidden; display: none; }
 
+
+
 	.capitular{
+
 		background:purple;
+
 		width:100%;
+
 		height:150px;
+
 		padding:20px 0;
+
 		margin-top:51px;
+
 		background-color: rgba(26, 188, 156,1.0);/*Turqouise*/
+
 		color: #fff !important;
+
 	}
+
 	.capitular h1{
+
 		color: #fff;
+
 	}
+
 }
+
+
 
 @media handheld {
+
 	.no-print{ visibility: hidden; display: none; }
+
 }
+
+
 
 .invisible{ display: none;}
+
 /*BLOCKQUOTES PERSONALIZADOS*/
 
+
+
 @media print {
+
 	blockquote {
+
 		border-top: none;
+
 		border-right: none;
+
 		border-bottom: none;
+
 	}
 
+
+
 }
+
+
 
 /*Blockquote Nota*/
+
 .blockquote-nota {
+
 	border-left: 5px solid rgb(52, 152, 219);
+
 }
+
+
 
 /*Blockquote Nota al pie*/
+
 .blockquote-nota-pie {
+
 	border-left: 5px solid rgb(22, 160, 133);
+
 }
+
+
 
 /*Superindice*/
+
 sup, footer sup {
+
 	color: rgb(22, 160, 133);
+
 	font-weight: bold;
+
 }
+
+
 
 .popover-content {
+
 	font-size: 14px;
+
 }
+
+
 
 .popover-title {
+
 	font-weight: bold;
+
 	background: rgb(22, 160, 133);
+
 	color: white;
+
 }
 
+
+
 /*Nota al pie*/
+
 .notapie {
+
 	color: rgb(22, 160, 133);
+
 }
+
+
+
 
 
 /* Bloques de código */
 
+
+
 pCodigoXXX {
+
 	padding: 2px 4px;
+
 	font-size: 95%;
+
 	color: rgb(44, 62, 80);
+
 	border-radius: 4px;
+
 }
+
+
 
 .zero-clipboard {
+
 	position: relative;
+
 	/*display: none*/
+
 }
+
+
 
 .btn-clipboard{
+
 	/*position: absolute;*/
+
 	top: 0;
+
 	right: 0;
+
 	z-index: 0;
+
 	display: block;
+
 	padding: 5px 8px;
+
 	font-size: 12px;
+
 	color: #fff; /*#777;*/
+
 	cursor: pointer;
+
 	/*background-color: #fff;*/
+
 	/*border: 1px solid #e1e1e8;*/
+
 	border-radius: 0 4px 0 4px
+
 }
+
+
 
 .btn-clipboard:hover {
+
 	color: #fff;
+
 	/*background-color: #563d7c;*/
+
 	/*border-color: #563d7c*/
+
 	text-decoration:none !important;
+
 }
+
+
 
 .btn-clipboard-hover {
+
 	color: #fff;
+
 	/*background-color: #563d7c;*/
+
 	/*border-color: #563d7c*/
+
 	text-decoration:none !important;
+
 }
+
+
 
 /*#btnCopiar>span{*/
+
 .btnCopiar>span{
+
 	width:100%;
+
 	background:#563d7c;
+
 	padding: 5px 8px;
+
 	margin: 0px;
+
 }
+
+
 
 @media (min-width: 768px) {
+
 	.zero-clipboard {
+
 		display:block
+
 	}
+
+
 
 	.bs-example+.zero-clipboard .btn-clipboard {
+
 		top: -16px;
+
 		border-top-right-radius: 0
+
 	}
+
 }
 
+
+
 #focusedInput {
+
 	border-color: #ccc;
+
 	border-color: rgba(82,168,236,.8);
+
 	outline: 0;
+
 	outline: thin dotted \9;
+
 	-webkit-box-shadow: 0 0 8px rgba(82,168,236,.6);
+
 	box-shadow: 0 0 8px rgba(82,168,236,.6)
+
 }
+
+
+
+
 
 
 
 /* */
+
 .highlight {
+
 	padding: 9px 14px;
+
 	margin-bottom: 0px;
+
 	background-color: #f7f7f9;
+
 	border: 1px solid #e1e1e8;
+
 	border-radius: 4px;
 
+
+
 	color: rgb(44, 62, 80);
+
 	border-radius: 4px;
+
+
 
 	font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
 
+
+
 }
+
+
 
 .highlight p{
+
 	font-size: 17px;
+
 }
+
+
 
 h4, h3 {
+
 	font-weight: bold;
+
 }
+
+
 
 .list-unstyled li{
+
 	font-size: 17px;
+
 	padding-left: 1em;
+
 	padding-bottom: 1em;
+
 }
+
+
 
 pre{
+
 	font-size: 17px;
+
 	font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+
 	color: rgb(44, 62, 80);
+
 	-o-tab-size: 3;
+
 	-moz-tab-size: 3;
+
 	tab-size: 3;
+
 	padding: 15px;
+
 	margin-bottom:2em;
+
 }
+
+.snippet>span{
+	font-size: 17px !important;
+	font-family: Menlo, Monaco, Consolas, "Courier New", monospace !important;
+	color: #2C3E50 !important;
+	padding: 15px !important;
+	margin-bottom: 2em !important;
+
+	-moz-font-size: 17px !important;
+	-moz-font-family: Menlo, Monaco, Consolas, "Courier New", monospace !important;
+	-moz-color: #2C3E50 !important;
+	-moz-padding: 15px !important;
+	-moz-margin-bottom: 2em !important;
+
+	/*-webkit-transition: border 750ms;*/
+}
+
 
 #btnImprimir{
+
 	/*border: none;*/
+
 }
+
+.lstDesordenada{
+	font-size: 16px;
+}
+
+
 
 button >span >span {
+
 	font-family: Arial !important;
+
 }
 
+
+
 .btn-default:focus, .btn-default:active, .btn-default.active, .open>.dropdown-toggle.btn-default {
+
 	border: none;
+
 	margin-top: 5px;
+
 }
+
+
 
 .print-only{
 
+
+
 }
+
+
 
 #filaBtnImprimir{
+
 	margin-top: 5px;
+
 }
+
+
 
 .btn-success {
+
 	color: #5cb85c;
+
 	background-color: #fff;
+
 	border: 2px solid  #5cb85c;
 
+
+
 	/*color: #fff;
+
 	background-color: #5cb85c;
+
 	border-color: #4cae4c;*/
+
 }
+
+
 
 .btn-success:hover {
+
 	border: 2px solid transparent;
+
 	background-color: #5cb85c;
+
 }
+
+
 
 .btn-warning {
+
 	color: #F0AD4E;
+
 	background-color: #fff;
+
 	border: 2px solid  #F0AD4E;
+
 }
+
+
 
 .btn-warning:hover {
+
 	border: 2px solid transparent;
+
 	background-color: #F0AD4E;
+
 }
+
+
 
 /*#btnCopiar{*/
+
 .btnCopiar{
+
 	/*margin-top:-16px;
+
 	margin-right:0;
+
 	margin-left:0;*/
+
 	border-width:1px;
+
 	/*border-bottom-right-radius:4px;
+
 	border-bottom-left-radius:4px;*/
+
 	border-radius: 0 4px 0 4px;
-	background-color: #e67e22;
+
+	/*background-color: #e67e22;*/
+
 	/*height:29px;*/
+
 	width: 45px;
+
 	height:35px;
+
 	color: #fff;
+
 	border-style: solid;
+
 	outline-style: none;
+
 	/*border-color: transparent;*/
+
 	position: absolute;
+
 	right:16px;
+
 	margin-top: 1px;
+
 	border-left-color: 1px solid #ccc;
+
 	border-bottom-color: 1px solid #ccc;
+
 	border-top: none;
+
 	border-right: none;
+
 	padding:0;
+
+
+
+	border: none;
+
 }
 
-/*#btnCopiar:hover{
-	background-color: #563d7c;
-}*/
+
+
+.btn-clipboard.glyphicon{
+
+	color:rgba(44, 62, 80,0.25);
+
+}
+
+
+
+
+
+.btnCopiar:hover{
+
+	/*cursor: pointer;*/
+
+	/*background-color: #563d7c;*/
+
+}
+
+
 
 .btnCopiar-hover {
+
 	color: #fff;
-	background-color: #563d7c;
-	border-color: #563d7c
+
+	/*background-color: #563d7c;*/
+
+	border-color: #563d7c;
+
+	/*cursor: pointer;*/
+
 }
 
+
+
 .glyphicon-copy {
+
 	/*margin-top: 5px;
+
 	margin-bottom: 10px;*/
+
 	font-size: 24px;
+
+	cursor: pointer;
+
 }
+
+
+
+.zero-clipboard.btnCopiar{
+
+	cursor: pointer;
+
+}
+
+
+
+
+
+pre.blqCod{
+
+	background-color: rgba(236, 240, 241,0.25) !important;
+
+	border-radius: 0 !important;
+
+	border: none;
+
+	margin:0;
+
+}
+
 /**************************************************************************/
 
 
-.zero-clipboard+.highlight{
-	margin:-15px -15px 15px;
-	border-width:0 0 1px;
-	border-radius:0
-}
+
+
 
 .zero-clipboard+.highlight{
-	margin-top:-16px;
-	margin-right:0;
-	margin-left:0;
-	border-width:1px;
-	border-bottom-right-radius:4px;
-	border-bottom-left-radius:4px
+
+	margin:-15px -15px 15px;
+
+	border-width:0 0 1px;
+
+	border-radius:0
+
 }
+
+
+
+.zero-clipboard+.highlight{
+
+	margin-top:-16px;
+
+	margin-right:0;
+
+	margin-left:0;
+
+	border-width:1px;
+
+	border-bottom-right-radius:4px;
+
+	border-bottom-left-radius:4px
+
+}
+
+
 
 /*.zero-clipboard{
+
 	position:relative;
+
 	display:none
+
 }*/
 
 
+
+
+
 /***************** Tema Esmeralda *********************/
+
 /*Turqouise (claro) rgba(26, 188, 156,1.0); */
+
 /*Green sea (oscuro) rgba(22, 160, 133,1.0); */
 
+
+
 /* Panel Izquierdo */
+
 #learning_path_left_zone{
+
 	background-color: rgba(26, 188, 156,1.0); /*Turqouise*/
+
 }
+
+
 
 /* Titulo de Capítulo */
+
 #scorm_title{
+
 	color: #ffffff;
+
 }
+
+
 
 /* Tema */
+
 .scorm_item_normal{
+
 	color: #ffffff;
+
 }
+
 /* Tema Actual */
+
 .scorm_highlight{
+
 	background-color:  rgba(22, 160, 133,1.0); /*Green sea*/
+
 	color: #ffffff;
+
 }
+
+
 
 h1{
+
 	/*color: #158A73; *//*Green sea Dark*/
+
 	color: #fff;
+
 	margin-left:0;
+
 	padding-left:0;
+
 	left:0;
+
 }
+
+
 
 h2, h3, h4, h5, h6 {
-	color: rgba(22, 160, 133,1.0); /*Green sea*/
+
+	color: rgba(22, 160, 133,1.0) /*Green sea*/
+
 }
+
+
 
 .jumbotron .h1, .jumbotron h1 {
+
 	font-size: 63px;
+
 	color: #fff !important;
+
 }
 
+
+
 /* ************************************* jquery.remodal.css ************************************************** */
+
 .remodal {
+
 	background-color: rgba(26, 188, 156,1.0) !important;/*Turqouise*/
+
 	color: #fff !important;
+
 }
+
 /*Números de Lineas del edictor codeMirror*/
+
 .CodeMirror-linenumber{font-size:14px !important;}
+
+
+
+.CodeMirror {
+
+	font-size: 16px;
+
+	/* background: #f5f5f5; */
+
+	/*border: 1px solid #e3e3e3;*/
+
+	border: 1px solid red;
+
+	min-height: 200px;
+
+	padding-bottom:5px;
+
+}
+
+
+
+/* *************** Correción de estilo de lista de temas en portada de capitulos *************** */
+
+.clrSunflower-dark{
+
+	color: #f6bb42;
+
+}
+
+.clrSunflower-light{
+
+	color: #ffce54;
+
+}
+
+
+
+.txtListaTema{
+
+	color: #777;
+
+	font-family: Helvetica Neue,
+
+	Helvetica, Arial, sans-serif;
+
+}
+
+
+
+.icnListaTema{
+
+	font-size: 16px !important;
+
+	display: list-item !important;
+
+	line-height: 2 !important;
+
+	list-style: none !important;
+
+	/*color: #f6bb42;*/
+
+}
+
+
+
+.dvIconFile{
+
+	font-size:22px;
+
+}
+
+
+
+.portadaCapitulo{
+
+	height:350px;
+
+	margin-bottom:0;
+
+	padding-left:75px;
+
+	/*background-color: #ffce54;*/
+
+	border-bottom: 5px solid #AAB2BD;
+
+}
+
+
+
+.imgFondoCapitulo1{
+
+	background:#ffce54 url('//cetec1.net/lms/bower_components/imagenes/PortadaCapitulo1_JavaScript.png') no-repeat !important;
+
+}
+
+
+
+.portadaCapitulo.imgFondoCapitulo2{
+
+	background:#ffce54 url('//cetec1.net/lms/bower_components/imagenes/PortadaCapitulo2_JavaScript.png') no-repeat !important;
+
+}
+
+
+
+.tituloCapitulo{
+
+	font-size: 85px !important;
+
+	line-height: 55px;
+
+}
+
+
+
+.subTitulo{
+
+	color: #fff;
+
+	font-size: 35px;
+
+	font-family: Georgia;
+
+	font-style: italic;
+
+	/*margin-left: 10px;*/
+
+}
